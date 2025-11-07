@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://wudanyang8327.github.io/000 inbox/202511071302 chrome 无头模式打印pdf/</loc>
+            <lastmod>2025-11-07T05:02:55.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/python/gunicorn+uvicorn+fastapi 进程模型.excalidraw/</loc>
             <lastmod>2025-10-29T15:34:13.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -326,6 +332,174 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-pidstat/</loc>
+            <lastmod>2024-10-24T15:44:35.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Personal/费曼技巧/</loc>
+            <lastmod>2024-10-21T11:13:44.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell 命令，替换逗号为tab符号/</loc>
+            <lastmod>2024-10-21T08:59:49.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell替换字符串/</loc>
+            <lastmod>2024-10-21T08:58:59.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/202405061043 go 抽象的一个例子/</loc>
+            <lastmod>2024-10-21T08:55:53.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/docker/docker 和 Kubernetes 的异同/</loc>
+            <lastmod>2024-10-21T08:52:55.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-dnsmasq/</loc>
+            <lastmod>2024-10-21T08:52:22.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/go-gorm-FindInBatches/</loc>
+            <lastmod>2024-10-21T04:44:45.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell-生成随机数/</loc>
+            <lastmod>2024-10-20T15:57:33.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-command-substitution（命令替换）/</loc>
+            <lastmod>2024-10-19T05:52:06.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/ubuntu-unminimize/</loc>
+            <lastmod>2024-10-19T04:24:31.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/iso-日期表示法/</loc>
+            <lastmod>2024-10-12T15:19:09.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/epoll的边缘触发和水平触发/</loc>
+            <lastmod>2024-10-12T15:17:29.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/什么是 mdns/</loc>
+            <lastmod>2024-10-12T14:56:45.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/202011261547 - 使用base64处理二进制字符串/</loc>
+            <lastmod>2024-10-12T08:45:43.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/go- make 和 new 关键字的区别/</loc>
+            <lastmod>2024-10-12T02:13:32.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-man命令使用/</loc>
+            <lastmod>2024-09-13T12:08:00.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell-循环/</loc>
+            <lastmod>2024-09-09T05:32:31.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/202407251323  go flag 别在init中使用/</loc>
+            <lastmod>2024-08-12T06:32:51.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/202103251606 - 如何在 linux 上配置科学上网/</loc>
+            <lastmod>2024-04-27T12:32:12.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/202404142147 如何在shell中遍历数字/</loc>
+            <lastmod>2024-04-22T02:49:06.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/go-mod/</loc>
+            <lastmod>2024-04-20T14:38:10.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/获取进程存活时间/</loc>
+            <lastmod>2024-04-18T04:54:33.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/go-exec-run/</loc>
+            <lastmod>2024-03-22T10:43:31.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/go-exec/</loc>
+            <lastmod>2024-03-13T07:53:18.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-查看内存占用情况/</loc>
+            <lastmod>2024-02-02T04:07:52.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/archive/</loc>
+            <lastmod>2025-11-07T05:03:17Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/journal/2024-10-11/</loc>
+            <lastmod>2024-11-10T11:43:00.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/算法/leetcode题目/1143. 最长公共子序列/</loc>
             <lastmod>2024-11-10T11:42:56.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -416,12 +590,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-pidstat/</loc>
-            <lastmod>2024-10-24T15:44:35.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/树莓派/树莓派无法上网排查/</loc>
             <lastmod>2024-10-23T14:09:35.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -470,24 +638,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Personal/费曼技巧/</loc>
-            <lastmod>2024-10-21T11:13:44.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell 命令，替换逗号为tab符号/</loc>
-            <lastmod>2024-10-21T08:59:49.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell替换字符串/</loc>
-            <lastmod>2024-10-21T08:58:59.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/工具/marginnote/marginnote 使用方法/</loc>
             <lastmod>2024-10-21T08:57:13.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -496,12 +646,6 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/操作系统/操作系统-内核态与用户态/</loc>
             <lastmod>2024-10-21T08:56:43.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/202405061043 go 抽象的一个例子/</loc>
-            <lastmod>2024-10-21T08:55:53.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -518,18 +662,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/docker/docker 和 Kubernetes 的异同/</loc>
-            <lastmod>2024-10-21T08:52:55.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-dnsmasq/</loc>
-            <lastmod>2024-10-21T08:52:22.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/工具/202404251146 破解mindnode/</loc>
             <lastmod>2024-10-21T08:49:53.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -542,20 +674,8 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/go/go-gorm-FindInBatches/</loc>
-            <lastmod>2024-10-21T04:44:45.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/算法/leetcode题目/leetcode-557. 反转字符串中的单词 III/</loc>
             <lastmod>2024-10-21T04:41:35.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell-生成随机数/</loc>
-            <lastmod>2024-10-20T15:57:33.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -568,18 +688,6 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/php/PHP生成zip压缩包/</loc>
             <lastmod>2024-10-20T09:53:15.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-command-substitution（命令替换）/</loc>
-            <lastmod>2024-10-19T05:52:06.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/ubuntu-unminimize/</loc>
-            <lastmod>2024-10-19T04:24:31.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -638,18 +746,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/iso-日期表示法/</loc>
-            <lastmod>2024-10-12T15:19:09.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/epoll的边缘触发和水平触发/</loc>
-            <lastmod>2024-10-12T15:17:29.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/工具/10x程序员工作法/</loc>
             <lastmod>2024-10-12T15:16:46.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -682,12 +778,6 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/nginx/vscode 调试nginx代码/</loc>
             <lastmod>2024-10-12T15:02:05.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/什么是 mdns/</loc>
-            <lastmod>2024-10-12T14:56:45.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -734,20 +824,8 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/202011261547 - 使用base64处理二进制字符串/</loc>
-            <lastmod>2024-10-12T08:45:43.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/哲学/20240415141933 什么是哲学/</loc>
             <lastmod>2024-10-12T05:38:19.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/go- make 和 new 关键字的区别/</loc>
-            <lastmod>2024-10-12T02:13:32.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -890,12 +968,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-man命令使用/</loc>
-            <lastmod>2024-09-13T12:08:00.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/算法/leetcode题目/5. 最长回文子串/</loc>
             <lastmod>2024-09-12T02:27:44.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -908,12 +980,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell-循环/</loc>
-            <lastmod>2024-09-09T05:32:31.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/工具/搜索引擎技巧/</loc>
             <lastmod>2024-09-08T04:37:46.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -922,12 +988,6 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/工具/202409022100 things3 与 mac 备忘录联动/</loc>
             <lastmod>2024-09-02T14:07:50.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/202407251323  go flag 别在init中使用/</loc>
-            <lastmod>2024-08-12T06:32:51.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -986,12 +1046,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/202103251606 - 如何在 linux 上配置科学上网/</loc>
-            <lastmod>2024-04-27T12:32:12.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/nginx/如何查看 nginx 的rewrite记录/</loc>
             <lastmod>2024-04-25T11:06:19.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -1000,12 +1054,6 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/redis/202011281031 - 安装 rdbtools 工具/</loc>
             <lastmod>2024-04-25T03:15:37.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/202404142147 如何在shell中遍历数字/</loc>
-            <lastmod>2024-04-22T02:49:06.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1034,12 +1082,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/go/go-mod/</loc>
-            <lastmod>2024-04-20T14:38:10.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/算法/滑动窗口模板/</loc>
             <lastmod>2024-04-20T10:25:52.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -1060,12 +1102,6 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/工具/vim显示列分隔符/</loc>
             <lastmod>2024-04-18T08:06:19.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/获取进程存活时间/</loc>
-            <lastmod>2024-04-18T04:54:33.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1100,20 +1136,8 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/go/go-exec-run/</loc>
-            <lastmod>2024-03-22T10:43:31.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/工具/phpstorm 两下 ctrl 可以快速运行程序/</loc>
             <lastmod>2024-03-19T03:19:05.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/go-exec/</loc>
-            <lastmod>2024-03-13T07:53:18.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1130,32 +1154,14 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-查看内存占用情况/</loc>
-            <lastmod>2024-02-02T04:07:52.000Z</lastmod>
+            <loc>https://wudanyang8327.github.io/card/算法/算法新年祝福语/</loc>
+            <lastmod>2024-02-05T04:42:49.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
         <url>
             <loc>https://wudanyang8327.github.io/card/obsidian/obsidian 开发过程支持的ICON/</loc>
             <lastmod>2024-02-01T07:25:33.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/archive/</loc>
-            <lastmod>2025-10-30T16:23:17Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/journal/2024-10-11/</loc>
-            <lastmod>2024-11-10T11:43:00.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/算法/算法新年祝福语/</loc>
-            <lastmod>2024-02-05T04:42:49.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     

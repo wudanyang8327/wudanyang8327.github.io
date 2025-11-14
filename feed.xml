@@ -3,7 +3,7 @@
     <title>起风了</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-11-07T05:03:33Z</updated>
+    <updated>2025-11-14T05:22:10Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -6998,6 +6998,29 @@ go mod tidy
 
             </content>
             <link href="https://wudanyang8327.github.io/card/go/go-mod/" />
+        </entry>
+        <entry>
+            <title>
+                go-init函数
+                
+            </title>
+            <updated>2025-11-14T05:18:40.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/go/go-init函数/</id>
+            <content type="html">
+                &lt;h1 id=&quot;go-init&quot; tabindex=&quot;-1&quot;&gt;go-init函数&lt;/h1&gt;
+&lt;p&gt;作用：初始化&lt;br /&gt;
+主要特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;golang 会自动解析 import&lt;/li&gt;
+&lt;li&gt;先于 main 函数执行，不能被其他函数调用&lt;/li&gt;
+&lt;li&gt;没有输入参数、返回值&lt;/li&gt;
+&lt;li&gt;源文件中可以有多个 init 函数&lt;/li&gt;
+&lt;li&gt;同一个包的 init 顺序是自上而下调用的&lt;/li&gt;
+&lt;li&gt;不同包的 init 执行顺序无法预知，所以只能做当前包的一些初始化操作&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/go/go-init函数/" />
         </entry>
         <entry>
             <title>

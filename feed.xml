@@ -3,7 +3,7 @@
     <title>起风了</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-11-14T05:22:10Z</updated>
+    <updated>2025-11-14T10:09:00Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -222,7 +222,7 @@
                 leetcode题目难度更新了
                 
             </title>
-            <updated>2024-11-05T16:28:34.000Z</updated>
+            <updated>2025-11-04T09:55:45.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/leetcode题目难度更新了/</id>
             <content type="html">
                 &lt;h1 id=&quot;leetcode&quot; tabindex=&quot;-1&quot;&gt;leetcode题目难度更新了&lt;/h1&gt;
@@ -484,7 +484,7 @@ func swapStrBytes(s []byte, left, right int) {
                 leetcode-401. 二进制手表
                 
             </title>
-            <updated>2024-10-21T08:54:48.000Z</updated>
+            <updated>2025-11-03T10:10:24.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/leetcode题目/leetcode-401. 二进制手表/</id>
             <content type="html">
                 &lt;h1 id=&quot;leetcode-401&quot; tabindex=&quot;-1&quot;&gt;leetcode-401. 二进制手表&lt;/h1&gt;
@@ -810,7 +810,7 @@ fn 为最大值&lt;/p&gt;
                 72. 编辑距离
                 
             </title>
-            <updated>2024-11-08T04:32:31.000Z</updated>
+            <updated>2025-11-05T15:28:55.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/leetcode题目/72. 编辑距离/</id>
             <content type="html">
                 &lt;h1 id=&quot;72&quot; tabindex=&quot;-1&quot;&gt;72. 编辑距离&lt;/h1&gt;
@@ -1294,7 +1294,7 @@ func dynamic(s string) string {
                 239. 滑动窗口最大值
                 
             </title>
-            <updated>2024-11-08T16:09:01.000Z</updated>
+            <updated>2025-11-06T06:06:08.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/leetcode题目/239. 滑动窗口最大值/</id>
             <content type="html">
                 &lt;h1 id=&quot;239&quot; tabindex=&quot;-1&quot;&gt;239. 滑动窗口最大值&lt;/h1&gt;
@@ -1544,7 +1544,7 @@ for _, dir := range directions {
                 14. 最长公共前缀
                 
             </title>
-            <updated>2024-10-25T15:47:26.000Z</updated>
+            <updated>2025-11-07T05:03:16.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/leetcode题目/14. 最长公共前缀/</id>
             <content type="html">
                 &lt;h1 id=&quot;14&quot; tabindex=&quot;-1&quot;&gt;14. 最长公共前缀&lt;/h1&gt;
@@ -1803,7 +1803,7 @@ for j := 0; j &amp;lt; 4; j++ {
                 202404091044 leetcode-会员购买优惠-宫水三叶
                 
             </title>
-            <updated>2024-10-21T13:53:50.000Z</updated>
+            <updated>2025-11-13T05:27:31.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/202404091044 leetcode-会员购买优惠-宫水三叶/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404091044-leetcode&quot; tabindex=&quot;-1&quot;&gt;202404091044 leetcode-会员购买优惠-宫水三叶&lt;/h1&gt;
@@ -1831,7 +1831,7 @@ for j := 0; j &amp;lt; 4; j++ {
             <content type="html">
                 &lt;h1 id=&quot;20240417125706&quot; tabindex=&quot;-1&quot;&gt;20240417125706 部落冲突&lt;/h1&gt;
 &lt;p&gt;部落冲突玩到13本了，原来部落联盟的人都没了，然后也没有什么动力能继续玩下去，就这样偶尔上线一次了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/IMG_2971.png&quot; alt=&quot;IMG_2971.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang8327.github.io/404&quot; target=&quot;&quot;&gt;IMG_2971.png&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang8327.github.io/card/游戏/20240417125706 部落冲突/" />
@@ -1914,7 +1914,7 @@ Saving to: ‘index.html’
                 ubuntu 树莓派启动时配置网络
                 
             </title>
-            <updated>2024-09-24T10:53:22.000Z</updated>
+            <updated>2025-11-05T15:26:49.000Z</updated>
             <id>https://wudanyang8327.github.io/card/树莓派/ubuntu 树莓派启动时配置网络/</id>
             <content type="html">
                 &lt;h1 id=&quot;ubuntu&quot; tabindex=&quot;-1&quot;&gt;ubuntu 树莓派启动时配置网络&lt;/h1&gt;
@@ -2158,7 +2158,7 @@ if __name__ == &#39;__main__&#39;:
                 内存问题分析
                 
             </title>
-            <updated>2024-10-22T03:31:51.000Z</updated>
+            <updated>2025-11-02T15:44:55.000Z</updated>
             <id>https://wudanyang8327.github.io/card/操作系统/内存问题分析/</id>
             <content type="html">
                 &lt;h1 id=&quot;内存问题分析&quot; tabindex=&quot;-1&quot;&gt;内存问题分析&lt;/h1&gt;
@@ -2450,7 +2450,7 @@ linux 中只使用了 &lt;code&gt;Ring 0&lt;/code&gt; 和 &lt;code&gt;Ring3&lt;/
                 硬件中断输出示例
                 
             </title>
-            <updated>2024-09-20T13:17:58.000Z</updated>
+            <updated>2025-11-03T13:52:18.000Z</updated>
             <id>https://wudanyang8327.github.io/card/操作系统/CPU性能优化/硬件中断输出示例/</id>
             <content type="html">
                 &lt;h1 id=&quot;硬件中断输出示例&quot; tabindex=&quot;-1&quot;&gt;硬件中断输出示例&lt;/h1&gt;
@@ -2614,7 +2614,7 @@ sudo hping -S -p 8080 --flood 192.168.135.130
                 模拟突发进程特别多的情况
                 
             </title>
-            <updated>2024-09-20T13:18:14.000Z</updated>
+            <updated>2025-11-03T11:15:11.000Z</updated>
             <id>https://wudanyang8327.github.io/card/操作系统/CPU性能优化/模拟突发进程特别多的情况/</id>
             <content type="html">
                 &lt;h1 id=&quot;模拟突发进程特别多的情况&quot; tabindex=&quot;-1&quot;&gt;模拟突发进程特别多的情况&lt;/h1&gt;
@@ -2997,7 +2997,7 @@ Average:        all      0.03      0.00      0.13      0.00      0.00     99.85
                 CPU 上下文切换
                 
             </title>
-            <updated>2024-09-20T13:17:31.000Z</updated>
+            <updated>2025-11-02T17:57:02.000Z</updated>
             <id>https://wudanyang8327.github.io/card/操作系统/CPU性能优化/CPU 上下文切换/</id>
             <content type="html">
                 &lt;h1 id=&quot;cpu&quot; tabindex=&quot;-1&quot;&gt;CPU 上下文切换&lt;/h1&gt;
@@ -3110,7 +3110,7 @@ vmstat 5
                 202409121624 Linux 性能分析优化-CPU
                 
             </title>
-            <updated>2025-01-24T09:11:52.000Z</updated>
+            <updated>2025-11-05T12:53:59.000Z</updated>
             <id>https://wudanyang8327.github.io/card/操作系统/CPU性能优化/202409121624 Linux 性能分析优化-CPU/</id>
             <content type="html">
                 &lt;h1 id=&quot;202409121624-linux-cpu&quot; tabindex=&quot;-1&quot;&gt;202409121624 Linux 性能分析优化-CPU&lt;/h1&gt;
@@ -3504,7 +3504,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 创建一个chrome独立APP窗口
                 
             </title>
-            <updated>2025-01-21T09:27:50.000Z</updated>
+            <updated>2025-11-02T15:47:45.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/创建一个chrome独立APP窗口/</id>
             <content type="html">
                 &lt;h1 id=&quot;chrome-app&quot; tabindex=&quot;-1&quot;&gt;创建一个chrome独立APP窗口&lt;/h1&gt;
@@ -3551,7 +3551,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 vscode git 只暂存部分改动
                 
             </title>
-            <updated>2024-02-29T15:41:01.000Z</updated>
+            <updated>2025-11-03T16:15:08.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/vscode git 只暂存部分改动/</id>
             <content type="html">
                 &lt;h1 id=&quot;vscode-git&quot; tabindex=&quot;-1&quot;&gt;vscode git 只暂存部分改动&lt;/h1&gt;
@@ -3568,7 +3568,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 vim显示列分隔符
                 
             </title>
-            <updated>2024-04-18T08:06:19.000Z</updated>
+            <updated>2025-11-04T05:10:01.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/vim显示列分隔符/</id>
             <content type="html">
                 &lt;h1 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;vim显示列分隔符&lt;/h1&gt;
@@ -3585,7 +3585,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 phpstorm 两下 ctrl 可以快速运行程序
                 
             </title>
-            <updated>2024-03-19T03:19:05.000Z</updated>
+            <updated>2025-11-14T09:56:11.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/phpstorm 两下 ctrl 可以快速运行程序/</id>
             <content type="html">
                 &lt;h1 id=&quot;phpstorm-ctrl&quot; tabindex=&quot;-1&quot;&gt;phpstorm 两下 ctrl 可以快速运行程序&lt;/h1&gt;
@@ -3604,7 +3604,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 mermaid 图表自动生成
                 
             </title>
-            <updated>2025-01-16T05:35:31.000Z</updated>
+            <updated>2025-11-02T15:46:30.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/mermaid 图表自动生成/</id>
             <content type="html">
                 &lt;h1 id=&quot;mermaid&quot; tabindex=&quot;-1&quot;&gt;mermaid 图表自动生成&lt;/h1&gt;
@@ -3618,7 +3618,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 marginnote 使用方法
                 
             </title>
-            <updated>2024-10-21T08:57:13.000Z</updated>
+            <updated>2025-11-02T15:45:38.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/marginnote/marginnote 使用方法/</id>
             <content type="html">
                 &lt;h1 id=&quot;marginnote&quot; tabindex=&quot;-1&quot;&gt;marginnote 使用方法&lt;/h1&gt;
@@ -3691,7 +3691,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 mac-鼠须管-使用lua脚本
                 
             </title>
-            <updated>2024-09-26T07:32:50.000Z</updated>
+            <updated>2025-11-04T09:56:28.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/mac/mac-鼠须管-使用lua脚本/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac-lua&quot; tabindex=&quot;-1&quot;&gt;mac-鼠须管-使用lua脚本&lt;/h1&gt;
@@ -3808,7 +3808,7 @@ date_translator = require(&amp;quot;date&amp;quot;)
                 mac-合上盖子不断网
                 
             </title>
-            <updated>2024-09-26T07:31:56.000Z</updated>
+            <updated>2025-11-03T04:47:41.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/mac/mac-合上盖子不断网/</id>
             <content type="html">
                 &lt;h1 id=&quot;mac&quot; tabindex=&quot;-1&quot;&gt;mac-合上盖子不断网&lt;/h1&gt;
@@ -3933,7 +3933,7 @@ open /Applications/Obsidian.app
                 ithoughtx破产了
                 
             </title>
-            <updated>2024-09-14T07:53:04.000Z</updated>
+            <updated>2025-11-02T15:47:14.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/ithoughtx破产了/</id>
             <content type="html">
                 &lt;h1 id=&quot;ithoughtx&quot; tabindex=&quot;-1&quot;&gt;ithoughtx破产了&lt;/h1&gt;
@@ -3963,7 +3963,7 @@ open /Applications/Obsidian.app
                 Things 工作流
                 
             </title>
-            <updated>2025-07-16T05:23:40.000Z</updated>
+            <updated>2025-11-02T15:46:29.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
@@ -3993,7 +3993,7 @@ open /Applications/Obsidian.app
                 202506171613 vscode 如何粘贴文件不覆盖
                 
             </title>
-            <updated>2025-06-17T15:07:42.000Z</updated>
+            <updated>2025-11-02T15:46:12.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/202506171613 vscode 如何粘贴文件不覆盖/</id>
             <content type="html">
                 &lt;h1 id=&quot;202506171613-vscode&quot; tabindex=&quot;-1&quot;&gt;202506171613 vscode 如何粘贴文件不覆盖&lt;/h1&gt;
@@ -4009,7 +4009,7 @@ open /Applications/Obsidian.app
                 202409022100 things3 与 mac 备忘录联动
                 
             </title>
-            <updated>2024-09-02T14:07:50.000Z</updated>
+            <updated>2025-11-02T15:46:41.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/202409022100 things3 与 mac 备忘录联动/</id>
             <content type="html">
                 &lt;h1 id=&quot;202409022100-things3-mac&quot; tabindex=&quot;-1&quot;&gt;202409022100 things3 与 mac 备忘录联动&lt;/h1&gt;
@@ -4025,7 +4025,7 @@ open /Applications/Obsidian.app
                 202409021102 marginnote 从 Web 网页导入内容
                 
             </title>
-            <updated>2024-09-26T07:30:40.000Z</updated>
+            <updated>2025-11-02T15:46:44.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/202409021102 marginnote 从 Web 网页导入内容/</id>
             <content type="html">
                 &lt;h1 id=&quot;202409021102-marginnote-web&quot; tabindex=&quot;-1&quot;&gt;202409021102 marginnote 从 Web 网页导入内容&lt;/h1&gt;
@@ -4053,7 +4053,7 @@ open /Applications/Obsidian.app
                 202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作
                 
             </title>
-            <updated>2024-09-25T16:07:16.000Z</updated>
+            <updated>2025-11-02T15:46:45.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作/</id>
             <content type="html">
                 &lt;h1 id=&quot;202405081331-mac-rime&quot; tabindex=&quot;-1&quot;&gt;202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作&lt;/h1&gt;
@@ -5141,7 +5141,7 @@ async def foo():
                 gunicorn+uvicorn+fastapi 进程模型.excalidraw
                 
             </title>
-            <updated>2025-10-29T15:34:13.000Z</updated>
+            <updated>2025-11-07T05:03:09.000Z</updated>
             <id>https://wudanyang8327.github.io/card/python/gunicorn+uvicorn+fastapi 进程模型.excalidraw/</id>
             <content type="html">
                 &lt;style&gt; .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir=&quot;ltr&quot;] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} &lt;/style&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;gunicorn+uvicorn+fastapi_进程模型excalidraw.md&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){const InitialData={&quot;type&quot;:&quot;excalidraw&quot;,&quot;version&quot;:2,&quot;source&quot;:&quot;https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.4&quot;,&quot;elements&quot;:[{&quot;id&quot;:&quot;S4gUjxN4&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-531.95703125,&quot;y&quot;:-584.3515625,&quot;width&quot;:1012,&quot;height&quot;:50,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a0&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1214529693,&quot;version&quot;:228,&quot;versionNonce&quot;:598635485,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748272628702,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;&#92;ngunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:80&quot;,&quot;rawText&quot;:&quot;&#92;ngunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:80&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;&#92;ngunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:80&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;9FBfKqTT7v9kGyTNumEUj&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:277.8014831542969,&quot;y&quot;:-107.359375,&quot;width&quot;:119.46484375,&quot;height&quot;:64.3515625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#e03131&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;dashed&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a5&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:864042077,&quot;version&quot;:848,&quot;versionNonce&quot;:2041314941,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;mHgbpbCq&quot;},{&quot;id&quot;:&quot;p3HOzwb7YH7E_8EdBIrYd&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;kgFwNPtbK84w_pHfyxrMM&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748272672535,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;mHgbpbCq&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:304.5339050292969,&quot;y&quot;:-87.68359375,&quot;width&quot;:66,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#e03131&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a6&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1146267837,&quot;version&quot;:871,&quot;versionNonce&quot;:1879123677,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748272672535,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;worker&quot;,&quot;rawText&quot;:&quot;worker&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;9FBfKqTT7v9kGyTNumEUj&quot;,&quot;originalText&quot;:&quot;worker&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;lVx-AMgblG54Lt8erWAvo&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-132.26101684570312,&quot;y&quot;:126.55859375,&quot;width&quot;:119.46484375,&quot;height&quot;:85,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a64&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:2017317459,&quot;version&quot;:820,&quot;versionNonce&quot;:904078899,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;ZJTVR45q&quot;},{&quot;id&quot;:&quot;kgFwNPtbK84w_pHfyxrMM&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;FWPrvrXL4XjXoYo4q93lh&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;l3-szXt3A9_wTuw_OSuiH&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;9pj_kIxky1z41QNhkkXzi&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;-FjPr4NV5C9WonQJ_4dnf&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748318118796,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;ZJTVR45q&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-116.52859497070312,&quot;y&quot;:131.55859375,&quot;width&quot;:88,&quot;height&quot;:75,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a68&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:471207923,&quot;version&quot;:851,&quot;versionNonce&quot;:1168500691,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748318118796,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;gunicorn&#92;n&#92;nMaster&quot;,&quot;rawText&quot;:&quot;gunicorn&#92;n&#92;nMaster&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;lVx-AMgblG54Lt8erWAvo&quot;,&quot;originalText&quot;:&quot;gunicorn&#92;n&#92;nMaster&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;YIHvLs4eZBiL5vXm8s5PA&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-87.8263976815299,&quot;y&quot;:-106.26535646816808,&quot;width&quot;:119.46484375,&quot;height&quot;:64.3515625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a6G&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:1296783987,&quot;version&quot;:633,&quot;versionNonce&quot;:1134454627,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;AiVRAhYO&quot;},{&quot;id&quot;:&quot;WUG1G4sxyfCy9kbuzQPBl&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;FWPrvrXL4XjXoYo4q93lh&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1750735975675,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;AiVRAhYO&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-61.0939758065299,&quot;y&quot;:-86.58957521816808,&quot;width&quot;:66,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a6V&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1652397075,&quot;version&quot;:655,&quot;versionNonce&quot;:1723958019,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735975675,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;worker&quot;,&quot;rawText&quot;:&quot;worker&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;YIHvLs4eZBiL5vXm8s5PA&quot;,&quot;originalText&quot;:&quot;worker&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;os9Zn4verPJ9k1rb7fS_y&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:84.19992065429688,&quot;y&quot;:-106.65625,&quot;width&quot;:119.46484375,&quot;height&quot;:64.3515625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a6X&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:400950685,&quot;version&quot;:678,&quot;versionNonce&quot;:302796893,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;OXJG6CAO&quot;},{&quot;id&quot;:&quot;ZWfrumVJFtqawHcJmTrXY&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;l3-szXt3A9_wTuw_OSuiH&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748272673384,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;OXJG6CAO&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:110.93234252929688,&quot;y&quot;:-86.98046875,&quot;width&quot;:66,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a6Z&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1135430141,&quot;version&quot;:699,&quot;versionNonce&quot;:540818621,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748272673384,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;worker&quot;,&quot;rawText&quot;:&quot;worker&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;os9Zn4verPJ9k1rb7fS_y&quot;,&quot;originalText&quot;:&quot;worker&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;APeF_8BMTw-rp_iimGAQv&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:463.7624206542969,&quot;y&quot;:-108.26953125,&quot;width&quot;:119.46484375,&quot;height&quot;:64.3515625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a6d&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:738957437,&quot;version&quot;:846,&quot;versionNonce&quot;:468581395,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;ZxC1pOEg&quot;},{&quot;id&quot;:&quot;fuyyWOyAF4plKqGs6f455&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;9pj_kIxky1z41QNhkkXzi&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748272671135,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;ZxC1pOEg&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:490.4948425292969,&quot;y&quot;:-88.59375,&quot;width&quot;:66,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;a6l&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:660439261,&quot;version&quot;:868,&quot;versionNonce&quot;:865796531,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748272671135,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;worker&quot;,&quot;rawText&quot;:&quot;worker&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;APeF_8BMTw-rp_iimGAQv&quot;,&quot;originalText&quot;:&quot;worker&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-101.00160217285156,&quot;y&quot;:-331.73828125,&quot;width&quot;:148.578125,&quot;height&quot;:71.8984375,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;aO&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:1130394717,&quot;version&quot;:158,&quot;versionNonce&quot;:152068989,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;a1TEPwC0&quot;},{&quot;id&quot;:&quot;WUG1G4sxyfCy9kbuzQPBl&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;fuyyWOyAF4plKqGs6f455&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;ZWfrumVJFtqawHcJmTrXY&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;p3HOzwb7YH7E_8EdBIrYd&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;ewiNG8IFZYiTcf2VQ4r8c&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;BhypayHPZ9_MGvVX1WUFt&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748272986202,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;a1TEPwC0&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-65.21253967285156,&quot;y&quot;:-308.2890625,&quot;width&quot;:77,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;aP&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1552546291,&quot;version&quot;:70,&quot;versionNonce&quot;:1837102867,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748272633903,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;IP:PORT&quot;,&quot;rawText&quot;:&quot;IP:PORT&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;originalText&quot;:&quot;IP:PORT&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;DIqMUlW2GW47rp5vSM0zS&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-98.93910217285156,&quot;y&quot;:-499.44140625,&quot;width&quot;:148.578125,&quot;height&quot;:71.8984375,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;aPV&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:1928846813,&quot;version&quot;:220,&quot;versionNonce&quot;:1822724083,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;WSnHMVgr&quot;},{&quot;id&quot;:&quot;ewiNG8IFZYiTcf2VQ4r8c&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748272641752,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;WSnHMVgr&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-57.65003967285156,&quot;y&quot;:-475.9921875,&quot;width&quot;:66,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;aQ&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1197087293,&quot;version&quot;:141,&quot;versionNonce&quot;:1041573747,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748272638853,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;Client&quot;,&quot;rawText&quot;:&quot;Client&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;DIqMUlW2GW47rp5vSM0zS&quot;,&quot;originalText&quot;:&quot;Client&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;BhypayHPZ9_MGvVX1WUFt&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-89.88548221263866,&quot;y&quot;:-254.21505783964992,&quot;width&quot;:267.6204038467097,&quot;height&quot;:145.45836999640053,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ae&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1400197565,&quot;version&quot;:621,&quot;versionNonce&quot;:923344845,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940522,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[-267.6204038467097,145.45836999640053]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;focus&quot;:-0.09482774842106187,&quot;gap&quot;:6.2734375},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;JtUUqvbE4jUBrRaKxZbBF&quot;,&quot;focus&quot;:-0.19613845916586353,&quot;gap&quot;:5.03515625},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;Sn8lqm9jePBpI49ZJ630-&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-487.9697746329468,&quot;y&quot;:-115.60471744535046,&quot;width&quot;:322.35703994009197,&quot;height&quot;:79.16015624999999,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;af&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:1692909277,&quot;version&quot;:912,&quot;versionNonce&quot;:2010959709,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;id&quot;:&quot;-FjPr4NV5C9WonQJ_4dnf&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748273056926,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;JtUUqvbE4jUBrRaKxZbBF&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-477.6892348602195,&quot;y&quot;:-103.7215315932494,&quot;width&quot;:173.1478946374622,&quot;height&quot;:55.88451726002471,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ag&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:2029249971,&quot;version&quot;:676,&quot;versionNonce&quot;:1802263581,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;id&quot;:&quot;FiKWqKFIkrbQu7yDkCRz5&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;BhypayHPZ9_MGvVX1WUFt&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748273056926,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;Urams_Ui7Mj_ocIG__wYQ&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-239.3442825444333,&quot;y&quot;:-103.07669770861298,&quot;width&quot;:70.73228776864185,&quot;height&quot;:52.73668431148722,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ah&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:1169353277,&quot;version&quot;:883,&quot;versionNonce&quot;:1675398141,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;id&quot;:&quot;jMOlumm9&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;id&quot;:&quot;FiKWqKFIkrbQu7yDkCRz5&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;QJI8-w3JAij6HDQ2cUQcs&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748273098309,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;jMOlumm9&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-219.2818801151905,&quot;y&quot;:-81.67780076022999,&quot;width&quot;:30.60748291015625,&quot;height&quot;:9.938890414721227,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ai&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1658812371,&quot;version&quot;:860,&quot;versionNonce&quot;:1329501501,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748273056926,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;fastapi&quot;,&quot;rawText&quot;:&quot;fastapi&quot;,&quot;fontSize&quot;:7.951112331776982,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;Urams_Ui7Mj_ocIG__wYQ&quot;,&quot;originalText&quot;:&quot;fastapi&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;7JfyulYV&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-469.2070130719058,&quot;y&quot;:-96.5065183328127,&quot;width&quot;:34.97998046875,&quot;height&quot;:9.938890414721227,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;aj&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1632899709,&quot;version&quot;:467,&quot;versionNonce&quot;:1337862653,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748273056926,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;gunicorn&quot;,&quot;rawText&quot;:&quot;gunicorn&quot;,&quot;fontSize&quot;:7.951112331776982,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;gunicorn&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;9KAEkrWM&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-472.25856301955065,&quot;y&quot;:-73.36598613441252,&quot;width&quot;:157.409912109375,&quot;height&quot;:9.938890414721227,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ak&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1026156051,&quot;version&quot;:552,&quot;versionNonce&quot;:700572253,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;id&quot;:&quot;FiKWqKFIkrbQu7yDkCRz5&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1748273056926,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;import uvicorn.workers.UvicornWorker&quot;,&quot;rawText&quot;:&quot;import uvicorn.workers.UvicornWorker&quot;,&quot;fontSize&quot;:7.951112331776982,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;import uvicorn.workers.UvicornWorker&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;FiKWqKFIkrbQu7yDkCRz5&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-302.06091135687586,&quot;y&quot;:-72.19453696498874,&quot;width&quot;:61.111264916856385,&quot;height&quot;:2.489372160985738,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;al&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1111201427,&quot;version&quot;:1547,&quot;versionNonce&quot;:1748193421,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940524,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[61.111264916856385,-2.489372160985738]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;9KAEkrWM&quot;,&quot;focus&quot;:-0.008688635386196934,&quot;gap&quot;:12.787739553299787},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;Urams_Ui7Mj_ocIG__wYQ&quot;,&quot;focus&quot;:-0.018641786698389236,&quot;gap&quot;:1.60536389558618},&quot;startArrowhead&quot;:&quot;triangle_outline&quot;,&quot;endArrowhead&quot;:&quot;triangle_outline&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;r8ZG4TSX&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-289.0190263376443,&quot;y&quot;:-108.22669421214881,&quot;width&quot;:31.844970703125,&quot;height&quot;:12.062520366519385,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;an&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:414699155,&quot;version&quot;:409,&quot;versionNonce&quot;:346884381,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748273055611,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;worker&quot;,&quot;rawText&quot;:&quot;worker&quot;,&quot;fontSize&quot;:9.650016293215508,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;worker&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;WUG1G4sxyfCy9kbuzQPBl&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-54.52615128130463,&quot;y&quot;:-252.87500000000003,&quot;width&quot;:36.67833359187334,&quot;height&quot;:130.92604978183198,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ao&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:2076030621,&quot;version&quot;:221,&quot;versionNonce&quot;:1514154659,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735975686,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[36.67833359187334,130.92604978183198]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;focus&quot;:0.47272851819246026,&quot;gap&quot;:6.96484375},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;YIHvLs4eZBiL5vXm8s5PA&quot;,&quot;focus&quot;:0.3440728618549619,&quot;gap&quot;:15.68359375},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;fuyyWOyAF4plKqGs6f455&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:8.173023200157331,&quot;y&quot;:-258.83984375,&quot;width&quot;:497.72152801873597,&quot;height&quot;:144.8359375,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ap&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1725641491,&quot;version&quot;:275,&quot;versionNonce&quot;:506801741,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940494,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[497.72152801873597,144.8359375]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;focus&quot;:0.46550118878701685,&quot;gap&quot;:1},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;APeF_8BMTw-rp_iimGAQv&quot;,&quot;focus&quot;:0.6616216337397371,&quot;gap&quot;:5.734375},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;ZWfrumVJFtqawHcJmTrXY&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-26.919985796585024,&quot;y&quot;:-251.39453125,&quot;width&quot;:172.96212516909418,&quot;height&quot;:135.375,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;aq&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1241509299,&quot;version&quot;:143,&quot;versionNonce&quot;:24370349,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940504,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[172.96212516909418,135.375]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;focus&quot;:0.4735349262658192,&quot;gap&quot;:8.4453125},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;os9Zn4verPJ9k1rb7fS_y&quot;,&quot;focus&quot;:0.5472157435438478,&quot;gap&quot;:9.36328125},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;p3HOzwb7YH7E_8EdBIrYd&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:41.18245064111119,&quot;y&quot;:-254.8530752896957,&quot;width&quot;:233.4823137631857,&quot;height&quot;:169.87857997153554,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#e03131&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;dashed&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ar&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:709357619,&quot;version&quot;:294,&quot;versionNonce&quot;:965590797,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940513,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[233.4823137631857,169.87857997153554]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;focus&quot;:-0.09403778791618672,&quot;gap&quot;:7.0243889888422775},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;9FBfKqTT7v9kGyTNumEUj&quot;,&quot;focus&quot;:-0.4753252553424164,&quot;gap&quot;:3.13671875},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;kgFwNPtbK84w_pHfyxrMM&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-18.661103093347066,&quot;y&quot;:122.82908605702461,&quot;width&quot;:291.2438362476439,&quot;height&quot;:196.64513600606352,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#e03131&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;dashed&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;as&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1042080211,&quot;version&quot;:264,&quot;versionNonce&quot;:375183821,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;HebC4SkJ&quot;}],&quot;updated&quot;:1750735940381,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[291.2438362476439,-196.64513600606352]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;lVx-AMgblG54Lt8erWAvo&quot;,&quot;focus&quot;:-0.11902190622204285,&quot;gap&quot;:7.05308561251697},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;9FBfKqTT7v9kGyTNumEUj&quot;,&quot;focus&quot;:0.5867477457301011,&quot;gap&quot;:5.21875},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;HebC4SkJ&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:83.53393227259625,&quot;y&quot;:13.461928009361753,&quot;width&quot;:88,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#e03131&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;dashed&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;asV&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1691676453,&quot;version&quot;:21,&quot;versionNonce&quot;:1090445515,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748326473512,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;Shutdown&quot;,&quot;rawText&quot;:&quot;Shutdown&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;kgFwNPtbK84w_pHfyxrMM&quot;,&quot;originalText&quot;:&quot;Shutdown&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;-FjPr4NV5C9WonQJ_4dnf&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-113.96389256605134,&quot;y&quot;:124.75013712225342,&quot;width&quot;:147.52592686299064,&quot;height&quot;:152.89782331760387,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;at&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:670853213,&quot;version&quot;:151,&quot;versionNonce&quot;:1849625421,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940423,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[-147.52592686299064,-152.89782331760387]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;lVx-AMgblG54Lt8erWAvo&quot;,&quot;focus&quot;:0.013069489317624312,&quot;gap&quot;:1.9133943445542279},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;Sn8lqm9jePBpI49ZJ630-&quot;,&quot;focus&quot;:-0.09580584894302578,&quot;gap&quot;:8.296875000000014},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;FWPrvrXL4XjXoYo4q93lh&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-83.81192468354159,&quot;y&quot;:123.58943158318013,&quot;width&quot;:87.9068967952561,&quot;height&quot;:155.42119430134824,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;au&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:448191859,&quot;version&quot;:103,&quot;versionNonce&quot;:583589443,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735975697,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[87.9068967952561,-155.42119430134824]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;lVx-AMgblG54Lt8erWAvo&quot;,&quot;focus&quot;:-0.44187519137075315,&quot;gap&quot;:2.969162166819853},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;YIHvLs4eZBiL5vXm8s5PA&quot;,&quot;focus&quot;:-0.7197394801742868,&quot;gap&quot;:10.08203125},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;l3-szXt3A9_wTuw_OSuiH&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-66.83217475023548,&quot;y&quot;:121.24426664464616,&quot;width&quot;:210.07625333122047,&quot;height&quot;:155.57239164464616,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;av&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1357492381,&quot;version&quot;:143,&quot;versionNonce&quot;:146570445,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940461,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[210.07625333122047,-155.57239164464616]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;lVx-AMgblG54Lt8erWAvo&quot;,&quot;focus&quot;:-0.5026327227860383,&quot;gap&quot;:5.31432710535386},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;os9Zn4verPJ9k1rb7fS_y&quot;,&quot;focus&quot;:-0.5188098586222556,&quot;gap&quot;:7.976562499999993},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;9pj_kIxky1z41QNhkkXzi&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-2.277741584338969,&quot;y&quot;:190.14670365265232,&quot;width&quot;:535.8950266610178,&quot;height&quot;:232.58029740265232,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;aw&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:323024083,&quot;version&quot;:260,&quot;versionNonce&quot;:1618177421,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;B93WEGv1&quot;}],&quot;updated&quot;:1750735940479,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[535.8950266610178,-232.58029740265232]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;lVx-AMgblG54Lt8erWAvo&quot;,&quot;focus&quot;:0.7537876300237375,&quot;gap&quot;:10.518431511364156},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;APeF_8BMTw-rp_iimGAQv&quot;,&quot;focus&quot;:-0.655175971530495,&quot;gap&quot;:1.484375},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;B93WEGv1&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:238.83385357281145,&quot;y&quot;:60.85836787685204,&quot;width&quot;:44,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;dashed&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;awV&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1573646507,&quot;version&quot;:20,&quot;versionNonce&quot;:1911168939,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748326487218,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;Fork&quot;,&quot;rawText&quot;:&quot;Fork&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;9pj_kIxky1z41QNhkkXzi&quot;,&quot;originalText&quot;:&quot;Fork&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;ewiNG8IFZYiTcf2VQ4r8c&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-20.923477172851594,&quot;y&quot;:-420.08984375,&quot;width&quot;:4.421874999999972,&quot;height&quot;:81.53515625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;ax&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:310431133,&quot;version&quot;:47,&quot;versionNonce&quot;:231579181,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750735940522,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[-4.421874999999972,81.53515625]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;DIqMUlW2GW47rp5vSM0zS&quot;,&quot;focus&quot;:-0.07975465983878265,&quot;gap&quot;:7.453125},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;7nNy3mIVCKHgm_lWvufPQ&quot;,&quot;focus&quot;:-0.012488535595382442,&quot;gap&quot;:6.81640625},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;6XeL3FS8eEBQyBalU13ND&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-978.2282756737985,&quot;y&quot;:162.50254551249395,&quot;width&quot;:203.2421875,&quot;height&quot;:92.20312500000001,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1971c2&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0A8&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:390370771,&quot;version&quot;:270,&quot;versionNonce&quot;:1111507235,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;E9NwlGap&quot;},{&quot;id&quot;:&quot;rr_powStz00aN0x7KgWg0&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;td_uKOlp8-mBFKOWlXNUi&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1750736002918,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;E9NwlGap&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-931.6071819237985,&quot;y&quot;:183.60410801249395,&quot;width&quot;:110,&quot;height&quot;:50,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1971c2&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0AG&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1396371613,&quot;version&quot;:278,&quot;versionNonce&quot;:1870800067,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002918,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;ASGI Async&#92;nHandler&quot;,&quot;rawText&quot;:&quot;ASGI Async Handler&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;6XeL3FS8eEBQyBalU13ND&quot;,&quot;originalText&quot;:&quot;ASGI Async Handler&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;etTE-fOBKQ9NbuPCPzRnS&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-999.9633355619685,&quot;y&quot;:133.7124689928695,&quot;width&quot;:627.45703125,&quot;height&quot;:417.2734375,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;qZy9y8gqMWCofeqmT6i25&quot;,&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0AO&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:1962649363,&quot;version&quot;:247,&quot;versionNonce&quot;:1614878627,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;id&quot;:&quot;QJI8-w3JAij6HDQ2cUQcs&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1750736002918,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;rBwGQJ2t&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-980.8422418119685,&quot;y&quot;:105.3804377428695,&quot;width&quot;:77,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;qZy9y8gqMWCofeqmT6i25&quot;,&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0AV&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1052801235,&quot;version&quot;:196,&quot;versionNonce&quot;:765709027,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;fastapi&quot;,&quot;rawText&quot;:&quot;fastapi&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;fastapi&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;ITap3Hce&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-574.0563041940707,&quot;y&quot;:463.8726252428695,&quot;width&quot;:110,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;qZy9y8gqMWCofeqmT6i25&quot;,&quot;BIv2nNORnFLNeRSt989pr&quot;,&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0Ad&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1465418707,&quot;version&quot;:225,&quot;versionNonce&quot;:1095661187,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;Logic Code&quot;,&quot;rawText&quot;:&quot;Logic Code&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;Logic Code&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;ukW_1SuAtdkE5i_ZQZbgN&quot;,&quot;type&quot;:&quot;ellipse&quot;,&quot;x&quot;:-964.8820795884782,&quot;y&quot;:390.4039460798183,&quot;width&quot;:148.0703125,&quot;height&quot;:137.28515625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0Al&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:620763187,&quot;version&quot;:322,&quot;versionNonce&quot;:1306701347,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;HjpkTiGA&quot;},{&quot;id&quot;:&quot;rr_powStz00aN0x7KgWg0&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;7tLyhouPWr3EHIriOpjLb&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;HjpkTiGA&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-929.1976843690588,&quot;y&quot;:446.50889173450344,&quot;width&quot;:77,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0At&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1960101981,&quot;version&quot;:209,&quot;versionNonce&quot;:374272451,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;Request&quot;,&quot;rawText&quot;:&quot;Request&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;ukW_1SuAtdkE5i_ZQZbgN&quot;,&quot;originalText&quot;:&quot;Request&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;No71Pg7-VUn059S1yHryY&quot;,&quot;type&quot;:&quot;ellipse&quot;,&quot;x&quot;:-581.8962444237985,&quot;y&quot;:190.25254551249395,&quot;width&quot;:148.0703125,&quot;height&quot;:137.28515625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0B&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:897076349,&quot;version&quot;:431,&quot;versionNonce&quot;:1422197923,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;type&quot;:&quot;text&quot;,&quot;id&quot;:&quot;8xfyprDc&quot;},{&quot;id&quot;:&quot;LsNi7YLaM1lAvaNwT-Abu&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;td_uKOlp8-mBFKOWlXNUi&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;8xfyprDc&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-551.7118492043792,&quot;y&quot;:246.3574911671791,&quot;width&quot;:88,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0BG&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1226028253,&quot;version&quot;:329,&quot;versionNonce&quot;:1805809731,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;Response&quot;,&quot;rawText&quot;:&quot;Response&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;center&quot;,&quot;verticalAlign&quot;:&quot;middle&quot;,&quot;containerId&quot;:&quot;No71Pg7-VUn059S1yHryY&quot;,&quot;originalText&quot;:&quot;Response&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;zc5eohugb-U3foby8Hg5n&quot;,&quot;type&quot;:&quot;rectangle&quot;,&quot;x&quot;:-620.7899943059007,&quot;y&quot;:425.95567051249395,&quot;width&quot;:203.2421875,&quot;height&quot;:92.20312500000001,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;BIv2nNORnFLNeRSt989pr&quot;,&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0BV&quot;,&quot;roundness&quot;:{&quot;type&quot;:3},&quot;seed&quot;:1473920787,&quot;version&quot;:400,&quot;versionNonce&quot;:1854413603,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[{&quot;id&quot;:&quot;7tLyhouPWr3EHIriOpjLb&quot;,&quot;type&quot;:&quot;arrow&quot;},{&quot;id&quot;:&quot;LsNi7YLaM1lAvaNwT-Abu&quot;,&quot;type&quot;:&quot;arrow&quot;}],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false},{&quot;id&quot;:&quot;rr_powStz00aN0x7KgWg0&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-880.5302164782222,&quot;y&quot;:257.2025967536137,&quot;width&quot;:1.9901619214066386,&quot;height&quot;:128.8254490025065,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0Bl&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1487133139,&quot;version&quot;:195,&quot;versionNonce&quot;:504741773,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002978,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[1.9901619214066386,128.8254490025065]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;6XeL3FS8eEBQyBalU13ND&quot;,&quot;focus&quot;:0.045672418514774535,&quot;gap&quot;:2.496926241119752},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;ukW_1SuAtdkE5i_ZQZbgN&quot;,&quot;focus&quot;:0.17890394449200353,&quot;gap&quot;:5.270981849601763},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;7tLyhouPWr3EHIriOpjLb&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-805.3778216759583,&quot;y&quot;:474.9471150446393,&quot;width&quot;:181.12094418760148,&quot;height&quot;:3.490454379936523,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0C&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:1500896605,&quot;version&quot;:257,&quot;versionNonce&quot;:1357578317,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002978,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[181.12094418760148,-3.490454379936523]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;ukW_1SuAtdkE5i_ZQZbgN&quot;,&quot;focus&quot;:0.25043336153877777,&quot;gap&quot;:13.097178721107307},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;zc5eohugb-U3foby8Hg5n&quot;,&quot;focus&quot;:0.054635206116899156,&quot;gap&quot;:3.466883182456172},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;LsNi7YLaM1lAvaNwT-Abu&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-508.70525159816873,&quot;y&quot;:421.28796491218435,&quot;width&quot;:1.5816188145682872,&quot;height&quot;:78.41828223714083,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0CG&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:2088985501,&quot;version&quot;:131,&quot;versionNonce&quot;:1383534861,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002978,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[-1.5816188145682872,-78.41828223714083]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;zc5eohugb-U3foby8Hg5n&quot;,&quot;focus&quot;:0.11201864434728742,&quot;gap&quot;:4.667705600309603},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;No71Pg7-VUn059S1yHryY&quot;,&quot;focus&quot;:0.054620617877799746,&quot;gap&quot;:15.362887550074277},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;td_uKOlp8-mBFKOWlXNUi&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-575.3432529271395,&quot;y&quot;:222.94407188899302,&quot;width&quot;:192.04517899665916,&quot;height&quot;:10.437620126499013,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;49yVSCOOEPZSlEfZ6GGvD&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0CV&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:102617885,&quot;version&quot;:155,&quot;versionNonce&quot;:1598419405,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002978,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[-192.04517899665916,-10.437620126499013]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;No71Pg7-VUn059S1yHryY&quot;,&quot;focus&quot;:0.44426887140492716,&quot;gap&quot;:3.7197547221936387},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;6XeL3FS8eEBQyBalU13ND&quot;,&quot;focus&quot;:-0.03939349124770368,&quot;gap&quot;:7.597656249999886},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;deKgnWHa&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-293.52646414029033,&quot;y&quot;:-65.6580027286375,&quot;width&quot;:44,&quot;height&quot;:25,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#1e1e1e&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[&quot;YrhkoWvYWO3Zf13E7rxSx&quot;,&quot;b2KYPkLUZC1Qin9DGCq_b&quot;],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0G&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:703477011,&quot;version&quot;:56,&quot;versionNonce&quot;:1642830259,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748273059501,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;ASGI&quot;,&quot;rawText&quot;:&quot;ASGI&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;ASGI&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25},{&quot;id&quot;:&quot;QJI8-w3JAij6HDQ2cUQcs&quot;,&quot;type&quot;:&quot;arrow&quot;,&quot;x&quot;:-218.0583122641634,&quot;y&quot;:-48.95651768789955,&quot;width&quot;:277.54195387077095,&quot;height&quot;:177.69922377810684,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0H&quot;,&quot;roundness&quot;:{&quot;type&quot;:2},&quot;seed&quot;:638924403,&quot;version&quot;:67,&quot;versionNonce&quot;:1948527427,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1750736002931,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[-277.54195387077095,177.69922377810684]],&quot;lastCommittedPoint&quot;:null,&quot;startBinding&quot;:{&quot;elementId&quot;:&quot;Urams_Ui7Mj_ocIG__wYQ&quot;,&quot;focus&quot;:-0.38243603113641167,&quot;gap&quot;:1.383495709226203},&quot;endBinding&quot;:{&quot;elementId&quot;:&quot;etTE-fOBKQ9NbuPCPzRnS&quot;,&quot;focus&quot;:-0.22356431771341473,&quot;gap&quot;:4.969762902662239},&quot;startArrowhead&quot;:null,&quot;endArrowhead&quot;:&quot;arrow&quot;,&quot;elbowed&quot;:false},{&quot;id&quot;:&quot;0R5XnjKI&quot;,&quot;type&quot;:&quot;text&quot;,&quot;x&quot;:-1124.0696266615828,&quot;y&quot;:-109.78973405530371,&quot;width&quot;:544,&quot;height&quot;:125,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#2f9e44&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;solid&quot;,&quot;strokeWidth&quot;:2,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;frameId&quot;:null,&quot;index&quot;:&quot;b0I&quot;,&quot;roundness&quot;:null,&quot;seed&quot;:1947090589,&quot;version&quot;:287,&quot;versionNonce&quot;:1759171877,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:[],&quot;updated&quot;:1748326429835,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;text&quot;:&quot;gunicorn 本身只支持 WSGI&#92;n&#92;n但是可以通过 import uvicorn.workers.UvicornWorker&#92;n&#92;n执行Uvicorn的兼容Worker类，从而支持ASGI与fastapi通信&quot;,&quot;rawText&quot;:&quot;gunicorn 本身只支持 WSGI&#92;n&#92;n但是可以通过 import uvicorn.workers.UvicornWorker&#92;n&#92;n执行Uvicorn的兼容Worker类，从而支持ASGI与fastapi通信&quot;,&quot;fontSize&quot;:20,&quot;fontFamily&quot;:8,&quot;textAlign&quot;:&quot;left&quot;,&quot;verticalAlign&quot;:&quot;top&quot;,&quot;containerId&quot;:null,&quot;originalText&quot;:&quot;gunicorn 本身只支持 WSGI&#92;n&#92;n但是可以通过 import uvicorn.workers.UvicornWorker&#92;n&#92;n执行Uvicorn的兼容Worker类，从而支持ASGI与fastapi通信&quot;,&quot;autoResize&quot;:true,&quot;lineHeight&quot;:1.25}],&quot;appState&quot;:{&quot;theme&quot;:&quot;light&quot;,&quot;viewBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;currentItemStrokeColor&quot;:&quot;#2f9e44&quot;,&quot;currentItemBackgroundColor&quot;:&quot;transparent&quot;,&quot;currentItemFillStyle&quot;:&quot;solid&quot;,&quot;currentItemStrokeWidth&quot;:2,&quot;currentItemStrokeStyle&quot;:&quot;dashed&quot;,&quot;currentItemRoughness&quot;:1,&quot;currentItemOpacity&quot;:100,&quot;currentItemFontFamily&quot;:8,&quot;currentItemFontSize&quot;:20,&quot;currentItemTextAlign&quot;:&quot;left&quot;,&quot;currentItemStartArrowhead&quot;:null,&quot;currentItemEndArrowhead&quot;:&quot;arrow&quot;,&quot;currentItemArrowType&quot;:&quot;round&quot;,&quot;scrollX&quot;:1347.7131277316298,&quot;scrollY&quot;:701.17843984053,&quot;zoom&quot;:{&quot;value&quot;:1},&quot;currentItemRoundness&quot;:&quot;round&quot;,&quot;gridSize&quot;:20,&quot;gridStep&quot;:5,&quot;gridModeEnabled&quot;:false,&quot;gridColor&quot;:{&quot;Bold&quot;:&quot;rgba(217, 217, 217, 0.5)&quot;,&quot;Regular&quot;:&quot;rgba(230, 230, 230, 0.5)&quot;},&quot;currentStrokeOptions&quot;:null,&quot;frameRendering&quot;:{&quot;enabled&quot;:true,&quot;clip&quot;:true,&quot;name&quot;:true,&quot;outline&quot;:true},&quot;objectsSnapModeEnabled&quot;:false,&quot;activeTool&quot;:{&quot;type&quot;:&quot;selection&quot;,&quot;customType&quot;:null,&quot;locked&quot;:false,&quot;fromSelection&quot;:false,&quot;lastActiveTool&quot;:null}},&quot;files&quot;:{}};InitialData.scrollToContent=true;App=()=&gt;{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener(&quot;resize&quot;,e),()=&gt;window.removeEventListener(&quot;resize&quot;,e)},[t]),React.createElement(React.Fragment,null,React.createElement(&quot;div&quot;,{className:&quot;excalidraw-wrapper&quot;,ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById(&quot;gunicorn+uvicorn+fastapi_进程模型excalidraw.md&quot;);ReactDOM.render(React.createElement(App),excalidrawWrapper);})();&lt;/script&gt;
@@ -5437,205 +5437,205 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
             <id>https://wudanyang8327.github.io/card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
-&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;&lt;/strong&gt; (26)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:tmux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;tmux&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:26px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;&lt;/strong&gt; (8)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:26px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:20.384615384615387px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;linux&lt;/strong&gt; (8)
+                        &lt;strong&gt;linux&lt;/strong&gt; (9)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:16px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:13.461538461538462px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:shell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;shell&lt;/strong&gt; (3)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:24px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:18.076923076923077px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:aigc&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;aigc&lt;/strong&gt; (7)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;压力测试&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:aigc-kimi&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;aigc-kimi&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%96%87%E4%BB%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;文件&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;操作系统&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%8F%8F%E8%BF%B0%E7%AC%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;描述符&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;文件描述符&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:22px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:16.923076923076923px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:Go&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;Go&lt;/strong&gt; (6)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:mysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;mysql&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:kafka&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;kafka&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AD%A6%E4%B9%A0&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;学习&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:mysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;mysql&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:nginx&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;nginx&lt;/strong&gt; (4)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:master&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;master&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:Process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;Process&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:source-code&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;source-code&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:php&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;php&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%8E%8B%E7%BC%A9&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;压缩&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:excalidraw&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:redis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;redis&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;rdb&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:aigc-deepseek&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;aigc-deepseek&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;rime&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:marginnote&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;marginnote&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E9%98%85%E8%AF%BB%E5%99%A8&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;阅读器&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;things3&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:18px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;mac&lt;/strong&gt; (4)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;效率&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;tools&lt;/strong&gt; (2)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E8%BE%93%E5%85%A5%E6%B3%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;输入法&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:phpstorm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;phpstorm&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:ide&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;ide&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:chrome&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;chrome&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;镜像&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;开发经验&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;思维导图&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:rime&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;rime&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:marginnote&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;marginnote&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E9%98%85%E8%AF%BB%E5%99%A8&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;阅读器&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:things3&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;things3&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.615384615384617px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:mac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;mac&lt;/strong&gt; (4)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;效率&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tools&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tools&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E8%BE%93%E5%85%A5%E6%B3%95&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;输入法&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:phpstorm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;phpstorm&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:ide&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;ide&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:chrome&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;chrome&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;镜像&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:linux%E5%91%BD%E4%BB%A4&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;linux命令&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;树莓派&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:40px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:27.307692307692307px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:leetcode&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;leetcode&lt;/strong&gt; (15)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.307692307692308px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;前缀和&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:dp&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;dp&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;network&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:11.153846153846153px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;家&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -6830,7 +6830,7 @@ qsk-deploy-668c8bdb95-xssrf   1/1     Running       0          150m
                 golang-cobra
                 
             </title>
-            <updated>2024-12-31T02:27:43.000Z</updated>
+            <updated>2025-11-04T15:55:39.000Z</updated>
             <id>https://wudanyang8327.github.io/card/go/golang-cobra/</id>
             <content type="html">
                 &lt;h1 id=&quot;golang-cobra&quot; tabindex=&quot;-1&quot;&gt;golang-cobra&lt;/h1&gt;
@@ -7004,7 +7004,7 @@ go mod tidy
                 go-init函数
                 
             </title>
-            <updated>2025-11-14T05:18:40.000Z</updated>
+            <updated>2025-11-14T05:21:55.000Z</updated>
             <id>https://wudanyang8327.github.io/card/go/go-init函数/</id>
             <content type="html">
                 &lt;h1 id=&quot;go-init&quot; tabindex=&quot;-1&quot;&gt;go-init函数&lt;/h1&gt;
@@ -7464,6 +7464,47 @@ You have to make sure that all flag definitions happen before calling flag.Parse
         </entry>
         <entry>
             <title>
+                202407111120 go - 防止接口在包外被继承
+                
+            </title>
+            <updated>2024-07-11T03:22:47.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/go/202407111120 go - 防止接口在包外被继承/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202407111120-go&quot; tabindex=&quot;-1&quot;&gt;202407111120 go - 防止接口在包外被继承&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;// TB is the interface common to T, B, and F.
+type TB interface {
+	Cleanup(func())
+	Error(args ...any)
+	Errorf(format string, args ...any)
+	Fail()
+	FailNow()
+	Failed() bool
+	Fatal(args ...any)
+	Fatalf(format string, args ...any)
+	Helper()
+	Log(args ...any)
+	Logf(format string, args ...any)
+	Name() string
+	Setenv(key, value string)
+	Skip(args ...any)
+	SkipNow()
+	Skipf(format string, args ...any)
+	Skipped() bool
+	TempDir() string
+
+	// A private method to prevent users implementing the
+	// interface and so future additions to it will not
+	// violate Go 1 compatibility.
+	private()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;主要依靠  private  函数，防止包外实现 interface&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/go/202407111120 go - 防止接口在包外被继承/" />
+        </entry>
+        <entry>
+            <title>
                 202405061043 go 抽象的一个例子
                 
             </title>
@@ -7485,7 +7526,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 docker 和 Kubernetes 的异同
                 
             </title>
-            <updated>2024-10-21T08:52:55.000Z</updated>
+            <updated>2025-11-03T15:41:54.000Z</updated>
             <id>https://wudanyang8327.github.io/card/docker/docker 和 Kubernetes 的异同/</id>
             <content type="html">
                 &lt;h1 id=&quot;docker-kubernetes&quot; tabindex=&quot;-1&quot;&gt;docker 和 Kubernetes 的异同&lt;/h1&gt;
@@ -7560,7 +7601,7 @@ You have to make sure that all flag definitions happen before calling flag.Parse
                 202408312248 甲沟炎的处理办法
                 
             </title>
-            <updated>2025-02-08T03:14:51.000Z</updated>
+            <updated>2025-11-03T16:14:11.000Z</updated>
             <id>https://wudanyang8327.github.io/card/Personal/202408312248 甲沟炎的处理办法/</id>
             <content type="html">
                 &lt;h1 id=&quot;202408312248&quot; tabindex=&quot;-1&quot;&gt;202408312248 甲沟炎的处理办法&lt;/h1&gt;
@@ -7789,7 +7830,7 @@ echo &amp;quot;hellohe&amp;quot; | awk &#39;{gsub(/he/, &amp;quot;ae&amp;quot;);
                 shell-生成随机数
                 
             </title>
-            <updated>2024-10-20T15:57:33.000Z</updated>
+            <updated>2025-11-04T15:57:02.000Z</updated>
             <id>https://wudanyang8327.github.io/card/Linux/shell/shell-生成随机数/</id>
             <content type="html">
                 &lt;h1 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;shell-生成随机数&lt;/h1&gt;
@@ -7852,7 +7893,7 @@ fi
                 shell-循环
                 
             </title>
-            <updated>2024-09-09T05:32:31.000Z</updated>
+            <updated>2025-11-03T16:12:30.000Z</updated>
             <id>https://wudanyang8327.github.io/card/Linux/shell/shell-循环/</id>
             <content type="html">
                 &lt;h1 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;shell-循环&lt;/h1&gt;
@@ -7923,12 +7964,12 @@ done &amp;lt; file.txt
                 linux-什么是anon_inode
                 
             </title>
-            <updated>2025-06-21T15:17:40.000Z</updated>
+            <updated>2025-11-13T17:48:09.000Z</updated>
             <id>https://wudanyang8327.github.io/card/Linux/linux-什么是anon_inode/</id>
             <content type="html">
-                &lt;p&gt;无法和文件系统的 inode 关联上的文件描述符，在 &lt;code&gt;/proc&lt;/code&gt; 系统中统称为 anon_inode&lt;/p&gt;
-&lt;h1 id=&quot;linux-anon-inode&quot; tabindex=&quot;-1&quot;&gt;linux-什么是anon_inode&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://unix.stackexchange.com/questions/463548/what-is-anon-inode-in-the-output-of-ls-l-proc-pid-fd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://unix.stackexchange.com/questions/463548/what-is-anon-inode-in-the-output-of-ls-l-proc-pid-fd&lt;/a&gt;&lt;/p&gt;
+                &lt;h1 id=&quot;linux-anon-inode&quot; tabindex=&quot;-1&quot;&gt;linux-什么是anon_inode&lt;/h1&gt;
+&lt;p&gt;无法和文件系统的 inode 关联上的文件描述符，在 &lt;code&gt;/proc&lt;/code&gt; 系统中统称为 anon_inode&lt;br /&gt;
+&lt;a href=&quot;https://unix.stackexchange.com/questions/463548/what-is-anon-inode-in-the-output-of-ls-l-proc-pid-fd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://unix.stackexchange.com/questions/463548/what-is-anon-inode-in-the-output-of-ls-l-proc-pid-fd&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang8327.github.io/card/Linux/linux-什么是anon_inode/" />
@@ -7938,7 +7979,7 @@ done &amp;lt; file.txt
                 linux-wrk
                 
             </title>
-            <updated>2025-03-13T08:47:19.000Z</updated>
+            <updated>2025-11-03T10:10:50.000Z</updated>
             <id>https://wudanyang8327.github.io/card/Linux/linux-wrk/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-wrk&quot; tabindex=&quot;-1&quot;&gt;linux-wrk&lt;/h1&gt;
@@ -7993,7 +8034,7 @@ wrk.headers[&amp;quot;Content-Type&amp;quot;] = &amp;quot;application/x-www-form
                 linux-wait
                 
             </title>
-            <updated>2025-02-18T14:05:49.000Z</updated>
+            <updated>2025-11-05T03:49:24.000Z</updated>
             <id>https://wudanyang8327.github.io/card/Linux/linux-wait/</id>
             <content type="html">
                 &lt;h1 id=&quot;linux-wait&quot; tabindex=&quot;-1&quot;&gt;linux-wait&lt;/h1&gt;
@@ -8551,6 +8592,22 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
         </entry>
         <entry>
             <title>
+                202508271156 tmux 查看每个pane的进程id
+                
+            </title>
+            <updated>2025-08-27T05:28:23.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/202508271156 tmux 查看每个pane的进程id/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202508271156-tmux-pane-id&quot; tabindex=&quot;-1&quot;&gt;202508271156 tmux 查看每个pane的进程id&lt;/h1&gt;
+&lt;p&gt;查看当前pane 正在运行的进程id&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;tmux list-panes -a -F &amp;quot;#{session_name} #{pane_pid} #{pane_current_command}&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/202508271156 tmux 查看每个pane的进程id/" />
+        </entry>
+        <entry>
+            <title>
                 202506201431 将刚提交的commit回滚
                 
             </title>
@@ -8638,7 +8695,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 202511071302 chrome 无头模式打印pdf
                 
             </title>
-            <updated>2025-11-07T05:02:55.000Z</updated>
+            <updated>2025-11-07T05:03:03.000Z</updated>
             <id>https://wudanyang8327.github.io/000 inbox/202511071302 chrome 无头模式打印pdf/</id>
             <content type="html">
                 &lt;h1 id=&quot;202511071302-chrome-pdf&quot; tabindex=&quot;-1&quot;&gt;202511071302 chrome 无头模式打印pdf&lt;/h1&gt;
@@ -8648,22 +8705,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
             </content>
             <link href="https://wudanyang8327.github.io/000 inbox/202511071302 chrome 无头模式打印pdf/" />
-        </entry>
-        <entry>
-            <title>
-                202508271156 tmux 查看每个pane的进程id
-                
-            </title>
-            <updated>2025-08-27T05:28:23.000Z</updated>
-            <id>https://wudanyang8327.github.io/000 inbox/202508271156 tmux 查看每个pane的进程id/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202508271156-tmux-pane-id&quot; tabindex=&quot;-1&quot;&gt;202508271156 tmux 查看每个pane的进程id&lt;/h1&gt;
-&lt;p&gt;查看当前pane 正在运行的进程id&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;tmux list-panes -a -F &amp;quot;#{session_name} #{pane_pid} #{pane_current_command}&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://wudanyang8327.github.io/000 inbox/202508271156 tmux 查看每个pane的进程id/" />
         </entry>
         <entry>
             <title>

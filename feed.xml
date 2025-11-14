@@ -3,7 +3,7 @@
     <title>起风了</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-11-14T10:09:00Z</updated>
+    <updated>2025-11-14T10:19:55Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -7438,6 +7438,40 @@ The &amp;quot;Error: TypeError: Cannot read property &#39;lt&#39; of undefined&a
 
             </content>
             <link href="https://wudanyang8327.github.io/card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/" />
+        </entry>
+        <entry>
+            <title>
+                202407311627 goreplay 使用
+                
+            </title>
+            <updated>2025-02-17T05:29:45.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/go/202407311627 goreplay 使用/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202407311627-goreplay&quot; tabindex=&quot;-1&quot;&gt;202407311627 goreplay 使用&lt;/h1&gt;
+&lt;p&gt;goreplay 架构图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020240731162859.png&quot; alt=&quot;Pasted image 20240731162859.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;录制&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;./gor --input-raw :2014 --output-file=requests.gor
+
+./gor --input-raw :2014 --output-stdout --output-http-track-response --prettify-http --input-raw-track-response
+
+./gor --input-raw :2014 --output-http-track-response --input-raw-track-response --output-file=requests.gor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tracking responses&lt;/strong&gt;&lt;br /&gt;
+By default &lt;code&gt;input-raw&lt;/code&gt; does not intercept responses, only requests. You can turn response tracking using &lt;code&gt;--input-raw-track-response&lt;/code&gt; option.&lt;br /&gt;
+When enable you will be able to access response information in middleware and output-file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;回放&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;gor --input-file requests.gor --output-http=&amp;quot;http://localhost:8081&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang8327.github.io/404&quot; target=&quot;&quot;&gt;../Omnivore/2024-07-31/回放线上流量利器-GoReplay - CharyGao - 博客园&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang8327.github.io/404&quot; target=&quot;&quot;&gt;../Omnivore/2024-07-31/Capturing and replaying traffic · buger-goreplay Wiki&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang8327.github.io/404&quot; target=&quot;&quot;&gt;../Omnivore/2024-07-31/性能工具之 Goreplay 安装及入门使用-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/go/202407311627 goreplay 使用/" />
         </entry>
         <entry>
             <title>

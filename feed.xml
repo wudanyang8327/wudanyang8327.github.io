@@ -3,7 +3,7 @@
     <title>起风了</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-11-15T06:36:48Z</updated>
+    <updated>2025-11-15T06:54:44Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -8815,26 +8815,39 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
                 CDN 带宽优化
                 
             </title>
-            <updated>2025-11-15T06:36:05.000Z</updated>
+            <updated>2025-11-15T06:54:06.000Z</updated>
             <id>https://wudanyang8327.github.io/card/0000 publish/CDN 带宽优化/</id>
             <content type="html">
                 &lt;h1 id=&quot;cdn&quot; tabindex=&quot;-1&quot;&gt;CDN 带宽优化&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;refer 限制，禁用非自身域名
-&lt;ol&gt;
-&lt;li&gt;空refer禁用，有一定风险，尽量在站点刚开放时使用此方案&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&quot;生产侧&quot; tabindex=&quot;-1&quot;&gt;生产侧&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;对用户上传的原始内容
+&lt;ul&gt;
+&lt;li&gt;校验大小，超过一定大小不让上传&lt;/li&gt;
+&lt;li&gt;关联内容，无法关联到内容的图片，延迟一段时间后删除或挪到回收站&lt;/li&gt;
+&lt;li&gt;如果可以无损破坏原始内容，最好做一下压缩、二进制头内容打乱、插入标识等操作&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;单请求响应限速，百度CDN可以配置&lt;/li&gt;
-&lt;li&gt;CDN日志回扫分析
-&lt;ol&gt;
-&lt;li&gt;删除肉眼可见的违规图片&lt;/li&gt;
-&lt;li&gt;对图片进行检测，是否包含视频资源（需要策略算法支持）&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;消费侧&quot; tabindex=&quot;-1&quot;&gt;消费侧&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;禁止直接访问源文件&lt;/li&gt;
+&lt;li&gt;refer 限制，禁用非自身域名，禁用空 refer，甚至是可以在refer上加入校验token等&lt;/li&gt;
+&lt;li&gt;单文件请求限速&lt;/li&gt;
+&lt;li&gt;封禁访问量极高的IP&lt;/li&gt;
+&lt;li&gt;图片格式转换成 webp，或者根据浏览器自适应格式。&lt;br /&gt;
+大部分的 CDN 都会提供 uri 后缀参数转格式的能力，不过需要花费一点钱。&lt;br /&gt;
+亲测，webp 格式最高可在不损失体验的情况下节省30%带宽&lt;/li&gt;
+&lt;li&gt;视频带宽优化
+&lt;ul&gt;
+&lt;li&gt;将原视频转成720P等码率的文件后访问&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;针对访问量、请求数过高的ip进行封禁&lt;/li&gt;
-&lt;li&gt;图片与内容关联，在审核内容时，发现图片违禁直接删除内容并删除图片&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;存量数据&quot; tabindex=&quot;-1&quot;&gt;存量数据&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;对 CDN 访问日志例行抽样扫描，通过策略判断图片是否违规，或者被当做图床，风险图片占比过高，需要批量回扫删除&lt;/li&gt;
+&lt;/ul&gt;
 
             </content>
             <link href="https://wudanyang8327.github.io/card/0000 publish/CDN 带宽优化/" />

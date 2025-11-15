@@ -3,7 +3,7 @@
     <title>起风了</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-11-14T10:19:55Z</updated>
+    <updated>2025-11-15T06:06:39Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -8492,6 +8492,88 @@ so happy&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang8327.github.io/card/Linux/iso-日期表示法/" />
+        </entry>
+        <entry>
+            <title>
+                gcc或者g++编译的几个过程
+                
+            </title>
+            <updated>2025-11-15T06:05:51.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/Linux/gcc或者g++编译的几个过程/</id>
+            <content type="html">
+                &lt;p&gt;一段普通的 c++ 代码是如何变成可执行程序的&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-c++&quot;&gt;using namespace std;
+
+int main() {
+    cout &amp;lt;&amp;lt; &amp;quot;hello, world&amp;quot; &amp;lt;&amp;lt; endl;
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;会经过4个步骤&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预处理&lt;/li&gt;
+&lt;li&gt;编译&lt;/li&gt;
+&lt;li&gt;汇编&lt;/li&gt;
+&lt;li&gt;链接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;gcc-g&quot; tabindex=&quot;-1&quot;&gt;gcc或者g++编译的几个过程&lt;/h1&gt;
+&lt;p&gt;作用：宏替换（展开文本，include 文本替换），删除空格等文本处理&lt;/p&gt;
+&lt;p&gt;相关语句 -E 仅生成 .i 预处理后的文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020220327001213.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;编译&quot; tabindex=&quot;-1&quot;&gt;编译&lt;/h1&gt;
+&lt;p&gt;-S 仅生成 .s 编译后 .s 后缀文件&lt;/p&gt;
+&lt;p&gt;将c代码解析后生成汇编语句&lt;/p&gt;
+&lt;p&gt;下面代码是一部分汇编语句&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;ubuntu@foo:~/test$ cat test.s
+	.arch armv8-a
+	.file	&amp;quot;test.c&amp;quot;
+	.text
+	.section	.rodata
+	.align	3
+	.type	_ZStL19piecewise_construct, %object
+	.size	_ZStL19piecewise_construct, 1
+_ZStL19piecewise_construct:
+	.zero	1
+	.local	_ZStL8__ioinit
+	.comm	_ZStL8__ioinit,1,8
+	.align	3
+.LC0:
+	.string	&amp;quot;hello, world&amp;quot;
+	.text
+	.align	2
+	.global	main
+	.type	main, %function
+main:
+.LFB1521:
+	.cfi_startproc
+	stp	x29, x30, [sp, -16]!
+	.cfi_def_cfa_offset 16
+	.cfi_offset 29, -16
+	.cfi_offset 30, -8
+	mov	x29, sp
+	adrp	x0, .LC0
+	add	x1, x0, :lo12:.LC0
+	adrp	x0, :got:_ZSt4cout
+	ldr	x0, [x0, #:got_lo12:_ZSt4cout]
+	bl	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	mov	x2, x0
+	adrp	x0, :got:_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;汇编&quot; tabindex=&quot;-1&quot;&gt;汇编&lt;/h1&gt;
+&lt;p&gt;将汇编语句转换成 &lt;code&gt;机器码&lt;/code&gt; (二进制)&lt;/p&gt;
+&lt;p&gt;-c 仅生成汇编后的 .o 后缀文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020220327000712.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;链接&quot; tabindex=&quot;-1&quot;&gt;链接&lt;/h1&gt;
+&lt;p&gt;将静态链接库与动态链接库链接到程序中&lt;/p&gt;
+&lt;p&gt;生成的可执行文件中会多很多信息&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020220327002002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;总结&quot; tabindex=&quot;-1&quot;&gt;总结&lt;/h1&gt;
+&lt;p&gt;经过4个步骤处理之后，最终就可以执行了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020220327002102.png&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+OK，精通 hello world&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/Linux/gcc或者g++编译的几个过程/" />
         </entry>
         <entry>
             <title>

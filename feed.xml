@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-11-16T07:43:01Z</updated>
+    <updated>2025-11-17T07:29:17Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -8899,5 +8899,22 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
             </content>
             <link href="https://wudanyang8327.github.io/journal/2024-10-11/" />
+        </entry>
+        <entry>
+            <title>
+                利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派
+                
+            </title>
+            <updated>2025-11-15T06:06:42.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/Omnivore/2024-08-16/利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派/</id>
+            <content type="html">
+                &lt;h1 id=&quot;chrome&quot; tabindex=&quot;-1&quot;&gt;利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Omnivore&quot;&gt;#Omnivore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://omnivore.app/me/chrome-1915a0dcd73&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read on Omnivore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://sspai.com/post/42193&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Read Original&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;notes&quot; tabindex=&quot;-1&quot;&gt;Notes&lt;/h2&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/Omnivore/2024-08-16/利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派/" />
         </entry>
 </feed>

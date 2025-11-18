@@ -1,4 +1,4 @@
-/* Maple Theme v1.2.3 For Obsidian */
+/* Maple Theme v1.2.4 For Obsidian */
 
 
 
@@ -5105,7 +5105,7 @@ body.modal-header:not(.is-mobile) .modal-container .mod-settings {
   container-type: inline-size;
 }
 body.modal-header:not(.is-mobile) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.2.3");
+  content: var(--setting-modal-header-title, "Maple 1.2.4");
   position: absolute;
   left: 50%;
   top: calc(var(--modal-header-height) / 2);

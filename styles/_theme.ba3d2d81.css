@@ -1,4 +1,4 @@
-/* Maple Theme v1.2.4 For Obsidian */
+/* Maple Theme v1.2.5 For Obsidian */
 
 
 
@@ -1201,7 +1201,7 @@ body {
   --grid-spacing: var(--setting-editor-bg-grid-spacing, var(--size-4-5));
 }
 
-:is(.markdown-reading-view .markdown-rendered,
+:is(.editor-bg-grid-dots, .editor-bg-grid-line) :is(.markdown-reading-view .markdown-rendered,
 .markdown-source-view.mod-cm6 .cm-scroller) {
   background-size: var(--grid-spacing) var(--grid-spacing);
   background-position: center center;
@@ -5105,7 +5105,7 @@ body.modal-header:not(.is-mobile) .modal-container .mod-settings {
   container-type: inline-size;
 }
 body.modal-header:not(.is-mobile) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.2.4");
+  content: var(--setting-modal-header-title, "Maple 1.2.5");
   position: absolute;
   left: 50%;
   top: calc(var(--modal-header-height) / 2);

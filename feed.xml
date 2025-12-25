@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-12-24T17:30:55Z</updated>
+    <updated>2025-12-25T03:05:14Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -5184,14 +5184,13 @@ async def foo():
                 py-spy 的用法
                 
             </title>
-            <updated>2025-12-23T08:37:48.000Z</updated>
+            <updated>2025-12-24T17:39:44.000Z</updated>
             <id>https://wudanyang8327.github.io/card/python/py-spy 的用法/</id>
             <content type="html">
                 &lt;h1 id=&quot;py-spy&quot; tabindex=&quot;-1&quot;&gt;py-spy 的用法&lt;/h1&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;watch -n 5 &amp;quot;py-spy top --pid &amp;lt;PID&amp;gt; --nonblocking --rate 50&amp;quot; | tee -a pyspy_top.log
 watch -n 5 &amp;quot;py-spy top --pid 172877 --nonblocking  --rate 100&amp;quot; | tee -a pyspy_top.log
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang8327.github.io/404&quot; target=&quot;&quot;&gt;自动工单审批权限&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;2025年04月09日22:29:16&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020250409222914.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020250409224335.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -8962,7 +8961,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)
                 
             </title>
-            <updated>2025-12-24T17:30:40Z</updated>
+            <updated>2025-12-25T03:05:00Z</updated>
             <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)/</id>
             <content type="html">
                 &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-and-quot-just-my-code-and-quot-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of &amp;quot;justMyCode&amp;quot; option)&lt;/h1&gt;

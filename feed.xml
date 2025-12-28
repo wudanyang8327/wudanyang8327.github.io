@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-12-25T03:05:14Z</updated>
+    <updated>2025-12-28T03:39:14Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -5218,6 +5218,45 @@ watch -n 5 &amp;quot;py-spy top --pid 172877 --nonblocking  --rate 100&amp;quot;
         </entry>
         <entry>
             <title>
+                202511261627 vscode调试gunicorn python
+                
+            </title>
+            <updated>2025-12-27T07:26:56.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/python/202511261627 vscode调试gunicorn python/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202511261627-vscode-gunicorn-python&quot; tabindex=&quot;-1&quot;&gt;202511261627 vscode调试gunicorn python&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    &amp;quot;version&amp;quot;: &amp;quot;0.2.0&amp;quot;,
+    &amp;quot;configurations&amp;quot;: [
+        {
+            &amp;quot;name&amp;quot;: &amp;quot;Python: Gunicorn(fastapi)&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;debugpy&amp;quot;,
+            &amp;quot;cwd&amp;quot;: &amp;quot;${workspaceFolder}&amp;quot;,
+            &amp;quot;request&amp;quot;: &amp;quot;launch&amp;quot;,
+            &amp;quot;program&amp;quot;: &amp;quot;gunicorn&amp;quot;,
+            // &amp;quot;gevent&amp;quot;: true,
+            &amp;quot;args&amp;quot;: [
+                &amp;quot;xxx.__main__:app&amp;quot;,
+                &amp;quot; --bind&amp;quot;,
+                &amp;quot; 0.0.0.0:8033 &amp;quot;,
+                &amp;quot;--config&amp;quot;,
+                &amp;quot;conf/online/gunicorn.py&amp;quot;
+            ],
+            &amp;quot;justMyCode&amp;quot;: false, //  可以调试进入第三方库的代码中
+            &amp;quot;subProcess&amp;quot;: true
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/python/202511261627 vscode调试gunicorn python/" />
+        </entry>
+        <entry>
+            <title>
                 php-xml 如何解析 cdata
                 
             </title>
@@ -5579,9 +5618,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%97%A5%E5%BF%97&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;日志&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:22.857142857142854px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:29.285714285714285px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E6%95%88%E7%8E%87&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;效率&lt;/strong&gt; (2)
+                        &lt;strong&gt;效率&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:16.428571428571427px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5674,6 +5713,18 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:16.428571428571427px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:network&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;network&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:16.428571428571427px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:raycast&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;raycast&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:16.428571428571427px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:focus&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;focus&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:16.428571428571427px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E7%BB%9F%E8%AE%A1&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;统计&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -8705,6 +8756,109 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
         </entry>
         <entry>
             <title>
+                202512281135 raycast 如何统计 focus 时间
+                
+            </title>
+            <updated>2025-12-28T03:38:22.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/202512281135 raycast 如何统计 focus 时间/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202512281135-raycast-focus&quot; tabindex=&quot;-1&quot;&gt;202512281135 raycast 如何统计 focus 时间&lt;/h1&gt;
+&lt;p&gt;raycast 的 focus 功能，非常好用，但是没有统计能力，不知道自己做了多少个专注&lt;/p&gt;
+&lt;p&gt;你可以试试这个插件，做一下简单统计：&lt;a href=&quot;https://www.raycast.com/dinocosta/raycast-focus-stats&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Raycast Store: Raycast Focus Stats&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不过应该还差一个功能，那就是导出，万一我切换了一台电脑，那应该怎么办呢？&lt;/p&gt;
+&lt;p&gt;好在这些数据都不是特别重要的，一般一周或者一个月做一次 review ，看一下数据就可以丢弃了，不需要一直留着。之前使用滴答清单的时候，番茄钟的数据也是 review 完成之后就丢弃了。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/202512281135 raycast 如何统计 focus 时间/" />
+        </entry>
+        <entry>
+            <title>
+                202512161115 vscode black formatter 列数设置
+                
+            </title>
+            <updated>2025-12-27T07:24:37.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/202512161115 vscode black formatter 列数设置/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202512161115-vscode-black-formatter&quot; tabindex=&quot;-1&quot;&gt;202512161115 vscode black formatter 列数设置&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020251216111537.png&quot; alt=&quot;Pasted image 20251216111537.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/78070638/2624728&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://stackoverflow.com/a/78070638/2624728&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/202512161115 vscode black formatter 列数设置/" />
+        </entry>
+        <entry>
+            <title>
+                202511302354 如何使用 unixsocket 进行 http 请求
+                
+            </title>
+            <updated>2025-11-30T15:57:24.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/202511302354 如何使用 unixsocket 进行 http 请求/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202511302354-unixsocket-http&quot; tabindex=&quot;-1&quot;&gt;202511302354 如何使用 unixsocket 进行 http 请求&lt;/h1&gt;
+&lt;p&gt;当 HTTP 请求需要通过本地 Unix Domain Socket 进行通信时，URL 的写法取决于你使用的工具或库。以下是几种常见场景：&lt;/p&gt;
+&lt;h2 id=&quot;1-strong-curl-strong&quot; tabindex=&quot;-1&quot;&gt;1. &lt;strong&gt;使用 curl&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 基本格式
+curl --unix-socket /path/to/socket.sock http://localhost/api/endpoint
+
+# 示例：Docker API
+curl --unix-socket /var/run/docker.sock http://localhost/containers/json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;2-strong-node-js-strong&quot; tabindex=&quot;-1&quot;&gt;2. &lt;strong&gt;使用 Node.js&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const http = require(&#39;http&#39;);
+
+const options = {
+  socketPath: &#39;/path/to/socket.sock&#39;,
+  path: &#39;/api/endpoint&#39;,
+  method: &#39;GET&#39;
+};
+
+const req = http.request(options, (res) =&amp;gt; {
+  // 处理响应
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;3-strong-python-requests-strong&quot; tabindex=&quot;-1&quot;&gt;3. &lt;strong&gt;使用 Python requests&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import requests
+from requests.adapters import HTTPAdapter
+from requests_unixsocket import UnixAdapter
+
+session = requests.Session()
+session.mount(&#39;http+unix://&#39;, UnixAdapter())
+
+# URL 格式：http+unix://&amp;lt;encoded_socket_path&amp;gt;/&amp;lt;path&amp;gt;
+response = session.get(&#39;http+unix://%2Fvar%2Frun%2Fdocker.sock/containers/json&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;4-strong-wget-strong&quot; tabindex=&quot;-1&quot;&gt;4. &lt;strong&gt;使用 wget&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;wget --method=GET --unix-socket=/path/to/socket.sock http://localhost/api/endpoint
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;关键点：&quot; tabindex=&quot;-1&quot;&gt;关键点：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Socket 路径&lt;/strong&gt;：需要指定完整的 socket 文件路径（如 &lt;code&gt;/var/run/docker.sock&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Host 部分&lt;/strong&gt;：通常写 &lt;code&gt;localhost&lt;/code&gt; 或任意值，因为实际通信不走网络&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;路径编码&lt;/strong&gt;：某些库（如 Python requests）需要对 socket 路径进行 URL 编码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;协议前缀&lt;/strong&gt;：有些库使用特殊协议如 &lt;code&gt;http+unix://&lt;/code&gt; 来标识 Unix socket 通信&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/202511302354 如何使用 unixsocket 进行 http 请求/" />
+        </entry>
+        <entry>
+            <title>
+                202511271252 vscode python 删除未使用的 import
+                
+            </title>
+            <updated>2025-11-27T04:54:13.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/202511271252 vscode python 删除未使用的 import/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202511271252-vscode-python-import&quot; tabindex=&quot;-1&quot;&gt;202511271252 vscode python 删除未使用的 import&lt;/h1&gt;
+&lt;p&gt;使用 ruff 扩展&lt;/p&gt;
+&lt;p&gt;命令 &lt;code&gt;Ruff: Fix all auto-fixable problems&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Ruff - Visual Studio Marketplace&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/202511271252 vscode python 删除未使用的 import/" />
+        </entry>
+        <entry>
+            <title>
                 202511262222 unix socket 与传统的 tcp 本地通信的异同
                 
             </title>
@@ -8961,7 +9115,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)
                 
             </title>
-            <updated>2025-12-25T03:05:00Z</updated>
+            <updated>2025-12-28T03:38:58Z</updated>
             <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)/</id>
             <content type="html">
                 &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-and-quot-just-my-code-and-quot-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of &amp;quot;justMyCode&amp;quot; option)&lt;/h1&gt;
@@ -8975,61 +9129,6 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)/" />
-        </entry>
-        <entry>
-            <title>
-                202511302354 如何使用 unixsocket 进行 http 请求
-                
-            </title>
-            <updated>2025-11-30T15:57:24.000Z</updated>
-            <id>https://wudanyang8327.github.io/000 inbox/202511302354 如何使用 unixsocket 进行 http 请求/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202511302354-unixsocket-http&quot; tabindex=&quot;-1&quot;&gt;202511302354 如何使用 unixsocket 进行 http 请求&lt;/h1&gt;
-&lt;p&gt;当 HTTP 请求需要通过本地 Unix Domain Socket 进行通信时，URL 的写法取决于你使用的工具或库。以下是几种常见场景：&lt;/p&gt;
-&lt;h2 id=&quot;1-strong-curl-strong&quot; tabindex=&quot;-1&quot;&gt;1. &lt;strong&gt;使用 curl&lt;/strong&gt;&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 基本格式
-curl --unix-socket /path/to/socket.sock http://localhost/api/endpoint
-
-# 示例：Docker API
-curl --unix-socket /var/run/docker.sock http://localhost/containers/json
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;2-strong-node-js-strong&quot; tabindex=&quot;-1&quot;&gt;2. &lt;strong&gt;使用 Node.js&lt;/strong&gt;&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const http = require(&#39;http&#39;);
-
-const options = {
-  socketPath: &#39;/path/to/socket.sock&#39;,
-  path: &#39;/api/endpoint&#39;,
-  method: &#39;GET&#39;
-};
-
-const req = http.request(options, (res) =&amp;gt; {
-  // 处理响应
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;3-strong-python-requests-strong&quot; tabindex=&quot;-1&quot;&gt;3. &lt;strong&gt;使用 Python requests&lt;/strong&gt;&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import requests
-from requests.adapters import HTTPAdapter
-from requests_unixsocket import UnixAdapter
-
-session = requests.Session()
-session.mount(&#39;http+unix://&#39;, UnixAdapter())
-
-# URL 格式：http+unix://&amp;lt;encoded_socket_path&amp;gt;/&amp;lt;path&amp;gt;
-response = session.get(&#39;http+unix://%2Fvar%2Frun%2Fdocker.sock/containers/json&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;4-strong-wget-strong&quot; tabindex=&quot;-1&quot;&gt;4. &lt;strong&gt;使用 wget&lt;/strong&gt;&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;wget --method=GET --unix-socket=/path/to/socket.sock http://localhost/api/endpoint
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;关键点：&quot; tabindex=&quot;-1&quot;&gt;关键点：&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Socket 路径&lt;/strong&gt;：需要指定完整的 socket 文件路径（如 &lt;code&gt;/var/run/docker.sock&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Host 部分&lt;/strong&gt;：通常写 &lt;code&gt;localhost&lt;/code&gt; 或任意值，因为实际通信不走网络&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;路径编码&lt;/strong&gt;：某些库（如 Python requests）需要对 socket 路径进行 URL 编码&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;协议前缀&lt;/strong&gt;：有些库使用特殊协议如 &lt;code&gt;http+unix://&lt;/code&gt; 来标识 Unix socket 通信&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://wudanyang8327.github.io/000 inbox/202511302354 如何使用 unixsocket 进行 http 请求/" />
         </entry>
         <entry>
             <title>
@@ -9066,22 +9165,6 @@ Go 官方明确设计成 soft limit，不会直接让 runtime 自己 panic。&lt
 
             </content>
             <link href="https://wudanyang8327.github.io/000 inbox/202511282239 go -  GOMEMLIMIT 参数/" />
-        </entry>
-        <entry>
-            <title>
-                202511271252 vscode python 删除未使用的 import
-                
-            </title>
-            <updated>2025-11-27T04:54:13.000Z</updated>
-            <id>https://wudanyang8327.github.io/000 inbox/202511271252 vscode python 删除未使用的 import/</id>
-            <content type="html">
-                &lt;h1 id=&quot;202511271252-vscode-python-import&quot; tabindex=&quot;-1&quot;&gt;202511271252 vscode python 删除未使用的 import&lt;/h1&gt;
-&lt;p&gt;使用 ruff 扩展&lt;/p&gt;
-&lt;p&gt;命令 &lt;code&gt;Ruff: Fix all auto-fixable problems&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Ruff - Visual Studio Marketplace&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://wudanyang8327.github.io/000 inbox/202511271252 vscode python 删除未使用的 import/" />
         </entry>
         <entry>
             <title>

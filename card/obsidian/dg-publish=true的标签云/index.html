@@ -64,7 +64,7 @@ CTRL + K
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-12-28T05:10:47.901Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-12-28T05:10:47.901Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-12-28T05:10:47.901Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-12-30T03:12:15.727Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-12-30T03:12:15.727Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-12-30T03:12:15.727Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
 <h1 data-note-icon="2">dg-publish=true的标签云</h1>
@@ -77,211 +77,183 @@ CTRL + K
 <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-10-23T20:19:22+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-11-18T13:39:36+08:00"></span></div></div></div>
 </header>
 <h1 id="dg-publish-true" tabindex="-1">dg-publish=true的标签云</h1>
-<span style="font-size:16px;margin-right:20px">
+<span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:clippings" style="text-decoration:none;color:inherit">
 <strong>clippings</strong> (1)
 </a>
-</span><span style="font-size:22px;margin-right:20px">
+</span><span style="font-size:20.588235294117645px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fide" style="text-decoration:none;color:inherit">
 <strong>area/ide</strong> (2)
 </a>
-</span><span style="font-size:22px;margin-right:20px">
+</span><span style="font-size:25.88235294117647px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fnetwork" style="text-decoration:none;color:inherit">
-<strong>area/network</strong> (2)
+<strong>area/network</strong> (3)
 </a>
-</span><span style="font-size:22px;margin-right:20px">
+</span><span style="font-size:31.176470588235293px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fbackend" style="text-decoration:none;color:inherit">
-<strong>area/backend</strong> (2)
+<strong>area/backend</strong> (4)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fdesign" style="text-decoration:none;color:inherit">
 <strong>area/design</strong> (1)
 </a>
-</span><span style="font-size:64px;margin-right:20px">
+</span><span style="font-size:89.41176470588235px;margin-right:20px">
 <a href="obsidian://search?query=tag:type%2Fbest-practice" style="text-decoration:none;color:inherit">
-<strong>type/best-practice</strong> (9)
+<strong>type/best-practice</strong> (15)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:20.588235294117645px;margin-right:20px">
 <a href="obsidian://search?query=tag:scene%2Fperformance" style="text-decoration:none;color:inherit">
-<strong>scene/performance</strong> (1)
+<strong>scene/performance</strong> (2)
 </a>
-</span><span style="font-size:82px;margin-right:20px">
+</span><span style="font-size:100px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Flinux" style="text-decoration:none;color:inherit">
-<strong>area/linux</strong> (12)
+<strong>area/linux</strong> (17)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:scene%2Fdata_process" style="text-decoration:none;color:inherit">
 <strong>scene/data_process</strong> (1)
 </a>
-</span><span style="font-size:52px;margin-right:20px">
+</span><span style="font-size:47.05882352941176px;margin-right:20px">
 <a href="obsidian://search?query=tag:type%2Faigc" style="text-decoration:none;color:inherit">
 <strong>type/aigc</strong> (7)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95" style="text-decoration:none;color:inherit">
-<strong>压力测试</strong> (1)
-</a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E5%86%85%E5%AD%98" style="text-decoration:none;color:inherit">
-<strong>内存</strong> (1)
-</a>
-</span><span style="font-size:28px;margin-right:20px">
+</span><span style="font-size:25.88235294117647px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fshell" style="text-decoration:none;color:inherit">
 <strong>area/shell</strong> (3)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6" style="text-decoration:none;color:inherit">
-<strong>文件描述符</strong> (1)
+</span><span style="font-size:20.588235294117645px;margin-right:20px">
+<a href="obsidian://search?query=tag:type%2Fconcept" style="text-decoration:none;color:inherit">
+<strong>type/concept</strong> (2)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:aigc-kimi" style="text-decoration:none;color:inherit">
-<strong>aigc-kimi</strong> (1)
-</a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E" style="text-decoration:none;color:inherit">
 <strong>甲沟炎</strong> (1)
 </a>
-</span><span style="font-size:46px;margin-right:20px">
+</span><span style="font-size:41.76470588235294px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fgolang" style="text-decoration:none;color:inherit">
 <strong>area/golang</strong> (6)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:chatgpt" style="text-decoration:none;color:inherit">
 <strong>chatgpt</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Ffrontend" style="text-decoration:none;color:inherit">
 <strong>area/frontend</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fjavascript" style="text-decoration:none;color:inherit">
 <strong>area/javascript</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:20.588235294117645px;margin-right:20px">
 <a href="obsidian://search?query=tag:type%2Fpitfall" style="text-decoration:none;color:inherit">
-<strong>type/pitfall</strong> (1)
+<strong>type/pitfall</strong> (2)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fmessage-queue" style="text-decoration:none;color:inherit">
 <strong>area/message-queue</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fmysql" style="text-decoration:none;color:inherit">
 <strong>area/mysql</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fdatabase" style="text-decoration:none;color:inherit">
 <strong>area/database</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:type%2Fconcept" style="text-decoration:none;color:inherit">
-<strong>type/concept</strong> (1)
-</a>
-</span><span style="font-size:28px;margin-right:20px">
+</span><span style="font-size:25.88235294117647px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fnginx" style="text-decoration:none;color:inherit">
 <strong>area/nginx</strong> (3)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:php" style="text-decoration:none;color:inherit">
-<strong>php</strong> (1)
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:area%2Fphp" style="text-decoration:none;color:inherit">
+<strong>area/php</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E5%8E%8B%E7%BC%A9" style="text-decoration:none;color:inherit">
-<strong>压缩</strong> (1)
-</a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:rdb" style="text-decoration:none;color:inherit">
 <strong>rdb</strong> (1)
 </a>
-</span><span style="font-size:22px;margin-right:20px">
+</span><span style="font-size:20.588235294117645px;margin-right:20px">
 <a href="obsidian://search?query=tag:excalidraw" style="text-decoration:none;color:inherit">
 <strong>excalidraw</strong> (2)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E5%A4%9A%E8%BF%9B%E7%A8%8B" style="text-decoration:none;color:inherit">
-<strong>多进程</strong> (1)
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:area%2Fpython" style="text-decoration:none;color:inherit">
+<strong>area/python</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E6%97%A5%E5%BF%97" style="text-decoration:none;color:inherit">
-<strong>日志</strong> (1)
+</span><span style="font-size:47.05882352941176px;margin-right:20px">
+<a href="obsidian://search?query=tag:area%2Fproductivity" style="text-decoration:none;color:inherit">
+<strong>area/productivity</strong> (7)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E6%95%88%E7%8E%87" style="text-decoration:none;color:inherit">
-<strong>效率</strong> (1)
-</a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:zettelkasten" style="text-decoration:none;color:inherit">
 <strong>zettelkasten</strong> (1)
 </a>
-</span><span style="font-size:28px;margin-right:20px">
+</span><span style="font-size:25.88235294117647px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fknowledge-management" style="text-decoration:none;color:inherit">
 <strong>area/knowledge-management</strong> (3)
 </a>
-</span><span style="font-size:46px;margin-right:20px">
-<a href="obsidian://search?query=tag:area%2Fproductivity" style="text-decoration:none;color:inherit">
-<strong>area/productivity</strong> (6)
-</a>
-</span><span style="font-size:22px;margin-right:20px">
+</span><span style="font-size:25.88235294117647px;margin-right:20px">
 <a href="obsidian://search?query=tag:type%2Fmethodology" style="text-decoration:none;color:inherit">
-<strong>type/methodology</strong> (2)
+<strong>type/methodology</strong> (3)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE" style="text-decoration:none;color:inherit">
-<strong>思维导图</strong> (1)
-</a>
-</span><span style="font-size:46px;margin-right:20px">
+</span><span style="font-size:36.470588235294116px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fmac" style="text-decoration:none;color:inherit">
-<strong>area/mac</strong> (6)
+<strong>area/mac</strong> (5)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:things3" style="text-decoration:none;color:inherit">
-<strong>things3</strong> (1)
-</a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Fgtd" style="text-decoration:none;color:inherit">
 <strong>area/gtd</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E8%BE%93%E5%85%A5%E6%B3%95" style="text-decoration:none;color:inherit">
-<strong>输入法</strong> (1)
-</a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:%E9%95%9C%E5%83%8F" style="text-decoration:none;color:inherit">
 <strong>镜像</strong> (1)
 </a>
-</span><span style="font-size:22px;margin-right:20px">
+</span><span style="font-size:20.588235294117645px;margin-right:20px">
 <a href="obsidian://search?query=tag:%E5%93%B2%E5%AD%A6" style="text-decoration:none;color:inherit">
 <strong>哲学</strong> (2)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E6%A0%91%E8%8E%93%E6%B4%BE" style="text-decoration:none;color:inherit">
-<strong>树莓派</strong> (1)
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:area%2Fops" style="text-decoration:none;color:inherit">
+<strong>area/ops</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C" style="text-decoration:none;color:inherit">
-<strong>开发经验</strong> (1)
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:type%2Fprocess" style="text-decoration:none;color:inherit">
+<strong>type/process</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
-<a href="obsidian://search?query=tag:%E6%B8%B8%E6%88%8F" style="text-decoration:none;color:inherit">
-<strong>游戏</strong> (1)
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:area%2Fgame" style="text-decoration:none;color:inherit">
+<strong>area/game</strong> (1)
 </a>
-</span><span style="font-size:100px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:area%2Flife" style="text-decoration:none;color:inherit">
+<strong>area/life</strong> (1)
+</a>
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:type%2Fexperience" style="text-decoration:none;color:inherit">
+<strong>type/experience</strong> (1)
+</a>
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
+<a href="obsidian://search?query=tag:scene%2Fentertainment" style="text-decoration:none;color:inherit">
+<strong>scene/entertainment</strong> (1)
+</a>
+</span><span style="font-size:89.41176470588235px;margin-right:20px">
 <a href="obsidian://search?query=tag:area%2Falgorithm" style="text-decoration:none;color:inherit">
 <strong>area/algorithm</strong> (15)
 </a>
-</span><span style="font-size:22px;margin-right:20px">
+</span><span style="font-size:20.588235294117645px;margin-right:20px">
 <a href="obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C" style="text-decoration:none;color:inherit">
 <strong>前缀和</strong> (2)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:%E5%AE%B6" style="text-decoration:none;color:inherit">
 <strong>家</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:scene%2Fworkflow" style="text-decoration:none;color:inherit">
 <strong>scene/workflow</strong> (1)
 </a>
-</span><span style="font-size:16px;margin-right:20px">
+</span><span style="font-size:15.294117647058822px;margin-right:20px">
 <a href="obsidian://search?query=tag:tool%2Fraycast" style="text-decoration:none;color:inherit">
 <strong>tool/raycast</strong> (1)
 </a>

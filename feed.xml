@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2025-12-30T13:45:59Z</updated>
+    <updated>2026-01-13T04:39:07Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -3557,7 +3557,7 @@ reset &amp;lt;target&amp;gt;            # 重置，使用上游默认使用的�
                 vim显示列分隔符
                 
             </title>
-            <updated>2025-11-04T05:10:01.000Z</updated>
+            <updated>2026-01-11T02:03:44.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/vim显示列分隔符/</id>
             <content type="html">
                 &lt;h1 id=&quot;vim&quot; tabindex=&quot;-1&quot;&gt;vim显示列分隔符&lt;/h1&gt;
@@ -3867,7 +3867,7 @@ open /Applications/Obsidian.app
                 Things 工作流
                 
             </title>
-            <updated>2025-12-28T05:09:53.000Z</updated>
+            <updated>2026-01-11T13:21:19.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/Things 工作流/</id>
             <content type="html">
                 &lt;h1 id=&quot;things&quot; tabindex=&quot;-1&quot;&gt;Things 工作流&lt;/h1&gt;
@@ -5432,6 +5432,18 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Flinux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/linux&lt;/strong&gt; (17)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:47.05882352941176px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fproductivity&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/productivity&lt;/strong&gt; (7)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fworkflow&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;scene/workflow&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tool%2Fraycast&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tool/raycast&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fdata_process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;scene/data_process&lt;/strong&gt; (1)
@@ -5492,10 +5504,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fphp&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/php&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;rdb&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:20.588235294117645px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:excalidraw&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (2)
@@ -5504,13 +5512,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fpython&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/python&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:47.05882352941176px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fproductivity&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/productivity&lt;/strong&gt; (7)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
+                    &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;rdb&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:25.88235294117647px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fknowledge-management&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5519,6 +5523,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:25.88235294117647px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fmethodology&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;type/methodology&lt;/strong&gt; (3)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:20.588235294117645px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:36.470588235294116px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fmac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5531,10 +5543,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;镜像&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:20.588235294117645px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fops&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5571,14 +5579,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;家&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fworkflow&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;scene/workflow&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:tool%2Fraycast&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;tool/raycast&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -8957,23 +8957,30 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 &lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/IMG_2579.jpg&quot; alt=&quot;IMG_2579.jpg|600&quot; width=&quot;600px&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;世界和平、国泰民安、风调雨顺、家和万事兴&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://wudanyang8327.github.io/archive/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;历史文章&lt;/a&gt;&lt;/p&gt;
-&lt;footer style=&quot;text-align: center; padding: 20px 0;&quot;&gt;
-  &lt;a href=&quot;https://beian.miit.gov.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; style=&quot;color: #666; text-decoration: none;&quot;&gt;
-    苏ICP备2025230070号-1
+&lt;footer style=&quot;display:flex; justify-content:center; align-items:center; gap:16px; padding:20px 0; font-size:14px;&quot;&gt;
+  &lt;!-- 公网安 --&gt;
+  &lt;a href=&quot;https://beian.mps.gov.cn/#/query/webSearch?code=32032202000617&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; style=&quot;color:#666; text-decoration:none; display:inline-flex; align-items:center; gap:4px;&quot;&gt;
+    &lt;img src=&quot;https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png&quot; style=&quot;width:13px; height:13px;&quot; /&gt;
+    苏公网安备32032202000617号
   &lt;/a&gt;
+  &lt;!-- ICP --&gt;
+&lt;p&gt;&lt;a href=&quot;https://beian.miit.gov.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; style=&quot;color:#666; text-decoration:none;&quot;&gt;&lt;br /&gt;
+苏ICP备2025230070号-1&lt;br /&gt;
+&lt;/a&gt;&lt;/p&gt;
 &lt;/footer&gt;
+
             </content>
             <link href="https://wudanyang8327.github.io/" />
         </entry>
         <entry>
             <title>
-                Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)
+                Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)
                 
             </title>
-            <updated>2025-12-30T13:45:46Z</updated>
-            <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)/</id>
+            <updated>2026-01-13T04:38:54Z</updated>
+            <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</id>
             <content type="html">
-                &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-and-quot-just-my-code-and-quot-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of &amp;quot;justMyCode&amp;quot; option)&lt;/h1&gt;
+                &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-just-my-code-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of justMyCode option)&lt;/h1&gt;
 &lt;p&gt;I was only able to add Breakpoints to 3rd party libraries when I set 2 options:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;on the &lt;em&gt;launch.json&lt;/em&gt; file: add &lt;strong&gt;&amp;quot;justMyCode&amp;quot;: false&lt;/strong&gt; to the configuration.&lt;/li&gt;
@@ -8983,7 +8990,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;p&gt;Tested on: version: 1.63.2&lt;/p&gt;
 
             </content>
-            <link href="https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option)/" />
+            <link href="https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/" />
         </entry>
         <entry>
             <title>

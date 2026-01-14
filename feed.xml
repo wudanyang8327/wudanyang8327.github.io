@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2026-01-13T04:39:07Z</updated>
+    <updated>2026-01-14T03:03:29Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -7240,6 +7240,42 @@ func main() {
         </entry>
         <entry>
             <title>
+                202511282239 go -  GOMEMLIMIT 参数
+                
+            </title>
+            <updated>2026-01-14T03:02:50.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/go/202511282239 go -  GOMEMLIMIT 参数/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202511282239-go-gomemlimit&quot; tabindex=&quot;-1&quot;&gt;202511282239 go -  GOMEMLIMIT 参数&lt;/h1&gt;
+&lt;p&gt;对GC提示的软限&lt;/p&gt;
+&lt;p&gt;超出 GOMEMLIMIT 的行为，其实不像一条“电网跳闸线”，更像一位“偏执的清洁工”：你一靠近它的红线，它就会发狂地扫地（GC），但它并不会立刻把你赶出去（panic or OOM）。&lt;/p&gt;
+&lt;p&gt;换成技术语言，行为大致分三层：&lt;/p&gt;
+&lt;p&gt;第一层：逼近上限&lt;br /&gt;
+当堆接近 GOMEMLIMIT，Go 会让 GC 进入“加速模式”。&lt;br /&gt;
+GC 开始更频繁、更多并发标记，更努力地把垃圾回收掉。&lt;/p&gt;
+&lt;p&gt;第二层：超过上限短暂冲上去&lt;br /&gt;
+GOMEMLIMIT 是软上限（soft limit），不是硬限制。&lt;br /&gt;
+如果你的服务代码突然分配一堆内存，可能会瞬间冲过 limit。&lt;/p&gt;
+&lt;p&gt;这个时候 Go 会继续让程序运行，但会马上触发一次&lt;strong&gt;全力 GC&lt;/strong&gt;，试图把堆压回限制以下。&lt;/p&gt;
+&lt;p&gt;第三层：GC 无法把它压回去 → 内存继续上涨&lt;br /&gt;
+如果 GC 已经拼命了，仍然压不下去，Go 进程会出现两种情况：&lt;/p&gt;
+&lt;p&gt;其一，&lt;strong&gt;继续消耗内存直到系统 OOM&lt;/strong&gt;&lt;br /&gt;
+操作系统会把你杀掉（典型 K8s OOMKilled）。&lt;br /&gt;
+Go 本身不会阻止，只是 GC 会非常忙。&lt;/p&gt;
+&lt;p&gt;其二，&lt;strong&gt;程序分配太快，内存来不及回收&lt;/strong&gt;&lt;br /&gt;
+这时 GC 占用 CPU 可能会飙升到 200~400% 甚至更高，QPS 会掉。&lt;br /&gt;
+堆不一定马上下降，但 GC 会拿 CPU 做最后挣扎。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE] 有没有可能因为超过 GOMEMLIMIT 而直接 panic？&lt;br /&gt;
+没有。&lt;br /&gt;
+Go 官方明确设计成 soft limit，不会直接让 runtime 自己 panic。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/go/202511282239 go -  GOMEMLIMIT 参数/" />
+        </entry>
+        <entry>
+            <title>
                 202506262333 go 协程调度的抢占机制
                 
             </title>
@@ -8977,7 +9013,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)
                 
             </title>
-            <updated>2026-01-13T04:38:54Z</updated>
+            <updated>2026-01-14T03:03:13Z</updated>
             <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</id>
             <content type="html">
                 &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-just-my-code-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of justMyCode option)&lt;/h1&gt;

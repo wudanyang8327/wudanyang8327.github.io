@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/nginx/编译 nginx/</loc>
+            <lastmod>2026-01-20T13:15:00.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/网络/深入理解 X-Forwarded-For：代理背后的真实IP追踪/</loc>
+            <lastmod>2026-01-17T18:19:07.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/202406112224 go 在 race 编译时，不包括部分代码/</loc>
+            <lastmod>2026-01-17T17:59:44.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/nginx/nginx master 进程/</loc>
+            <lastmod>2026-01-17T14:42:12.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/mysql/mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表/</loc>
+            <lastmod>2026-01-17T14:42:07.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/python/py-spy 的用法/</loc>
             <lastmod>2026-01-15T09:05:46.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -782,12 +812,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/nginx/nginx master 进程/</loc>
-            <lastmod>2025-11-26T05:36:40.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/</loc>
             <lastmod>2025-11-26T05:34:38.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -1058,12 +1082,6 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/go/golang-cobra/</loc>
-            <lastmod>2025-11-04T15:55:39.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/算法/leetcode题目难度更新了/</loc>
             <lastmod>2025-11-04T09:55:45.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -1179,13 +1197,13 @@
     
         <url>
             <loc>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</loc>
-            <lastmod>2026-01-20T12:58:12Z</lastmod>
+            <lastmod>2026-01-20T13:15:37Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
         <url>
             <loc>https://wudanyang8327.github.io/archive/</loc>
-            <lastmod>2026-01-20T12:58:12Z</lastmod>
+            <lastmod>2026-01-20T13:15:37Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1202,8 +1220,8 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/nginx/编译 nginx/</loc>
-            <lastmod>2025-10-24T06:42:30.000Z</lastmod>
+            <loc>https://wudanyang8327.github.io/card/go/golang-cobra/</loc>
+            <lastmod>2025-11-04T15:55:39.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     

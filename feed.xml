@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2026-01-20T12:58:24Z</updated>
+    <updated>2026-01-20T13:15:49Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -93,6 +93,239 @@
 
             </content>
             <link href="https://wudanyang8327.github.io/card/装修/软装-沙发/" />
+        </entry>
+        <entry>
+            <title>
+                深入理解 X-Forwarded-For：代理背后的真实IP追踪
+                
+            </title>
+            <updated>2026-01-17T18:19:07.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/网络/深入理解 X-Forwarded-For：代理背后的真实IP追踪/</id>
+            <content type="html">
+                &lt;h1 id=&quot;x-forwarded-for-ip&quot; tabindex=&quot;-1&quot;&gt;深入理解 X-Forwarded-For：代理背后的真实IP追踪&lt;/h1&gt;
+&lt;h2 id=&quot;引言&quot; tabindex=&quot;-1&quot;&gt;引言&lt;/h2&gt;
+&lt;p&gt;在现代分布式Web架构中，客户端请求很少直接到达后端服务器。它们通常需要经过CDN、负载均衡器、反向代理等层层代理。这就带来了一个关键问题：&lt;strong&gt;服务器如何知道真正的客户端IP地址？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;今天我们就来深入探讨解决这一问题的关键协议——&lt;code&gt;X-Forwarded-For&lt;/code&gt; HTTP头部。&lt;/p&gt;
+&lt;h2 id=&quot;x-forwarded-for&quot; tabindex=&quot;-1&quot;&gt;X-Forwarded-For 是什么？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;X-Forwarded-For&lt;/code&gt;（常缩写为XFF）是一个事实标准的HTTP请求头，用于标识通过HTTP代理或负载均衡器连接到Web服务器的客户端的原始IP地址。&lt;/p&gt;
+&lt;h3 id=&quot;and-quot-x-and-quot&quot; tabindex=&quot;-1&quot;&gt;名称中的&amp;quot;X&amp;quot;含义&lt;/h3&gt;
+&lt;p&gt;你可能好奇为什么叫&lt;code&gt;X-Forwarded-For&lt;/code&gt;而不是&lt;code&gt;Forwarded-For&lt;/code&gt;？这个&lt;code&gt;X-&lt;/code&gt;前缀是HTTP协议的一个历史惯例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;X-&lt;/code&gt;&lt;/strong&gt; 代表 &amp;quot;eXtension&amp;quot; 或 &amp;quot;eXperimental&amp;quot;&lt;/li&gt;
+&lt;li&gt;在HTTP标准中，官方头部没有前缀，而非标准/实验性头部通常加&lt;code&gt;X-&lt;/code&gt;前缀&lt;/li&gt;
+&lt;li&gt;虽然&lt;code&gt;X-Forwarded-For&lt;/code&gt;已成为事实标准，但名称保留了这一历史痕迹&lt;/li&gt;
+&lt;li&gt;IETF后来推出了标准头部&lt;code&gt;Forwarded&lt;/code&gt;（RFC 7239），但XFF由于广泛支持仍被大量使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;x-forwarded-for-1&quot; tabindex=&quot;-1&quot;&gt;为什么需要 X-Forwarded-For？&lt;/h2&gt;
+&lt;h3 id=&quot;问题场景&quot; tabindex=&quot;-1&quot;&gt;问题场景&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;客户端 (IP: 1.2.3.4)
+    ↓
+CDN/负载均衡器 (IP: 10.0.0.1)
+    ↓
+Web服务器 (看到的remote_addr: 10.0.0.1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;没有XFF时，Web服务器只能看到最后一个代理的IP（&lt;code&gt;10.0.0.1&lt;/code&gt;），完全丢失了客户端真实IP（&lt;code&gt;1.2.3.4&lt;/code&gt;）。&lt;/p&gt;
+&lt;h3 id=&quot;核心价值&quot; tabindex=&quot;-1&quot;&gt;核心价值&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;访问日志准确性&lt;/strong&gt;：记录真实用户IP而非代理IP&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;地理定位&lt;/strong&gt;：基于真实IP提供本地化内容&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全审计&lt;/strong&gt;：追踪恶意请求的真实来源&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;限流控制&lt;/strong&gt;：基于真实客户端实施访问限制&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据分析&lt;/strong&gt;：准确分析用户分布和行为&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;工作机制详解&quot; tabindex=&quot;-1&quot;&gt;工作机制详解&lt;/h2&gt;
+&lt;h3 id=&quot;基本格式&quot; tabindex=&quot;-1&quot;&gt;基本格式&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;X-Forwarded-For: client, proxy1, proxy2, ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;最左边的IP是原始客户端&lt;/li&gt;
+&lt;li&gt;后续IP是请求经过的代理链&lt;/li&gt;
+&lt;li&gt;每个代理追加自己的入口IP（或前一个代理IP）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;实际工作流程&quot; tabindex=&quot;-1&quot;&gt;实际工作流程&lt;/h3&gt;
+&lt;pre class=&quot;mermaid&quot;&gt;graph LR
+    A[客户端 IP: 203.0.113.195] --&gt; B[Cloudflare CDN]
+    B --&gt; C[内部负载均衡器]
+    C --&gt; D[Nginx反向代理]
+    D --&gt; E[应用服务器]
+    
+    subgraph &quot;X-Forwarded-For头部变化&quot;
+        B1[&quot;初始请求: 无XFF头&quot;] --&gt; B2[&quot;Cloudflare添加: 203.0.113.195&quot;]
+        B2 --&gt; C1[&quot;负载均衡器追加: , 198.51.100.10&quot;]
+        C1 --&gt; D1[&quot;Nginx追加: , 10.1.0.100&quot;]
+    end&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;最终到达应用服务器的头信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-http&quot;&gt;X-Forwarded-For: 203.0.113.195, 198.51.100.10, 10.1.0.100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;安全隐患与最佳实践&quot; tabindex=&quot;-1&quot;&gt;安全隐患与最佳实践&lt;/h2&gt;
+&lt;h3 id=&quot;⚠️ 核心安全问题：头部可伪造&quot; tabindex=&quot;-1&quot;&gt;⚠️ 核心安全问题：头部可伪造&lt;/h3&gt;
+&lt;p&gt;任何客户端都可以发送虚假的XFF头：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-http&quot;&gt;# 恶意客户端可以这样发送
+X-Forwarded-For: 8.8.8.8, 伪造的IP
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;✅ 安全最佳实践&quot; tabindex=&quot;-1&quot;&gt;✅ 安全最佳实践&lt;/h3&gt;
+&lt;h4 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1. 信任边界策略&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-nginx&quot;&gt;# Nginx配置示例 - 只信任内部代理
+real_ip_header X-Forwarded-For;
+set_real_ip_from 10.0.0.0/8;    # 信任内部网络
+set_real_ip_from 192.168.0.0/16;
+real_ip_recursive on;           # 从右向左查找可信IP
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2. 清除不可信头部（在第一个可信代理处）&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-nginx&quot;&gt;# 在边缘代理（如Cloudflare后第一个自有代理）上
+location / {
+    # 清除从外部来的XFF头
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    # 或者完全重置
+    proxy_set_header X-Forwarded-For $remote_addr;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;3&quot; tabindex=&quot;-1&quot;&gt;3. 多层代理的正确处理&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;外部流量 → Cloudflare → 自有边缘代理 → 内部LB → 应用
+        (可信)      (重置XFF)      (传递)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;4&quot; tabindex=&quot;-1&quot;&gt;4. 代码中的安全获取方式&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;# Python Flask示例 - 带验证的IP获取
+def get_client_ip(request):
+    &amp;quot;&amp;quot;&amp;quot;安全获取客户端IP，防止伪造&amp;quot;&amp;quot;&amp;quot;
+    trusted_proxies = {&#39;10.0.0.0/8&#39;, &#39;192.168.0.0/16&#39;}
+    
+    # 获取XFF头
+    xff = request.headers.get(&#39;X-Forwarded-For&#39;)
+    
+    if xff:
+        # 按逗号分割IP列表
+        ips = [ip.strip() for ip in xff.split(&#39;,&#39;)]
+        
+        # 从右向左找到第一个非可信代理IP
+        for ip in reversed(ips):
+            if not is_ip_in_networks(ip, trusted_proxies):
+                return ip
+    
+    # 回退到连接IP
+    return request.remote_addr
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;替代方案与相关头部&quot; tabindex=&quot;-1&quot;&gt;替代方案与相关头部&lt;/h2&gt;
+&lt;h3 id=&quot;1-code-forwarded-code-rfc-7239&quot; tabindex=&quot;-1&quot;&gt;1. 标准头部：&lt;code&gt;Forwarded&lt;/code&gt;（RFC 7239）&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-http&quot;&gt;Forwarded: for=192.0.2.60;proto=https;by=203.0.113.43
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更强大但采用率较低，支持协议、端口等更多信息。&lt;/p&gt;
+&lt;h3 id=&quot;2-1&quot; tabindex=&quot;-1&quot;&gt;2. 其他变体头部&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;X-Real-IP&lt;/code&gt;&lt;/strong&gt;：单IP版本，通常由第一跳代理设置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;X-Forwarded-Host&lt;/code&gt;&lt;/strong&gt;：原始Host头&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;X-Forwarded-Proto&lt;/code&gt;&lt;/strong&gt;：原始协议（http/https）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-1&quot; tabindex=&quot;-1&quot;&gt;3. 云服务商特定头部&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-http&quot;&gt;# Cloudflare
+CF-Connecting-IP: 203.0.113.195
+
+# AWS ALB
+X-Amzn-Trace-Id: Root=1-67891233-...
+
+# Google Cloud
+X-Cloud-Trace-Context: 445e9c5d...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;常见架构下的配置示例&quot; tabindex=&quot;-1&quot;&gt;常见架构下的配置示例&lt;/h2&gt;
+&lt;h3 id=&quot;1-nginx&quot; tabindex=&quot;-1&quot;&gt;场景1：Nginx作为反向代理&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-nginx&quot;&gt;http {
+    # 配置可信代理
+    set_real_ip_from 10.0.0.0/8;
+    set_real_ip_from 172.16.0.0/12;
+    real_ip_header X-Forwarded-For;
+    real_ip_recursive on;
+    
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://backend;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;2-docker&quot; tabindex=&quot;-1&quot;&gt;场景2：Docker容器环境&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;# docker-compose.yml片段
+version: &#39;3&#39;
+services:
+  nginx:
+    image: nginx:alpine
+    networks:
+      - proxy-net
+    labels:
+      - &amp;quot;traefik.http.middlewares.trustedips.ipwhitelist.sourcerange=10.0.0.0/8,192.168.0.0/16&amp;quot;
+  
+  app:
+    image: node:14
+    environment:
+      - TRUST_PROXY=10.0.0.0/8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;调试与故障排查&quot; tabindex=&quot;-1&quot;&gt;调试与故障排查&lt;/h2&gt;
+&lt;h3 id=&quot;1-1&quot; tabindex=&quot;-1&quot;&gt;1. 检查实际接收的头部&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 使用curl测试
+curl -H &amp;quot;X-Forwarded-For: 8.8.8.8&amp;quot; https://example.com
+
+# 在应用中打印所有头部
+app.get(&#39;/debug&#39;, (req, res) =&amp;gt; {
+    console.log(&#39;X-Forwarded-For:&#39;, req.headers[&#39;x-forwarded-for&#39;]);
+    console.log(&#39;Remote IP:&#39;, req.connection.remoteAddress);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;2-2&quot; tabindex=&quot;-1&quot;&gt;2. 常见问题诊断表&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;症状&lt;/th&gt;
+&lt;th&gt;可能原因&lt;/th&gt;
+&lt;th&gt;解决方案&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;获取的IP全是代理IP&lt;/td&gt;
+&lt;td&gt;未配置real_ip或信任链&lt;/td&gt;
+&lt;td&gt;配置信任的代理IP段&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;IP显示为127.0.0.1&lt;/td&gt;
+&lt;td&gt;本地代理未正确设置头部&lt;/td&gt;
+&lt;td&gt;检查代理配置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;获取到多个IP但顺序错误&lt;/td&gt;
+&lt;td&gt;代理链配置顺序问题&lt;/td&gt;
+&lt;td&gt;检查各代理追加IP的逻辑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;总结&quot; tabindex=&quot;-1&quot;&gt;总结&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;X-Forwarded-For&lt;/code&gt; 是现代Web架构中不可或缺的组件，它解决了多层代理环境下的客户端IP追踪问题。然而：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;它不是安全机制&lt;/strong&gt;：头部可被伪造，必须结合信任边界&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;配置需谨慎&lt;/strong&gt;：错误的配置可能导致IP欺骗或功能失效&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;了解替代方案&lt;/strong&gt;：根据场景选择XFF、Forwarded头或云服务商方案&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;持续更新知识&lt;/strong&gt;：随着云原生和Service Mesh发展，IP追踪方案也在演进&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;正确理解和实施&lt;code&gt;X-Forwarded-For&lt;/code&gt;，不仅能确保业务功能正常，也是Web应用安全的重要基石。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;扩展阅读&quot; tabindex=&quot;-1&quot;&gt;扩展阅读&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tools.ietf.org/html/rfc7239&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;RFC 7239: Forwarded HTTP Extension&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#x-forwarded-for&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;OWASP: Forwarded HTTP Header&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://nginx.org/en/docs/http/ngx_http_realip_module.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx Real IP Module Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;讨论问题&quot; tabindex=&quot;-1&quot;&gt;讨论问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在你的架构中，如何处理多层代理的IP传递？&lt;/li&gt;
+&lt;li&gt;是否遇到过XFF相关的安全问题？&lt;/li&gt;
+&lt;li&gt;有没有考虑迁移到标准的&lt;code&gt;Forwarded&lt;/code&gt;头部？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;本文基于实际运维经验撰写，具体配置请根据生产环境调整。欢迎在评论区分享你的实践经验！&lt;/em&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/网络/深入理解 X-Forwarded-For：代理背后的真实IP追踪/" />
         </entry>
         <entry>
             <title>
@@ -5408,9 +5641,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fide&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/ide&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:25.88235294117647px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:31.176470588235293px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fnetwork&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/network&lt;/strong&gt; (3)
+                        &lt;strong&gt;area/network&lt;/strong&gt; (4)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:31.176470588235293px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fbackend&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5432,6 +5665,18 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Flinux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/linux&lt;/strong&gt; (17)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:47.05882352941176px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fproductivity&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/productivity&lt;/strong&gt; (7)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fworkflow&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;scene/workflow&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tool%2Fraycast&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tool/raycast&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fdata_process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;scene/data_process&lt;/strong&gt; (1)
@@ -5444,9 +5689,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fshell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/shell&lt;/strong&gt; (3)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:20.588235294117645px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:25.88235294117647px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fconcept&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;type/concept&lt;/strong&gt; (2)
+                        &lt;strong&gt;type/concept&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5504,17 +5749,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;rdb&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:47.05882352941176px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fproductivity&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/productivity&lt;/strong&gt; (7)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fworkflow&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;scene/workflow&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:tool%2Fraycast&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;tool/raycast&lt;/strong&gt; (1)
+                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:25.88235294117647px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fknowledge-management&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5523,10 +5760,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:25.88235294117647px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fmethodology&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;type/methodology&lt;/strong&gt; (3)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:20.588235294117645px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5544,9 +5777,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;镜像&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:20.588235294117645px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fops&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/ops&lt;/strong&gt; (1)
+                        &lt;strong&gt;area/ops&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:15.294117647058822px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fprocess&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5677,7 +5910,7 @@ dv.container.innerHTML = Object.entries(tagCounts)
                 编译 nginx
                 
             </title>
-            <updated>2025-10-24T06:42:30.000Z</updated>
+            <updated>2026-01-20T13:15:00.000Z</updated>
             <id>https://wudanyang8327.github.io/card/nginx/编译 nginx/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;编译 nginx&lt;/h1&gt;
@@ -5713,7 +5946,7 @@ dv.container.innerHTML = Object.entries(tagCounts)
 &lt;h3 id=&quot;2-1&quot; tabindex=&quot;-1&quot;&gt;2.1 编译时遇到的报错&lt;/h3&gt;
 &lt;h4 id=&quot;2-1-1-implicit-fallthrough-error&quot; tabindex=&quot;-1&quot;&gt;2.1.1 implicit fallthrough error&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/jaybill/article/details/80164370&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;linux下编译nginx1.0.15报错：Implicit fallthrough error&lt;/a&gt;&lt;br /&gt;
-&lt;img src=&quot;https://img-blog.csdn.net/2018050211282675?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pheWJpbGw=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70&quot; alt=&quot;这里写图片描述&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020260120211459.png&quot; alt=&quot;Pasted image 20260120211459.png&quot; /&gt;&lt;br /&gt;
 CFLAGS表示编译的可选参数，我们只需要在后面加上**-Wno-implicit-fallthrough**，即可忽略gcc7编译时switch-case中缺少break的错误。&lt;/p&gt;
 &lt;h4 id=&quot;2-1-2-struct-crypt-data-has-no-member-named-current-salt&quot; tabindex=&quot;-1&quot;&gt;2.1.2 &#39;struct crypt_data&#39; has no member named &#39;current_salt&#39;&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/hxlinux/p/12900503.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;编译nginx时struct crypt_data’没有名为‘current_salt’的成员：cd.current_salt[0] = ~salt[0]；的解决方案&lt;/a&gt;&lt;br /&gt;
@@ -6023,7 +6256,7 @@ if (s == NGX_MAX_PROCESSES) {
                 nginx master 进程
                 
             </title>
-            <updated>2025-11-26T05:36:40.000Z</updated>
+            <updated>2026-01-17T14:42:12.000Z</updated>
             <id>https://wudanyang8327.github.io/card/nginx/nginx master 进程/</id>
             <content type="html">
                 &lt;h1 id=&quot;nginx-master&quot; tabindex=&quot;-1&quot;&gt;nginx master 进程&lt;/h1&gt;
@@ -6221,6 +6454,119 @@ alter table user add index idx_username (user_name);
 
             </content>
             <link href="https://wudanyang8327.github.io/card/mysql/mysql5.7json支持/" />
+        </entry>
+        <entry>
+            <title>
+                mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表
+                
+            </title>
+            <updated>2026-01-17T14:42:07.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/mysql/mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表/</id>
+            <content type="html">
+                &lt;h1 id=&quot;mysql-information-schema-optimizer-trace&quot; tabindex=&quot;-1&quot;&gt;mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表&lt;/h1&gt;
+&lt;h2 id=&quot;1-query&quot; tabindex=&quot;-1&quot;&gt;1 QUERY&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;QUERY: select count(*) from test_innodb&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-trace&quot; tabindex=&quot;-1&quot;&gt;2 TRACE&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+  &amp;quot;steps&amp;quot;: [
+    {
+      &amp;quot;join_preparation&amp;quot;: {
+        &amp;quot;select_id&amp;quot;: 1,
+        &amp;quot;steps&amp;quot;: [
+          {
+            &amp;quot;expanded_query&amp;quot;: &amp;quot;select count(0) AS `count(*)` from test_innodb&amp;quot;
+          }
+        ]
+      }
+    },
+    {
+      &amp;quot;join_optimization&amp;quot;: {
+        &amp;quot;select_id&amp;quot;: 1,
+        &amp;quot;steps&amp;quot;: [
+          {
+            &amp;quot;table_dependencies&amp;quot;: [
+              {
+                &amp;quot;table&amp;quot;: &amp;quot;test_innodb&amp;quot;,
+                &amp;quot;row_may_be_null&amp;quot;: false,
+                &amp;quot;map_bit&amp;quot;: 0,
+                &amp;quot;depends_on_map_bits&amp;quot;: []
+              }
+            ]
+          },
+          {
+            &amp;quot;rows_estimation&amp;quot;: [
+              {
+                &amp;quot;table&amp;quot;: &amp;quot;test_innodb&amp;quot;,
+                &amp;quot;table_scan&amp;quot;: {
+                  &amp;quot;rows&amp;quot;: 121287,
+                  &amp;quot;cost&amp;quot;: 481
+                }
+              }
+            ]
+          },
+          {
+            &amp;quot;considered_execution_plans&amp;quot;: [
+              {
+                &amp;quot;plan_prefix&amp;quot;: [],
+                &amp;quot;table&amp;quot;: &amp;quot;test_innodb&amp;quot;,
+                &amp;quot;best_access_path&amp;quot;: {
+                  &amp;quot;considered_access_paths&amp;quot;: [
+                    {
+                      &amp;quot;access_type&amp;quot;: &amp;quot;scan&amp;quot;,
+                      &amp;quot;resulting_rows&amp;quot;: 121287,
+                      &amp;quot;cost&amp;quot;: 481,
+                      &amp;quot;chosen&amp;quot;: true
+                    }
+                  ],
+                  &amp;quot;chosen_access_method&amp;quot;: {
+                    &amp;quot;type&amp;quot;: &amp;quot;scan&amp;quot;,
+                    &amp;quot;records&amp;quot;: 121287,
+                    &amp;quot;cost&amp;quot;: 481,
+                    &amp;quot;uses_join_buffering&amp;quot;: false
+                  }
+                },
+                &amp;quot;rows_for_plan&amp;quot;: 121287,
+                &amp;quot;cost_for_plan&amp;quot;: 24738.4,
+                &amp;quot;estimated_join_cardinality&amp;quot;: 121287
+              }
+            ]
+          },
+          {
+            &amp;quot;best_join_order&amp;quot;: [&amp;quot;test_innodb&amp;quot;]
+          },
+          {
+            &amp;quot;attaching_conditions_to_tables&amp;quot;: {
+              &amp;quot;original_condition&amp;quot;: null,
+              &amp;quot;attached_conditions_computation&amp;quot;: [],
+              &amp;quot;attached_conditions_summary&amp;quot;: [
+                {
+                  &amp;quot;table&amp;quot;: &amp;quot;test_innodb&amp;quot;,
+                  &amp;quot;attached&amp;quot;: null
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      &amp;quot;join_execution&amp;quot;: {
+        &amp;quot;select_id&amp;quot;: 1,
+        &amp;quot;steps&amp;quot;: []
+      }
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;3-missing-bytes-beyond-max-mem-size&quot; tabindex=&quot;-1&quot;&gt;3 MISSING_BYTES_BEYOND_MAX_MEM_SIZE&lt;/h2&gt;
+&lt;p&gt;json 会超出一定大小之后就会阶段，这个字段记录阶段之后还有多少字节未记录&lt;/p&gt;
+&lt;h2 id=&quot;4-insufficient-privileges&quot; tabindex=&quot;-1&quot;&gt;4 INSUFFICIENT_PRIVILEGES&lt;/h2&gt;
+&lt;p&gt;如果用户没有权限使用 trace 工具，这个地方的值就是 1&lt;/p&gt;
+&lt;h1 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://dev.mysql.com/doc/internals/en/information-schema-optimizer-trace-table.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://dev.mysql.com/doc/internals/en/information-schema-optimizer-trace-table.html&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/mysql/mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表/" />
         </entry>
         <entry>
             <title>
@@ -7510,6 +7856,63 @@ type TB interface {
 
             </content>
             <link href="https://wudanyang8327.github.io/card/go/202407111120 go - 防止接口在包外被继承/" />
+        </entry>
+        <entry>
+            <title>
+                202406112224 go 在 race 编译时，不包括部分代码
+                
+            </title>
+            <updated>2026-01-17T17:59:44.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/go/202406112224 go 在 race 编译时，不包括部分代码/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202406112224-go-race&quot; tabindex=&quot;-1&quot;&gt;202406112224 go 在 race 编译时，不包括部分代码&lt;/h1&gt;
+&lt;p&gt;在 Go 语言中，这段代码片段是用于条件编译的指令。具体来说，它指定了这段代码只会在编译器没有启用 &lt;strong&gt;数据竞争检测（race detector）&lt;/strong&gt; 时才会被编译。这是在源代码文件的顶部通过 &lt;code&gt;//go:build&lt;/code&gt; 和 &lt;code&gt;// +build&lt;/code&gt; 注释来实现的。&lt;/p&gt;
+&lt;p&gt;让我们具体来看这两行代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;//go:build !race
+// +build !race
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;相反的， 下面两行代码表示，在 race 时&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Go&quot;&gt;//go:build race  
+// +build race
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;code-go-build-race-code&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;//go:build !race&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;这是 Go 1.17 及以后的版本中推荐使用的条件编译语法。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!race&lt;/code&gt; 表示当编译时没有启用 &lt;code&gt;-race&lt;/code&gt; 标志（即数据竞争检测）时，这段代码才会被编译。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;code-build-race-code&quot; tabindex=&quot;-1&quot;&gt;&lt;code&gt;// +build !race&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;这是 Go 1.16 及以前版本中使用的条件编译语法。&lt;/li&gt;
+&lt;li&gt;它的作用与 &lt;code&gt;//go:build !race&lt;/code&gt; 相同，但在新版本中已经逐步被替代。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;使用场景&quot; tabindex=&quot;-1&quot;&gt;使用场景&lt;/h2&gt;
+&lt;p&gt;这种条件编译通常用于在特定条件下排除或包括某些代码。例如，你可能希望在启用了数据竞争检测时，跳过某些性能测试代码，或者在启用数据竞争检测时，避免编译某些不兼容的数据结构。&lt;/p&gt;
+&lt;h2 id=&quot;代码示例&quot; tabindex=&quot;-1&quot;&gt;代码示例&lt;/h2&gt;
+&lt;p&gt;假设有一个文件 &lt;code&gt;main.go&lt;/code&gt; 包含如下代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;//go:build !race
+// +build !race
+
+package main
+
+import &amp;quot;fmt&amp;quot;
+
+func main() {
+    fmt.Println(&amp;quot;Race detector is not enabled&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当你使用以下命令编译时：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;go build -race
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;因为启用了数据竞争检测，这段代码将不会被编译。&lt;/p&gt;
+&lt;p&gt;而当你使用以下命令编译时：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;go build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;因为没有启用数据竞争检测，这段代码将会被编译并生成可执行文件。&lt;/p&gt;
+&lt;h2 id=&quot;总结&quot; tabindex=&quot;-1&quot;&gt;总结&lt;/h2&gt;
+&lt;p&gt;这段代码的作用是利用条件编译特性，使得特定代码只在没有启用数据竞争检测的情况下才会被编译。这样你可以根据需求有选择地包含或排除某些代码。&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/go/202406112224 go 在 race 编译时，不包括部分代码/" />
         </entry>
         <entry>
             <title>
@@ -9013,7 +9416,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)
                 
             </title>
-            <updated>2026-01-20T12:58:12Z</updated>
+            <updated>2026-01-20T13:15:37Z</updated>
             <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</id>
             <content type="html">
                 &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-just-my-code-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of justMyCode option)&lt;/h1&gt;

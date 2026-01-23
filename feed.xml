@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2026-01-22T03:42:34Z</updated>
+    <updated>2026-01-23T03:44:37Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -5303,22 +5303,315 @@ async def foo():
                 py-spy 的用法
                 
             </title>
-            <updated>2026-01-15T09:05:46.000Z</updated>
+            <updated>2026-01-23T03:43:47.000Z</updated>
             <id>https://wudanyang8327.github.io/card/python/py-spy 的用法/</id>
             <content type="html">
                 &lt;h1 id=&quot;py-spy&quot; tabindex=&quot;-1&quot;&gt;py-spy 的用法&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;watch -n 5 &amp;quot;py-spy top --pid &amp;lt;PID&amp;gt; --nonblocking --rate 50&amp;quot; | tee -a pyspy_top.log
-watch -n 5 &amp;quot;py-spy top --pid 172877 --nonblocking  --rate 100&amp;quot; | tee -a pyspy_top.log
+&lt;h2 id=&quot;strong-py-spy-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;py-spy 命令概览&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;版本&lt;/strong&gt;: 0.4.0&lt;br /&gt;
+&lt;strong&gt;用途&lt;/strong&gt;: Python 程序的采样分析器&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;子命令&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;record&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;记录堆栈轨迹信息，生成火焰图、speedscope 或原始文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;top&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;以类 top 视图显示消耗 CPU 的函数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;dump&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;将目标程序的堆栈轨迹输出到 stdout&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;help&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;打印帮助信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;strong-code-top-code-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;&lt;code&gt;top&lt;/code&gt; 子命令&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;用途&lt;/strong&gt;：以类 top 视图显示消耗 CPU 的函数&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选项&lt;/th&gt;
+&lt;th&gt;默认值&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-p, --pid &amp;lt;pid&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;要监控的正在运行的 Python 进程 PID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-r, --rate &amp;lt;rate&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;每秒采集的样本数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-s, --subprocesses&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;分析原进程的子进程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--full-filenames&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;显示完整的 Python 文件名，而非只显示包名部分&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-g, --gil&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;仅包含持有 GIL 的轨迹&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-i, --idle&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;包含空闲线程的堆栈轨迹&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--delay &amp;lt;seconds&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1.0&lt;/td&gt;
+&lt;td&gt;top 刷新间隔（秒）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-n, --native&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;收集来自 Cython、C 或 C++ 编写的原生扩展的堆栈轨迹&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--nonblocking&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;采样时不暂停 Python 进程。此选项可降低采样对性能的影响，但可能导致结果不准确&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-h, --help&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;打印帮助信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;strong-code-record-code-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;&lt;code&gt;record&lt;/code&gt; 子命令&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;用途&lt;/strong&gt;：记录堆栈轨迹信息，生成火焰图、speedscope 或原始文件&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选项&lt;/th&gt;
+&lt;th&gt;默认值&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-p, --pid &amp;lt;pid&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;要记录的正在运行的 Python 进程 PID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--full-filenames&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;显示完整的 Python 文件名，而非只显示包名部分&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-o, --output &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;输出文件名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-f, --format &amp;lt;format&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;flamegraph&lt;/td&gt;
+&lt;td&gt;输出文件格式（可选：flamegraph, raw, speedscope, chrometrace）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-d, --duration &amp;lt;duration&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无限制&lt;/td&gt;
+&lt;td&gt;采样的总秒数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-r, --rate &amp;lt;rate&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;每秒采集的样本数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-s, --subprocesses&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;分析原进程的子进程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-F, --function&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;按函数的首行号聚合样本，而非当前行号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--nolineno&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;不显示行号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-t, --threads&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;在输出中显示线程 ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-g, --gil&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;仅包含持有 GIL 的轨迹&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-i, --idle&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;包含空闲线程的堆栈轨迹&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-n, --native&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;收集来自 Cython、C 或 C++ 编写的原生扩展的堆栈轨迹&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--nonblocking&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;采样时不暂停 Python 进程。此选项可降低采样对性能的影响，但可能导致结果不准确&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-h, --help&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;打印帮助信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;strong-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;基础监控命令&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;1-strong-python-strong&quot; tabindex=&quot;-1&quot;&gt;1. &lt;strong&gt;监控运行中的 Python 进程&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 查看 PID 为 12345 的 Python 进程的 CPU 使用情况（类似 top 命令）
+sudo py-spy top -p 12345
+
+# 每 2 秒刷新一次
+sudo py-spy top -p 12345 --delay 2
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2025年04月09日22:29:16&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020250409222914.png&quot; alt=&quot;Pasted image 20250409222914.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020250409224335.png&quot; alt=&quot;Pasted image 20250409224335.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020250409224347.png&quot; alt=&quot;Pasted image 20250409224347.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020250409225040.png&quot; alt=&quot;Pasted image 20250409225040.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://wudanyang8327.github.io/img/user/attachs/Pasted%20image%2020250409225029.png&quot; alt=&quot;Pasted image 20250409225029.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;0.5qps发压 hbe&lt;/p&gt;
-&lt;p&gt;每10秒采集3秒python进程火焰图&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;py-spy record --pid 240477 -s&lt;/code&gt; 会记录 profile ，然后生成一个&lt;code&gt;svg&lt;/code&gt;火焰图，可以查看cpu性能消耗在什么地方&lt;/p&gt;
+&lt;h3 id=&quot;2-strong-python-strong&quot; tabindex=&quot;-1&quot;&gt;2. &lt;strong&gt;从启动开始监控 Python 程序&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 启动 Python 脚本并实时监控
+sudo py-spy top -- python my_script.py arg1 arg2
+
+# 监控 Django 开发服务器
+sudo py-spy top -- python manage.py runserver
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;3-strong-strong&quot; tabindex=&quot;-1&quot;&gt;3. &lt;strong&gt;生成性能火焰图&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 对运行中的进程采样 30 秒，生成火焰图
+sudo py-spy record -p 12345 -d 30 -o flamegraph.svg
+
+# 采样 10 秒，使用 speedscope 格式（适合 Web 交互式分析）
+sudo py-spy record -p 12345 -d 10 -f speedscope -o profile.speedscope.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;4-strong-c-strong&quot; tabindex=&quot;-1&quot;&gt;4. &lt;strong&gt;分析完整调用链（包括 C 扩展）&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 包含 Python 和 C/C++/Cython 扩展的堆栈
+sudo py-spy record -p 12345 --native -o profile.svg
+
+# 包含子进程分析
+sudo py-spy record -p 12345 -s --native -o profile.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;strong-strong-1&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;高级分析命令&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;5-strong-strong&quot; tabindex=&quot;-1&quot;&gt;5. &lt;strong&gt;分析特定时间段的性能&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 高频率采样（500Hz），持续 5 秒
+sudo py-spy record -p 12345 -r 500 -d 5 -o high_freq.svg
+
+# 采样 1 分钟，按函数聚合而非行号
+sudo py-spy record -p 12345 -d 60 -F -o by_function.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;6-strong-gil-strong&quot; tabindex=&quot;-1&quot;&gt;6. &lt;strong&gt;GIL 竞争分析&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 只显示持有 GIL 的调用堆栈（分析 GIL 竞争）
+sudo py-spy top -p 12345 -g
+
+# 记录 GIL 持有者的火焰图
+sudo py-spy record -p 12345 -g -o gil_profile.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;7-strong-strong&quot; tabindex=&quot;-1&quot;&gt;7. &lt;strong&gt;线程分析&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 显示所有线程（包括空闲线程）
+sudo py-spy top -p 12345 -i
+
+# 火焰图中区分不同线程
+sudo py-spy record -p 12345 -t -o threads.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;8-strong-strong&quot; tabindex=&quot;-1&quot;&gt;8. &lt;strong&gt;生产环境友好命令&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 使用非阻塞模式，减少对生产服务的影响
+sudo py-spy record -p 12345 --nonblocking -d 60 -o prod_profile.svg
+
+# 后台运行并输出到文件
+sudo py-spy record -p 12345 -d 120 -o /tmp/profile_$(date +%Y%m%d_%H%M%S).svg &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;strong-strong-2&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;实用组合命令&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;9-strong-strong&quot; tabindex=&quot;-1&quot;&gt;9. &lt;strong&gt;查找性能瓶颈&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 监控并实时查看最耗时的函数
+sudo py-spy top -p 12345 --full-filenames
+
+# 生成详细调用链火焰图
+sudo py-spy record -p 12345 --full-filenames --native -o detailed.svg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;10-strong-strong&quot; tabindex=&quot;-1&quot;&gt;10. &lt;strong&gt;调试命令&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 快速查看进程当前堆栈
+sudo py-spy dump -p 12345
+
+# 监控 Flask/Django 请求处理
+sudo py-spy top -- python app.py
+# 然后在浏览器访问应用，观察 CPU 使用变化
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;strong-strong-3&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;容器环境使用&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 在 Docker 容器内运行
+docker exec -it &amp;lt;container_id&amp;gt; py-spy top -p 1
+
+# 从宿主机监控容器进程
+sudo py-spy top -p $(pgrep -f &amp;quot;python my_app&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;strong-strong-4&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;常用参数组合总结&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;场景&lt;/th&gt;
+&lt;th&gt;推荐命令&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;快速查看性能热点&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo py-spy top -p &amp;lt;PID&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;生成火焰图报告&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo py-spy record -p &amp;lt;PID&amp;gt; -d 30 -o profile.svg&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;分析包含 C 扩展&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo py-spy record -p &amp;lt;PID&amp;gt; --native -o profile.svg&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;生产环境采样&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo py-spy record -p &amp;lt;PID&amp;gt; --nonblocking -d 60 -o profile.svg&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;分析 GIL 竞争&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo py-spy top -p &amp;lt;PID&amp;gt; -g&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;详细调用链分析&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;sudo py-spy record -p &amp;lt;PID&amp;gt; --full-filenames --native -o detailed.svg&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;注意事项&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;通常需要 &lt;code&gt;sudo&lt;/code&gt; 权限&lt;/li&gt;
+&lt;li&gt;采样时间不宜过短（建议至少 10-30 秒）&lt;/li&gt;
+&lt;li&gt;生产环境使用 &lt;code&gt;--nonblocking&lt;/code&gt; 减少影响&lt;/li&gt;
+&lt;li&gt;分析完成后用浏览器打开 &lt;code&gt;.svg&lt;/code&gt; 文件查看火焰图&lt;/li&gt;
+&lt;/ol&gt;
 
             </content>
             <link href="https://wudanyang8327.github.io/card/python/py-spy 的用法/" />
@@ -5657,9 +5950,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fbest-practice&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;type/best-practice&lt;/strong&gt; (15)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fperformance&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;scene/performance&lt;/strong&gt; (2)
+                        &lt;strong&gt;scene/performance&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:50px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Flinux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5693,10 +5986,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fconcept&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;type/concept&lt;/strong&gt; (3)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:24.11764705882353px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fgolang&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/golang&lt;/strong&gt; (6)
@@ -5704,6 +5993,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fmessage-queue&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/message-queue&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Ffrontend&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5718,10 +6015,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;type/pitfall&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fmessage-queue&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/message-queue&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fmysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/mysql&lt;/strong&gt; (1)
                     &lt;/a&gt;
@@ -5729,25 +6022,29 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fdatabase&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/database&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fnginx&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/nginx&lt;/strong&gt; (3)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fphp&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/php&lt;/strong&gt; (1)
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fpython&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/python&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:excalidraw&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fpython&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/python&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;rdb&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fphp&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/php&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fnginx&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/nginx&lt;/strong&gt; (3)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fknowledge-management&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5760,10 +6057,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:21.764705882352942px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fmac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5785,6 +6078,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fprocess&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;type/process&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:45.294117647058826px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Falgorithm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/algorithm&lt;/strong&gt; (15)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;前缀和&lt;/strong&gt; (2)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fgame&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/game&lt;/strong&gt; (1)
@@ -5800,14 +6101,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fentertainment&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;scene/entertainment&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:45.294117647058826px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Falgorithm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/algorithm&lt;/strong&gt; (15)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;前缀和&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E5%AE%B6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -9403,6 +9696,11 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/python/py-spy%20%E7%9A%84%E7%94%A8%E6%B3%95/&quot;&gt;py-spy 的用法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-23&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/obsidian/dg-publish=true%E7%9A%84%E6%A0%87%E7%AD%BE%E4%BA%91/&quot;&gt;dg-publish=true的标签云&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2026-01-21&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
@@ -9435,11 +9733,6 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2026-01-16&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/python/py-spy%20%E7%9A%84%E7%94%A8%E6%B3%95/&quot;&gt;py-spy 的用法&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-15&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -9524,7 +9817,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)
                 
             </title>
-            <updated>2026-01-22T03:42:22Z</updated>
+            <updated>2026-01-23T03:44:19Z</updated>
             <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</id>
             <content type="html">
                 &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-just-my-code-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of justMyCode option)&lt;/h1&gt;

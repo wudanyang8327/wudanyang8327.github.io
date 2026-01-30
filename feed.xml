@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2026-01-29T13:41:56Z</updated>
+    <updated>2026-01-30T13:59:36Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -836,7 +836,7 @@ func swapStrBytes(s []byte, left, right int) {
                 leetcode-303. 区域和检索 - 数组不可变
                 
             </title>
-            <updated>2025-11-27T05:29:19.000Z</updated>
+            <updated>2026-01-30T06:24:26.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/leetcode题目/leetcode-303. 区域和检索 - 数组不可变/</id>
             <content type="html">
                 &lt;h1 id=&quot;leetcode-303&quot; tabindex=&quot;-1&quot;&gt;leetcode-303. 区域和检索 - 数组不可变&lt;/h1&gt;
@@ -1102,7 +1102,7 @@ fn 为最大值&lt;/p&gt;
                 560. 和为 K 的子数组
                 
             </title>
-            <updated>2025-11-27T05:46:09.000Z</updated>
+            <updated>2026-01-30T06:24:13.000Z</updated>
             <id>https://wudanyang8327.github.io/card/算法/leetcode题目/560. 和为 K 的子数组/</id>
             <content type="html">
                 &lt;h1 id=&quot;560-k&quot; tabindex=&quot;-1&quot;&gt;560. 和为 K 的子数组&lt;/h1&gt;
@@ -3638,7 +3638,7 @@ vmstat 5
                 各种资源国内镜像
                 
             </title>
-            <updated>2025-10-24T06:42:16.000Z</updated>
+            <updated>2026-01-29T13:44:49.000Z</updated>
             <id>https://wudanyang8327.github.io/card/工具/各种资源国内镜像/</id>
             <content type="html">
                 &lt;h1 id=&quot;各种资源国内镜像&quot; tabindex=&quot;-1&quot;&gt;各种资源国内镜像&lt;/h1&gt;
@@ -4324,7 +4324,7 @@ open /Applications/Obsidian.app
                 202404151420 哲学的分支
                 
             </title>
-            <updated>2025-11-27T05:32:04.000Z</updated>
+            <updated>2026-01-30T06:25:02.000Z</updated>
             <id>https://wudanyang8327.github.io/card/哲学/202404151420 哲学的分支/</id>
             <content type="html">
                 &lt;h1 id=&quot;202404151420&quot; tabindex=&quot;-1&quot;&gt;202404151420 哲学的分支&lt;/h1&gt;
@@ -4351,7 +4351,7 @@ open /Applications/Obsidian.app
                 20240415141933 什么是哲学
                 
             </title>
-            <updated>2025-11-26T14:45:32.000Z</updated>
+            <updated>2026-01-30T06:29:11.000Z</updated>
             <id>https://wudanyang8327.github.io/card/哲学/20240415141933 什么是哲学/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240415141933&quot; tabindex=&quot;-1&quot;&gt;20240415141933 什么是哲学&lt;/h1&gt;
@@ -4366,11 +4366,10 @@ open /Applications/Obsidian.app
                 生成
                 
             </title>
-            <updated>2025-11-27T05:32:38.000Z</updated>
+            <updated>2026-01-30T06:32:42.000Z</updated>
             <id>https://wudanyang8327.github.io/card/卡片盒笔记法/生成/</id>
             <content type="html">
-                &lt;p&gt;tags: &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#how-to-learn&quot;&gt;#how-to-learn&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一句话简单描述：自己想出一个答案，如果错了就给出反馈，纠正答案&lt;/p&gt;
+                &lt;p&gt;一句话简单描述：自己想出一个答案，如果错了就给出反馈，纠正答案&lt;/p&gt;
 &lt;h1 id=&quot;生成&quot; tabindex=&quot;-1&quot;&gt;生成&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;自己想出答案&lt;/li&gt;
@@ -4400,11 +4399,10 @@ open /Applications/Obsidian.app
                 20240408201701 卡片盒笔记法
                 
             </title>
-            <updated>2025-11-27T05:44:35.000Z</updated>
+            <updated>2026-01-30T06:37:43.000Z</updated>
             <id>https://wudanyang8327.github.io/card/卡片盒笔记法/20240408201701 卡片盒笔记法/</id>
             <content type="html">
                 &lt;h1 id=&quot;20240408201701&quot; tabindex=&quot;-1&quot;&gt;20240408201701 卡片盒笔记法&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#zettelkasten&quot;&gt;#zettelkasten&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011192022%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;202011192022 - 什么是卡片盒笔记法&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011201016%20-%20%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BF%A1%E6%81%AF/&quot;&gt;202011201016 - 什么是知识和信息&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://wudanyang8327.github.io/404&quot; target=&quot;&quot;&gt;202011201301 - 基础概念&lt;/a&gt;&lt;/p&gt;
@@ -4555,7 +4553,7 @@ open /Applications/Obsidian.app
                 202011222310 - 卡片盒笔记法的模块
                 
             </title>
-            <updated>2025-11-24T16:30:03.000Z</updated>
+            <updated>2026-01-30T06:37:43.000Z</updated>
             <id>https://wudanyang8327.github.io/card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/</id>
             <content type="html">
                 &lt;h1 id=&quot;202011222310&quot; tabindex=&quot;-1&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/h1&gt;
@@ -4773,7 +4771,7 @@ dyo {session-name}
                 redis-rdb 文件分析
                 
             </title>
-            <updated>2025-11-26T14:45:02.000Z</updated>
+            <updated>2026-01-30T06:35:07.000Z</updated>
             <id>https://wudanyang8327.github.io/card/redis/redis-rdb 文件分析/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/redis/202011281031%20-%20%E5%AE%89%E8%A3%85%20rdbtools%20%E5%B7%A5%E5%85%B7/&quot;&gt;202011281031 - 安装 rdbtools 工具&lt;/a&gt;&lt;/p&gt;
@@ -5028,7 +5026,7 @@ for file_path in dump_files:
                 python-Asyncer
                 
             </title>
-            <updated>2025-11-27T05:40:27.000Z</updated>
+            <updated>2026-01-30T08:39:49.000Z</updated>
             <id>https://wudanyang8327.github.io/card/python/python-Asyncer/</id>
             <content type="html">
                 &lt;h1 id=&quot;python-asyncer&quot; tabindex=&quot;-1&quot;&gt;python-Asyncer&lt;/h1&gt;
@@ -5881,7 +5879,19 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
             <id>https://wudanyang8327.github.io/card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
-&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
+&lt;span style=&quot;font-size:28.823529411764707px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fproductivity&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/productivity&lt;/strong&gt; (8)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:type%2Fpractice&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;type/practice&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:type%2Fpitfall&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;type/pitfall&lt;/strong&gt; (3)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:clippings&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;clippings&lt;/strong&gt; (1)
                     &lt;/a&gt;
@@ -5901,9 +5911,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fdesign&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/design&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:45.294117647058826px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:50px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fbest-practice&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;type/best-practice&lt;/strong&gt; (15)
+                        &lt;strong&gt;type/best-practice&lt;/strong&gt; (17)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fperformance&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5912,10 +5922,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:50px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Flinux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/linux&lt;/strong&gt; (17)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:26.470588235294116px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fproductivity&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/productivity&lt;/strong&gt; (7)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fworkflow&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5929,29 +5935,29 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fdata_process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;scene/data_process&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:26.470588235294116px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:21.764705882352942px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Faigc&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;type/aigc&lt;/strong&gt; (7)
+                        &lt;strong&gt;type/aigc&lt;/strong&gt; (5)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fshell&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/shell&lt;/strong&gt; (3)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:24.11764705882353px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fconcept&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;type/concept&lt;/strong&gt; (3)
+                        &lt;strong&gt;type/concept&lt;/strong&gt; (6)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:24.11764705882353px; margin-right:20px;&quot;&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:26.470588235294116px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fgolang&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/golang&lt;/strong&gt; (6)
+                        &lt;strong&gt;area/golang&lt;/strong&gt; (7)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:chatgpt&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;chatgpt&lt;/strong&gt; (1)
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fmysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/mysql&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Ffrontend&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5961,17 +5967,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fjavascript&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/javascript&lt;/strong&gt; (1)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:type%2Fpitfall&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;type/pitfall&lt;/strong&gt; (2)
-                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fmessage-queue&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/message-queue&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fmysql&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/mysql&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fdatabase&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5994,8 +5992,8 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:rdb&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;rdb&lt;/strong&gt; (1)
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fredis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/redis&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fknowledge-management&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6005,13 +6003,17 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fmethodology&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;type/methodology&lt;/strong&gt; (3)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:zettelkasten&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;zettelkasten&lt;/strong&gt; (1)
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2F%E5%8D%A1%E7%89%87%E7%9B%92&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/卡片盒&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:17.058823529411764px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fstudy&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;scene/study&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;哲学&lt;/strong&gt; (2)
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2F%E5%93%B2%E5%AD%A6&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/哲学&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:21.764705882352942px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fmac&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6020,10 +6022,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fgtd&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/gtd&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.352941176470589px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E9%95%9C%E5%83%8F&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;镜像&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fops&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6052,10 +6050,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:45.294117647058826px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Falgorithm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/algorithm&lt;/strong&gt; (15)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14.705882352941178px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:%E5%89%8D%E7%BC%80%E5%92%8C&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;前缀和&lt;/strong&gt; (2)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -7555,7 +7549,7 @@ go mod tidy
                 go-gorm-FindInBatches
                 
             </title>
-            <updated>2025-11-26T15:13:18.000Z</updated>
+            <updated>2026-01-30T06:31:57.000Z</updated>
             <id>https://wudanyang8327.github.io/card/go/go-gorm-FindInBatches/</id>
             <content type="html">
                 &lt;h1 id=&quot;go-gorm-find-in-batches&quot; tabindex=&quot;-1&quot;&gt;go-gorm-FindInBatches&lt;/h1&gt;
@@ -8256,7 +8250,7 @@ func main() {
                 202408312248 甲沟炎的处理办法
                 
             </title>
-            <updated>2026-01-29T13:41:17.000Z</updated>
+            <updated>2026-01-29T13:41:24.000Z</updated>
             <id>https://wudanyang8327.github.io/card/Personal/202408312248 甲沟炎的处理办法/</id>
             <content type="html">
                 &lt;h1 id=&quot;202408312248&quot; tabindex=&quot;-1&quot;&gt;202408312248 甲沟炎的处理办法&lt;/h1&gt;
@@ -9649,6 +9643,66 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/000%20inbox/202601302130%20kindle%20kpw3%20%E5%88%B7%E5%AE%89%E5%8D%93/&quot;&gt;202601302130 kindle kpw3 刷安卓&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/python/python-Asyncer/&quot;&gt;python-Asyncer&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/202011222310%20-%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95%E7%9A%84%E6%A8%A1%E5%9D%97/&quot;&gt;202011222310 - 卡片盒笔记法的模块&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/20240408201701%20%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/&quot;&gt;20240408201701 卡片盒笔记法&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/redis/redis-rdb%20%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90/&quot;&gt;redis-rdb 文件分析&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%8D%A1%E7%89%87%E7%9B%92%E7%AC%94%E8%AE%B0%E6%B3%95/%E7%94%9F%E6%88%90/&quot;&gt;生成&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/go/go-gorm-FindInBatches/&quot;&gt;go-gorm-FindInBatches&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%93%B2%E5%AD%A6/20240415141933%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%B2%E5%AD%A6/&quot;&gt;20240415141933 什么是哲学&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%93%B2%E5%AD%A6/202404151420%20%E5%93%B2%E5%AD%A6%E7%9A%84%E5%88%86%E6%94%AF/&quot;&gt;202404151420 哲学的分支&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-303.%20%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E7%B4%A2%20-%20%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98/&quot;&gt;leetcode-303. 区域和检索 - 数组不可变&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/560.%20%E5%92%8C%E4%B8%BA%20K%20%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/&quot;&gt;560. 和为 K 的子数组&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-30&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%B7%A5%E5%85%B7/%E5%90%84%E7%A7%8D%E8%B5%84%E6%BA%90%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/&quot;&gt;各种资源国内镜像&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-29&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/Personal/202408312248%20%E7%94%B2%E6%B2%9F%E7%82%8E%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/&quot;&gt;202408312248 甲沟炎的处理办法&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2026-01-29&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
@@ -9688,66 +9742,6 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;td&gt;2026-01-17&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/journal/2024-10-11/&quot;&gt;2024-10-11&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-16&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%B7%A5%E5%85%B7/mac/202507091139%20karabiner%20left_control%20to%20caps_lock/&quot;&gt;202507091139 karabiner left_control to caps_lock&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-15&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%AD%A6%E4%B9%A0/202409022041%20%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%BF%87%E6%8B%9F%E5%90%88%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/&quot;&gt;202409022041 神经网络过拟合了怎么办？&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-15&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/202511302354%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%20unixsocket%20%E8%BF%9B%E8%A1%8C%20http%20%E8%AF%B7%E6%B1%82/&quot;&gt;202511302354 如何使用 unixsocket 进行 http 请求&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-15&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/go/202511282239%20go%20-%20%20GOMEMLIMIT%20%E5%8F%82%E6%95%B0/&quot;&gt;202511282239 go -  GOMEMLIMIT 参数&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-14&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%B7%A5%E5%85%B7/Things%20%E5%B7%A5%E4%BD%9C%E6%B5%81/&quot;&gt;Things 工作流&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-11&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E5%B7%A5%E5%85%B7/vim%E6%98%BE%E7%A4%BA%E5%88%97%E5%88%86%E9%9A%94%E7%AC%A6/&quot;&gt;vim显示列分隔符&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-11&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E6%80%9D%E8%80%83/%E5%A6%82%E4%BD%95%E8%BF%BD%E6%9F%A5%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98/&quot;&gt;如何追查线上问题&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-11&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/Linux/linux-%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/&quot;&gt;linux-查看内存占用情况&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-11&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/python/python%20%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%97%A5%E5%BF%97%E8%BD%AE%E8%BD%AC/&quot;&gt;python 多进程日志轮转&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-11&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E6%A0%91%E8%8E%93%E6%B4%BE/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%97%A0%E6%B3%95%E4%B8%8A%E7%BD%91%E6%8E%92%E6%9F%A5/&quot;&gt;树莓派无法上网排查&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-11&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E7%AE%97%E6%B3%95/leetcode%E9%A2%98%E7%9B%AE/leetcode-401.%20%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%89%8B%E8%A1%A8/&quot;&gt;leetcode-401. 二进制手表&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-11&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;footer style=&quot;display:flex; justify-content:center; align-items:center; gap:16px; padding:20px 0; font-size:14px;&quot;&gt;
@@ -9770,7 +9764,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)
                 
             </title>
-            <updated>2026-01-29T13:41:45Z</updated>
+            <updated>2026-01-30T13:59:24Z</updated>
             <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</id>
             <content type="html">
                 &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-just-my-code-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of justMyCode option)&lt;/h1&gt;
@@ -9784,6 +9778,57 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 
             </content>
             <link href="https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/" />
+        </entry>
+        <entry>
+            <title>
+                202601302130 kindle kpw3 刷安卓
+                
+            </title>
+            <updated>2026-01-30T13:53:58.000Z</updated>
+            <id>https://wudanyang8327.github.io/000 inbox/202601302130 kindle kpw3 刷安卓/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202601302130-kindle-kpw3&quot; tabindex=&quot;-1&quot;&gt;202601302130 kindle kpw3 刷安卓&lt;/h1&gt;
+&lt;h2 id=&quot;教程&quot; tabindex=&quot;-1&quot;&gt;教程&lt;/h2&gt;
+&lt;p&gt;我跟着视频教程一步一步来的，不去当复读机了，直接看【大树同学】的小红书视频即可&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+视频教程：&lt;br /&gt;
+26 【kindle刷安卓装微信读书❗️保姆级教程 - 大树同学 | 小红书 - 你的生活兴趣社区】 😆 olUyfVra31xfkaQ 😆 &lt;a href=&quot;https://www.xiaohongshu.com/discovery/item/67c35ebc0000000028029519?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=AByA7ojhwQ2STrG6cjwIXsc2U1QXBMR2FOil1C3kiMqX0=&amp;amp;xsec_source=pc_share&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.xiaohongshu.com/discovery/item/67c35ebc0000000028029519?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=AByA7ojhwQ2STrG6cjwIXsc2U1QXBMR2FOil1C3kiMqX0=&amp;amp;xsec_source=pc_share&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+文档教程：&lt;br /&gt;
+&lt;a href=&quot;https://my.feishu.cn/docx/HuEEd60V0o7TzqxrY8jc3wcAnOh&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;kindle刷安卓系统必看 - 飞书云文档&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;踩坑&quot; tabindex=&quot;-1&quot;&gt;踩坑&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;隐藏手势无法成功，看下这个视频： 【kindle越狱隐藏手势演示】 &lt;a href=&quot;https://www.bilibili.com/video/BV1DD4y1P7ZD/?share_source=copy_web&amp;amp;vd_source=9b9303254fce5c9317af82292a4d447c&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.bilibili.com/video/BV1DD4y1P7ZD/?share_source=copy_web&amp;amp;vd_source=9b9303254fce5c9317af82292a4d447c&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;使用 mac 无法安装 adb ，使用 pd 虚拟机也不行，虚拟机中的 windows 无法安装驱动，老老实实去找一个 windows 电脑，几分钟搞定。&lt;/li&gt;
+&lt;li&gt;微信读书墨水屏，版本安装1.3 。我的机器使用3.0 版本会闪退。&lt;/li&gt;
+&lt;li&gt;微信读书非墨水屏版就不要安装了，耗电非常快。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;建议安装软件&quot; tabindex=&quot;-1&quot;&gt;建议安装软件&lt;/h2&gt;
+&lt;p&gt;这里有一些常用软件 &lt;a href=&quot;http://kdroid.club/apptest/Kindle/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Index of /apptest/Kindle/&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;微信读书墨水屏&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;绿色守护&lt;/code&gt;&lt;br /&gt;
+可以默认将后台杀掉。这样可以节省电量，速度也会快一些。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kdroid.club/apptest/Kindle/%e5%85%b6%e4%bb%96/Kindle%e6%97%8b%e8%bd%ac%e5%b1%8f%e5%b9%95.apk&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Kindle旋转屏幕.apk&lt;/a&gt;&lt;br /&gt;
+可以设置成横屏阅读，很方便。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kdroid.club/apptest/Kindle/%e5%85%b6%e4%bb%96/httpfileserver_1.3.2.apk.1.apk&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;httpfileserver_1.3.2.apk.1.apk&lt;/a&gt;&lt;br /&gt;
+开启后，可以同一局域网内上传下载文件到 &lt;code&gt;kindle&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;最终效果&quot; tabindex=&quot;-1&quot;&gt;最终效果&lt;/h2&gt;
+&lt;p&gt;点进去可以看视频&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+【超级会员V3】通过百度网盘分享的文件：2026-01-....mov&lt;br /&gt;
+链接： &lt;a href=&quot;https://pan.baidu.com/s/1ZUiUtOF6VJ-IX3fpGU-MYQ?pwd=6Ak6&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://pan.baidu.com/s/1ZUiUtOF6VJ-IX3fpGU-MYQ?pwd=6Ak6&lt;/a&gt;&lt;br /&gt;
+复制这段内容打开「百度网盘APP 即可获取」&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/000 inbox/202601302130 kindle kpw3 刷安卓/" />
         </entry>
         <entry>
             <title>

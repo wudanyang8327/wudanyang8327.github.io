@@ -3,7 +3,7 @@
     <title>丹阳的小站</title>
     <link href="https://wudanyang8327.github.io/feed.xml" rel="self" />
     <link href="https://wudanyang8327.github.io" />
-    <updated>2026-01-31T07:09:47Z</updated>
+    <updated>2026-02-05T11:25:59Z</updated>
     <id>https://wudanyang8327.github.io</id>
         <entry>
             <title>
@@ -48,6 +48,20 @@
 
             </content>
             <link href="https://wudanyang8327.github.io/card/阅读/如何合并marginnote笔记本/" />
+        </entry>
+        <entry>
+            <title>
+                202601311326 乒乓球产业链-小红书分享
+                
+            </title>
+            <updated>2026-01-31T08:06:54.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/运动/202601311326 乒乓球产业链-小红书分享/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202601311326&quot; tabindex=&quot;-1&quot;&gt;202601311326 乒乓球产业链-小红书分享&lt;/h1&gt;
+&lt;p&gt;55 【一天吃透一条产业链：乒乓球 - 青柠檬丸子 | 小红书 - 你的生活兴趣社区】 😆 VzvXjASVgBGW4vG 😆 &lt;a href=&quot;https://www.xiaohongshu.com/discovery/item/697cc7520000000021029357?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABnBKg7r5QBj0X7fyvpt_Id7KN6cUJh-J9G_JGCVWPQGU=&amp;amp;xsec_source=pc_share&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.xiaohongshu.com/discovery/item/697cc7520000000021029357?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABnBKg7r5QBj0X7fyvpt_Id7KN6cUJh-J9G_JGCVWPQGU=&amp;amp;xsec_source=pc_share&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/运动/202601311326 乒乓球产业链-小红书分享/" />
         </entry>
         <entry>
             <title>
@@ -5583,6 +5597,95 @@ sudo py-spy top -p $(pgrep -f &amp;quot;python my_app&amp;quot;)
         </entry>
         <entry>
             <title>
+                202602042030 python 什么是偏函数
+                
+            </title>
+            <updated>2026-02-04T12:36:43.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/python/202602042030 python 什么是偏函数/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202602042030-python&quot; tabindex=&quot;-1&quot;&gt;202602042030 python 什么是偏函数&lt;/h1&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from functools import partial
+
+def power(base, exp):
+    return base ** exp
+
+square = partial(power, exp=2)
+cube = partial(power, exp=3)
+
+print(square(5))  # 25
+print(cube(5))    # 125
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from functools import partial
+
+def log(prefix, msg):
+    print(f&amp;quot;[{prefix}] {msg}&amp;quot;)
+
+info = partial(log, &amp;quot;INFO&amp;quot;)
+error = partial(log, &amp;quot;ERROR&amp;quot;)
+
+info(&amp;quot;服务启动成功&amp;quot;)
+error(&amp;quot;数据库连接失败&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;作用：&lt;br /&gt;
+将函数的一部分参数设置上默认值，成为一个新函数。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;偏函数是“把通用工具压缩成专用工具”的过程。&lt;br /&gt;
+你在设计 API 时，往往先写一个能力很大的函数，然后用 &lt;code&gt;partial&lt;/code&gt; 组合出贴合业务语义的小函数，代码会更像在描述意图，而不是在堆参数。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/python/202602042030 python 什么是偏函数/" />
+        </entry>
+        <entry>
+            <title>
+                202602021508 python如何在将contextVar带到子线程中
+                
+            </title>
+            <updated>2026-02-04T12:38:08.000Z</updated>
+            <id>https://wudanyang8327.github.io/card/python/202602021508 python如何在将contextVar带到子线程中/</id>
+            <content type="html">
+                &lt;h1 id=&quot;202602021508-python-context-var&quot; tabindex=&quot;-1&quot;&gt;202602021508 python如何在将contextVar带到子线程中&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import time  
+from concurrent.futures import ThreadPoolExecutor  
+from contextvars import copy_context, ContextVar  
+  
+trace_id = ContextVar(&amp;quot;trace_id&amp;quot;)  
+  
+def work(x):  
+    time.sleep(x)  
+    print(&amp;quot;trace_id =&amp;quot;, trace_id.get(None), &amp;quot;x =&amp;quot;, x)  
+  
+def submit_with_context(pool, fn, *args, **kwargs):  
+    ctx = copy_context()  
+    return pool.submit(ctx.run, fn, *args, **kwargs)  
+  
+trace_id.set(&amp;quot;REQ-123&amp;quot;)  
+  
+with ThreadPoolExecutor(max_workers=2) as pool:  
+    f1 = submit_with_context(pool, work, 1)  
+    f2 = submit_with_context(pool, work, 2)  
+    f3 = pool.submit(work, 3)  
+  
+    f1.result()  
+    f2.result()  
+    f3.result()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;会将&lt;code&gt;ContextVar&lt;/code&gt;带到子线程中&lt;/p&gt;
+&lt;p&gt;输出：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;trace_id = REQ-123 x = 1
+trace_id = REQ-123 x = 2
+trace_id = None x = 3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;特别适合在做trace的时候，将 &lt;code&gt;contextVar&lt;/code&gt; 传到子线程中&lt;/p&gt;
+
+            </content>
+            <link href="https://wudanyang8327.github.io/card/python/202602021508 python如何在将contextVar带到子线程中/" />
+        </entry>
+        <entry>
+            <title>
                 202511261627 vscode调试gunicorn python
                 
             </title>
@@ -5879,9 +5982,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
             <id>https://wudanyang8327.github.io/card/obsidian/dg-publish=true的标签云/</id>
             <content type="html">
                 &lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
-&lt;span style=&quot;font-size:16.666666666666664px; margin-right:20px;&quot;&gt;
+&lt;span style=&quot;font-size:21.11111111111111px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fpython&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;area/python&lt;/strong&gt; (3)
+                        &lt;strong&gt;area/python&lt;/strong&gt; (5)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:50px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:type%2Fbest-practice&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5919,13 +6022,13 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fproductivity&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/productivity&lt;/strong&gt; (8)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fworkflow&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;scene/workflow&lt;/strong&gt; (1)
+                &lt;/span&gt;&lt;span style=&quot;font-size:14.444444444444445px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:type%2Fpractice&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;type/practice&lt;/strong&gt; (2)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:tool%2Fraycast&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;tool/raycast&lt;/strong&gt; (1)
+                &lt;/span&gt;&lt;span style=&quot;font-size:16.666666666666664px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:type%2Fpitfall&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;type/pitfall&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:scene%2Fdata_process&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5947,6 +6050,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:%E7%94%B2%E6%B2%9F%E7%82%8E&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;甲沟炎&lt;/strong&gt; (1)
                     &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fworkflow&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;scene/workflow&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tool%2Fraycast&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tool/raycast&lt;/strong&gt; (1)
+                    &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:25.555555555555557px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fgolang&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/golang&lt;/strong&gt; (7)
@@ -5962,10 +6073,6 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fjavascript&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/javascript&lt;/strong&gt; (1)
-                    &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:16.666666666666664px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:type%2Fpitfall&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;type/pitfall&lt;/strong&gt; (3)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fmessage-queue&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -5986,6 +6093,14 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                 &lt;/span&gt;&lt;span style=&quot;font-size:14.444444444444445px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:excalidraw&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;excalidraw&lt;/strong&gt; (2)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Fcode_design&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;scene/code_design&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:scene%2Ftrace&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;scene/trace&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Fredis&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
@@ -6047,9 +6162,9 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
                     &lt;a href=&quot;obsidian://search?query=tag:area%2Falgorithm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;area/algorithm&lt;/strong&gt; (15)
                     &lt;/a&gt;
-                &lt;/span&gt;&lt;span style=&quot;font-size:14.444444444444445px; margin-right:20px;&quot;&gt;
-                    &lt;a href=&quot;obsidian://search?query=tag:type%2Fpractice&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
-                        &lt;strong&gt;type/practice&lt;/strong&gt; (2)
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:area%2Fpingpang&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;area/pingpang&lt;/strong&gt; (1)
                     &lt;/a&gt;
                 &lt;/span&gt;
 &lt;p&gt;digital-garden 还是很牛的，居然是能用的&lt;/p&gt;
@@ -9694,6 +9809,21 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/python/202602042030%20python%20%E4%BB%80%E4%B9%88%E6%98%AF%E5%81%8F%E5%87%BD%E6%95%B0/&quot;&gt;202602042030 python 什么是偏函数&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-02-05&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/python/202602021508%20python%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B0%86contextVar%E5%B8%A6%E5%88%B0%E5%AD%90%E7%BA%BF%E7%A8%8B%E4%B8%AD/&quot;&gt;202602021508 python如何在将contextVar带到子线程中&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-02-05&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E8%BF%90%E5%8A%A8/202601311326%20%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%A7%E4%B8%9A%E9%93%BE-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%88%86%E4%BA%AB/&quot;&gt;202601311326 乒乓球产业链-小红书分享&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2026-01-31&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/000%20inbox/202601311428%20Async%20%E7%9A%84%20syncify%20%E5%9C%A8%E5%93%AA%E4%B8%AA%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E4%B8%AD%E6%89%A7%E8%A1%8C%E7%9A%84%20async%20%E4%BB%A3%E7%A0%81%EF%BC%9F/&quot;&gt;202601311428 Async 的 syncify 在哪个事件循环中执行的 async 代码？&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2026-01-31&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
@@ -9778,21 +9908,6 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;td&gt;2026-01-21&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/nginx/%E7%BC%96%E8%AF%91%20nginx/&quot;&gt;编译 nginx&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-20&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/%E7%BD%91%E7%BB%9C/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20X-Forwarded-For%EF%BC%9A%E4%BB%A3%E7%90%86%E8%83%8C%E5%90%8E%E7%9A%84%E7%9C%9F%E5%AE%9EIP%E8%BF%BD%E8%B8%AA/&quot;&gt;深入理解 X-Forwarded-For：代理背后的真实IP追踪&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-18&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://wudanyang8327.github.io/card/go/202406112224%20go%20%E5%9C%A8%20race%20%E7%BC%96%E8%AF%91%E6%97%B6%EF%BC%8C%E4%B8%8D%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BB%A3%E7%A0%81/&quot;&gt;202406112224 go 在 race 编译时，不包括部分代码&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;2026-01-18&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;footer style=&quot;display:flex; justify-content:center; align-items:center; gap:16px; padding:20px 0; font-size:14px;&quot;&gt;
@@ -9815,7 +9930,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
                 Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)
                 
             </title>
-            <updated>2026-01-31T07:09:36Z</updated>
+            <updated>2026-02-05T11:25:44Z</updated>
             <id>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</id>
             <content type="html">
                 &lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-just-my-code-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of justMyCode option)&lt;/h1&gt;

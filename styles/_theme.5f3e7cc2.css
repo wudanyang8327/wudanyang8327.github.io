@@ -1,4 +1,4 @@
-/* Maple Theme v1.4.5 For Obsidian */
+/* Maple Theme v1.4.6 For Obsidian */
 
 
 
@@ -5272,7 +5272,7 @@ body.modal-setting-header:not(.is-mobile) .modal-container .mod-settings {
   container-type: inline-size;
 }
 body.modal-setting-header:not(.is-mobile) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.4.5");
+  content: var(--setting-modal-header-title, "Maple 1.4.6");
   position: absolute;
   left: var(--size-4-4);
   top: calc(var(--modal-header-height) / 2);
@@ -5398,9 +5398,12 @@ button[disabled=true] {
 }
 
 :is(select, .dropdown) {
-  background-size: calc(1.2 * var(--size-4-4));
-  background-position: right calc(0.4 * var(--size-4-4)) top 56%, 0 0;
+  background-size: calc(1.2 * var(--size-4-4)) !important;
+  background-position: right calc(0.4 * var(--size-4-4)) top 56%, 0 0 !important;
   background-image: var(--select-bg-img) !important;
+  background-repeat: no-repeat !important;
+  padding: var(--dropdown-padding) !important;
+  border: none !important;
 }
 
 .flair.mod-pop {

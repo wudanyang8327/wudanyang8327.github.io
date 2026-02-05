@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/python/202602021508 python如何在将contextVar带到子线程中/</loc>
+            <lastmod>2026-02-04T12:38:08.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/python/202602042030 python 什么是偏函数/</loc>
+            <lastmod>2026-02-04T12:36:43.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/运动/202601311326 乒乓球产业链-小红书分享/</loc>
+            <lastmod>2026-01-31T08:06:54.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/python/python-Asyncer/</loc>
             <lastmod>2026-01-31T06:29:49.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -454,12 +472,6 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/工具/10x程序员工作法/</loc>
             <lastmod>2025-11-26T15:26:55.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/202506262318 go 的主协程id一直是1吗？/</loc>
-            <lastmod>2025-11-26T15:26:13.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1053,7 +1065,7 @@
     
         <url>
             <loc>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</loc>
-            <lastmod>2026-01-31T07:09:36Z</lastmod>
+            <lastmod>2026-02-05T11:25:44Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1083,7 +1095,7 @@
     
         <url>
             <loc>https://wudanyang8327.github.io/archive/</loc>
-            <lastmod>2026-01-31T07:09:35Z</lastmod>
+            <lastmod>2026-02-05T11:25:44Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1132,6 +1144,12 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/</loc>
             <lastmod>2025-11-26T15:28:19.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/202506262318 go 的主协程id一直是1吗？/</loc>
+            <lastmod>2025-11-26T15:26:13.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     

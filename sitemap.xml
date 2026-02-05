@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/python/202602042030 python 什么是偏函数/</loc>
+            <lastmod>2026-02-05T11:25:20.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/python/202602021508 python如何在将contextVar带到子线程中/</loc>
             <lastmod>2026-02-04T12:38:08.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/python/202602042030 python 什么是偏函数/</loc>
-            <lastmod>2026-02-04T12:36:43.000Z</lastmod>
+            <loc>https://wudanyang8327.github.io/card/运动/202601311326 乒乓球产业链-小红书分享/</loc>
+            <lastmod>2026-01-31T08:06:54.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/运动/202601311326 乒乓球产业链-小红书分享/</loc>
-            <lastmod>2026-01-31T08:06:54.000Z</lastmod>
+            <loc>https://wudanyang8327.github.io/card/python/202601311428 Async 的 syncify 在哪个事件循环中执行的 async 代码？/</loc>
+            <lastmod>2026-01-31T07:09:14.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -28,6 +34,12 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/算法/leetcode题目/200. 岛屿数量/</loc>
             <lastmod>2026-01-31T05:28:29.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/202601302130 kindle kpw3 刷安卓/</loc>
+            <lastmod>2026-01-30T13:54:05.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -118,6 +130,12 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/网络/深入理解 X-Forwarded-For：代理背后的真实IP追踪/</loc>
             <lastmod>2026-01-17T18:19:07.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/202406112224 go 在 race 编译时，不包括部分代码/</loc>
+            <lastmod>2026-01-17T17:59:44.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -242,6 +260,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/0000 publish/CDN 带宽优化/</loc>
+            <lastmod>2025-12-28T04:53:42.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/工具/创建一个chrome独立APP窗口/</loc>
             <lastmod>2025-12-28T04:49:24.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -314,6 +338,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/202011261547 - 使用base64处理二进制字符串/</loc>
+            <lastmod>2025-12-28T04:07:12.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/202508271156 tmux 查看每个pane的进程id/</loc>
             <lastmod>2025-12-28T04:05:50.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -332,8 +362,20 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/202512161115 vscode black formatter 列数设置/</loc>
+            <lastmod>2025-12-27T07:24:37.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/202511262222 unix socket 与传统的 tcp 本地通信的异同/</loc>
             <lastmod>2025-12-16T06:20:39.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/202103251606 - 如何在 linux 上配置科学上网/</loc>
+            <lastmod>2025-11-30T16:00:53.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -352,6 +394,12 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/kafka/Kafka入门/</loc>
             <lastmod>2025-11-27T05:52:11.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/iso-日期表示法/</loc>
+            <lastmod>2025-11-27T05:51:13.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -446,6 +494,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/202511271252 vscode python 删除未使用的 import/</loc>
+            <lastmod>2025-11-27T04:54:13.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/</loc>
             <lastmod>2025-11-26T15:35:16.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -470,8 +524,20 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/</loc>
+            <lastmod>2025-11-26T15:28:19.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/工具/10x程序员工作法/</loc>
             <lastmod>2025-11-26T15:26:55.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/go/202506262318 go 的主协程id一直是1吗？/</loc>
+            <lastmod>2025-11-26T15:26:13.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -572,8 +638,20 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-pidstat/</loc>
+            <lastmod>2025-11-26T15:04:27.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/redis/202011281031 - 安装 rdbtools 工具/</loc>
             <lastmod>2025-11-26T15:03:06.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/使用shell脚本快速并行启动指定数量的进程/</loc>
+            <lastmod>2025-11-26T15:02:55.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -692,6 +770,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/获取进程存活时间/</loc>
+            <lastmod>2025-11-26T12:37:40.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/Linux/linux-command-substitution（命令替换）/</loc>
             <lastmod>2025-11-26T12:35:59.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -772,6 +856,12 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/操作系统/CPU性能优化/进程上下文切换详情/</loc>
             <lastmod>2025-11-26T05:40:43.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/202506201431 将刚提交的commit回滚/</loc>
+            <lastmod>2025-11-26T05:40:39.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -866,6 +956,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/epoll的边缘触发和水平触发/</loc>
+            <lastmod>2025-11-18T16:50:29.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/卡片盒笔记法/202011201016 - 什么是知识和信息/</loc>
             <lastmod>2025-11-18T16:33:32.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -884,6 +980,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell替换字符串/</loc>
+            <lastmod>2025-11-18T16:26:22.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/操作系统/CPU性能优化/中断上下文切换详情/</loc>
             <lastmod>2025-11-18T16:16:09.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -892,6 +994,12 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/工具/mac/mac-获取程序名称-系统名称/</loc>
             <lastmod>2025-11-18T16:15:18.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Personal/费曼技巧/</loc>
+            <lastmod>2025-11-18T06:38:38.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -920,6 +1028,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/go/202407251323  go flag 别在init中使用/</loc>
+            <lastmod>2025-11-15T06:24:04.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/操作系统/CPU性能优化/快速分析系统CPU瓶颈的命令工具/</loc>
             <lastmod>2025-11-15T06:16:34.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -932,14 +1046,32 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-dnsmasq/</loc>
+            <lastmod>2025-11-15T06:05:18.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/go/202407311627 goreplay 使用/</loc>
             <lastmod>2025-11-14T10:20:14.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/go/202407111120 go - 防止接口在包外被继承/</loc>
+            <lastmod>2025-11-14T10:08:38.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/go/go-init函数/</loc>
             <lastmod>2025-11-14T05:21:55.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-什么是anon_inode/</loc>
+            <lastmod>2025-11-13T17:48:09.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -952,6 +1084,12 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/算法/leetcode题目/14. 最长公共前缀/</loc>
             <lastmod>2025-11-07T05:03:16.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/202511071302 chrome 无头模式打印pdf/</loc>
+            <lastmod>2025-11-07T05:03:03.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -980,6 +1118,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-wait/</loc>
+            <lastmod>2025-11-05T03:49:24.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/算法/leetcode题目难度更新了/</loc>
             <lastmod>2025-11-04T09:55:45.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -988,6 +1132,18 @@
         <url>
             <loc>https://wudanyang8327.github.io/card/工具/vscode git 只暂存部分改动/</loc>
             <lastmod>2025-11-03T16:15:08.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell-循环/</loc>
+            <lastmod>2025-11-03T16:12:30.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://wudanyang8327.github.io/card/docker/docker 和 Kubernetes 的异同/</loc>
+            <lastmod>2025-11-03T15:41:54.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1046,6 +1202,12 @@
         </url>
     
         <url>
+            <loc>https://wudanyang8327.github.io/card/Linux/linux-echo/</loc>
+            <lastmod>2025-10-24T06:38:42.000Z</lastmod>
+            <changefreq>weekly</changefreq>
+        </url>
+    
+        <url>
             <loc>https://wudanyang8327.github.io/card/工具/mac/202508221313 mac terminal 提示符图标显示错误/</loc>
             <lastmod>2025-10-13T08:26:21.000Z</lastmod>
             <changefreq>weekly</changefreq>
@@ -1065,37 +1227,13 @@
     
         <url>
             <loc>https://wudanyang8327.github.io/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</loc>
-            <lastmod>2026-02-05T11:25:44Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/000 inbox/202601311428 Async 的 syncify 在哪个事件循环中执行的 async 代码？/</loc>
-            <lastmod>2026-01-31T07:09:14.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/202601302130 kindle kpw3 刷安卓/</loc>
-            <lastmod>2026-01-30T13:54:05.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/202406112224 go 在 race 编译时，不包括部分代码/</loc>
-            <lastmod>2026-01-17T17:59:44.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-echo/</loc>
-            <lastmod>2025-10-24T06:38:42.000Z</lastmod>
+            <lastmod>2026-02-05T11:37:02Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
         <url>
             <loc>https://wudanyang8327.github.io/archive/</loc>
-            <lastmod>2026-02-05T11:25:44Z</lastmod>
+            <lastmod>2026-02-05T11:37:02Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
@@ -1106,152 +1244,14 @@
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/0000 publish/CDN 带宽优化/</loc>
-            <lastmod>2025-12-28T04:53:42.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/202011261547 - 使用base64处理二进制字符串/</loc>
-            <lastmod>2025-12-28T04:07:12.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/202512161115 vscode black formatter 列数设置/</loc>
-            <lastmod>2025-12-27T07:24:37.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/202103251606 - 如何在 linux 上配置科学上网/</loc>
-            <lastmod>2025-11-30T16:00:53.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/iso-日期表示法/</loc>
-            <lastmod>2025-11-27T05:51:13.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/202511271252 vscode python 删除未使用的 import/</loc>
-            <lastmod>2025-11-27T04:54:13.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/</loc>
-            <lastmod>2025-11-26T15:28:19.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/202506262318 go 的主协程id一直是1吗？/</loc>
-            <lastmod>2025-11-26T15:26:13.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-pidstat/</loc>
-            <lastmod>2025-11-26T15:04:27.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/使用shell脚本快速并行启动指定数量的进程/</loc>
-            <lastmod>2025-11-26T15:02:55.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/获取进程存活时间/</loc>
-            <lastmod>2025-11-26T12:37:40.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/202506201431 将刚提交的commit回滚/</loc>
-            <lastmod>2025-11-26T05:40:39.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/epoll的边缘触发和水平触发/</loc>
-            <lastmod>2025-11-18T16:50:29.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell替换字符串/</loc>
-            <lastmod>2025-11-18T16:26:22.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Personal/费曼技巧/</loc>
-            <lastmod>2025-11-18T06:38:38.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/Omnivore/2024-08-16/利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派/</loc>
             <lastmod>2025-11-17T07:28:52.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     
         <url>
-            <loc>https://wudanyang8327.github.io/card/go/202407251323  go flag 别在init中使用/</loc>
-            <lastmod>2025-11-15T06:24:04.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-dnsmasq/</loc>
-            <lastmod>2025-11-15T06:05:18.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/go/202407111120 go - 防止接口在包外被继承/</loc>
-            <lastmod>2025-11-14T10:08:38.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-什么是anon_inode/</loc>
-            <lastmod>2025-11-13T17:48:09.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/202511071302 chrome 无头模式打印pdf/</loc>
-            <lastmod>2025-11-07T05:03:03.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/linux-wait/</loc>
-            <lastmod>2025-11-05T03:49:24.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
             <loc>https://wudanyang8327.github.io/card/go/golang-cobra/</loc>
             <lastmod>2025-11-04T15:55:39.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/Linux/shell/shell-循环/</loc>
-            <lastmod>2025-11-03T16:12:30.000Z</lastmod>
-            <changefreq>weekly</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://wudanyang8327.github.io/card/docker/docker 和 Kubernetes 的异同/</loc>
-            <lastmod>2025-11-03T15:41:54.000Z</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     

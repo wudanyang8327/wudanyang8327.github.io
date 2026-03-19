@@ -2,22 +2,21 @@
 <html lang="zh-CN">
 <head>
 <title>go-gorm-FindInBatches</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<script async type="module">import mermaid from"/scripts/mermaid.esm.min.mjs"</script>
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
-<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
-<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
-<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
-<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("data-lucide",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script defer="defer" src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script defer="defer" src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script defer="defer" src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
 <script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
-<link href="/styles/digital-garden-base.css" rel="stylesheet">
 <link href="/styles/obsidian-base.css" rel="stylesheet">
-<link href="/styles/_theme.5f3e7cc2.css" rel="stylesheet">
-<link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css" rel="stylesheet">
+<link href="/styles/_theme.f957bef8.css" rel="stylesheet">
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet"><link href="/styles/user/code.css?v=2026-03-19T02:47:14.153Z" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -26,437 +25,496 @@
 <style></style>
 </head>
 <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager mod-macos is-frameless is-hidden-frameless obsidian-app theme-light is-translucent show-inline-title show-ribbon show-view-header hider-vault css-settings-manager obsidian-themepocalypse oz-show-all-num AT-multirow AT-row is-maximized pane-relief-pane-numbering color-use-default color-active-default-light color-active-default-dark app-layout-card-border app-layout-card-gradient explorer-title-wrap explorer-icon search-internal-enable modal-setting-header modal-setting-header-title-center modal-setting-header-search enable-group-title modal-control-gradient modal-slider modal-toggle-default tab-show-close-default tab-title-bar-text-default status-bar-style-float status-bar-default status-bar-style-center message-modify scrollbar-enable scrollbar-hover-accent scrollbar-movein-animation-enable editor-bg-grid-dots line-indicator-disable line-active-enable text-highlight-all-round font-maple link-hover-expand link-icon heading-color-colorful heading-indicator-fixed heading-h1-normal heading-h1-full-line-both heading-h1-center heading-h2-underline heading-h2-full-line-both heading-h3-normal heading-h3-full-line-both heading-h4-normal heading-h4-full-line-both heading-h5-normal heading-h5-full-line-both heading-h6-normal heading-h6-full-line-both heading-h6-caps hr-enable table-full table-style-default table-round embed-title-right-top image-alt image-dark-hover quote-shadow list-enable list-bullet-thread-style list-checkbox-decoration-default list-checkbox-alternative code-line-number code-language code-nowrap code-theme tag-outline pdf-dark-hover calendar-end-disable calendar-swap-year-month mobile-floating-button is-focused">
-<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-init="isDesktop = (window.innerWidth>=1000) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1000) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
 <div x-show.important="!isDesktop" style="display:none">
 <nav class="navbar">
 <div class="navbar-inner">
-<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
-<a href="/" style="text-decoration:none">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i data-lucide="menu"></i></span>
+<a href="/" style="text-decoration:none;text-align:center">
 <h1 style="margin:15px!important">丹阳的小站</h1>
 </a>
 </div>
 <div class="search-button align-icon" onclick="toggleSearch()">
 <span class="search-icon">
-<i icon-name="search"></i>
+<i data-lucide="search"></i>
 </span>
-<span class="search-text">
-<span>Search</span>
-<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
-CTRL + K
-</span>
-</span>
+<span class="search-text">Search</span>
+<span class="search-keys"><code>Ctrl</code>&nbsp;+&nbsp;<code>K</code></span>
 </div>
 </nav>
 </div>
 <div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
-<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
-<a href="/" style="text-decoration:none">
+<div class="filetree-wrapper" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<nav class="filetree-sidebar">
+<a href="/" style="text-decoration:none;text-align:center">
 <h1 style="text-align:center">丹阳的小站</h1>
 </a>
-<div style="display:flex;justify-content:center">
 <div class="search-button align-icon" onclick="toggleSearch()">
 <span class="search-icon">
-<i icon-name="search"></i>
+<i data-lucide="search"></i>
 </span>
-<span class="search-text">
-<span>Search</span>
-<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
-CTRL + K
-</span>
-</span>
-</div>
+<span class="search-text">Search</span>
+<span class="search-keys"><code>Ctrl</code>&nbsp;+&nbsp;<code>K</code></span>
 </div>
 <div class="folder" x-data="{isOpen: true}">
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/">Home </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/">Home </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">card</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/0000 publish')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/0000 publish&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">0000 publish</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/0000 publish/CDN 带宽优化/">CDN 带宽优化 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/0000 publish/CDN 带宽优化/">CDN 带宽优化 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/0000 publish/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/0000 publish/obsidian-things3-today插件/">obsidian-things3-today插件 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/docker')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/docker&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">docker</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/docker/docker 和 Kubernetes 的异同/">docker 和 Kubernetes 的异同 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/docker/docker 和 Kubernetes 的异同/">docker 和 Kubernetes 的异同 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/go')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/go&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">go</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202405061043 go 抽象的一个例子/">202405061043 go 抽象的一个例子 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202405061043 go 抽象的一个例子/">202405061043 go 抽象的一个例子 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202406112224 go 在 race 编译时，不包括部分代码/">202406112224 go 在 race 编译时，不包括部分代码 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202406112224 go 在 race 编译时，不包括部分代码/">202406112224 go 在 race 编译时，不包括部分代码 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202407111120 go - 防止接口在包外被继承/">202407111120 go - 防止接口在包外被继承 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202407111120 go - 防止接口在包外被继承/">202407111120 go - 防止接口在包外被继承 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202407251323  go flag 别在init中使用/">202407251323 go flag 别在init中使用 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202407251323  go flag 别在init中使用/">202407251323 go flag 别在init中使用 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202407311627 goreplay 使用/">202407311627 goreplay 使用 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202407311627 goreplay 使用/">202407311627 goreplay 使用 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/">202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理/">202506061308 vscode There is no formatter for &#39;go&#39; files installed 报错处理 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506262313 获取 goid/">202506262313 获取 goid </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506262313 获取 goid/">202506262313 获取 goid </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506262318 go 的主协程id一直是1吗？/">202506262318 go 的主协程id一直是1吗？ </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506262318 go 的主协程id一直是1吗？/">202506262318 go 的主协程id一直是1吗？ </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506262333 go 协程调度的抢占机制/">202506262333 go 协程调度的抢占机制 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202506262333 go 协程调度的抢占机制/">202506262333 go 协程调度的抢占机制 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202511282239 go -  GOMEMLIMIT 参数/">202511282239 go - GOMEMLIMIT 参数 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/202511282239 go -  GOMEMLIMIT 参数/">202511282239 go - GOMEMLIMIT 参数 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go 获取凌晨0点的时间戳/">go 获取凌晨0点的时间戳 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go 获取凌晨0点的时间戳/">go 获取凌晨0点的时间戳 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go- make 和 new 关键字的区别/">go- make 和 new 关键字的区别 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go- make 和 new 关键字的区别/">go- make 和 new 关键字的区别 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-exec-run/">go-exec-run </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-exec-run/">go-exec-run </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-exec/">go-exec </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-exec/">go-exec </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-gorm-FindInBatches/">go-gorm-FindInBatches </a>
+<div @click.stop class="notelink active-note">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-gorm-FindInBatches/">go-gorm-FindInBatches </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-init函数/">go-init函数 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-init函数/">go-init函数 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-mod/">go-mod </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-mod/">go-mod </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-时间处理/">go-时间处理 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-时间处理/">go-时间处理 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-零值/">go-零值 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/go-零值/">go-零值 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/golang-cobra/">golang-cobra </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/go/golang-cobra/">golang-cobra </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/js')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/js&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">js</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/js/js超长数字溢出问题/">js超长数字溢出问题 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/js/js超长数字溢出问题/">js超长数字溢出问题 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/k8s')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/k8s&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">k8s</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/k8s/快速创建一个可访问的服务/">快速创建一个可访问的服务 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/k8s/快速创建一个可访问的服务/">快速创建一个可访问的服务 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/kafka')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/kafka&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">kafka</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/kafka/Kafka入门/">Kafka入门 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/kafka/Kafka入门/">Kafka入门 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/kafka/mac 运行 kafka/">mac 运行 kafka </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/kafka/mac 运行 kafka/">mac 运行 kafka </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/Linux')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/Linux&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">Linux</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/Linux/shell')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/Linux/shell&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">shell</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell-循环/">shell-循环 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell-循环/">shell-循环 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell-生成随机数/">shell-生成随机数 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell-生成随机数/">shell-生成随机数 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell替换字符串/">shell替换字符串 </a>
-</div>
-</div>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/202011261547 - 使用base64处理二进制字符串/">202011261547 - 使用base64处理二进制字符串 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/202103251606 - 如何在 linux 上配置科学上网/">202103251606 - 如何在 linux 上配置科学上网 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/202404142147 如何在shell中遍历数字/">202404142147 如何在shell中遍历数字 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/gcc或者g++编译的几个过程/">gcc或者g++编译的几个过程 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/iso-日期表示法/">iso-日期表示法 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-command-substitution（命令替换）/">linux-command-substitution（命令替换） </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-dnsmasq/">linux-dnsmasq </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-echo/">linux-echo </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-man命令使用/">linux-man命令使用 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-ncdu/">linux-ncdu </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-pidstat/">linux-pidstat </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-top/">linux-top </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-wait/">linux-wait </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-wrk/">linux-wrk </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-什么是anon_inode/">linux-什么是anon_inode </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-查看内存占用情况/">linux-查看内存占用情况 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/ubuntu-unminimize/">ubuntu-unminimize </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/使用shell脚本快速并行启动指定数量的进程/">使用shell脚本快速并行启动指定数量的进程 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/文件描述符/">文件描述符 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/获取进程存活时间/">获取进程存活时间 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/shell/shell替换字符串/">shell替换字符串 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/mysql')}" @click.stop="isOpen=!isOpen">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/202011261547 - 使用base64处理二进制字符串/">202011261547 - 使用base64处理二进制字符串 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/202103251606 - 如何在 linux 上配置科学上网/">202103251606 - 如何在 linux 上配置科学上网 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/202404142147 如何在shell中遍历数字/">202404142147 如何在shell中遍历数字 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/epoll的边缘触发和水平触发/">epoll的边缘触发和水平触发 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/gcc或者g++编译的几个过程/">gcc或者g++编译的几个过程 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/iso-日期表示法/">iso-日期表示法 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-command-substitution（命令替换）/">linux-command-substitution（命令替换） </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-dnsmasq/">linux-dnsmasq </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-echo/">linux-echo </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-man命令使用/">linux-man命令使用 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-ncdu/">linux-ncdu </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-pidstat/">linux-pidstat </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-top/">linux-top </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-wait/">linux-wait </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-wrk/">linux-wrk </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-什么是anon_inode/">linux-什么是anon_inode </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/linux-查看内存占用情况/">linux-查看内存占用情况 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/ubuntu-unminimize/">ubuntu-unminimize </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/使用shell脚本快速并行启动指定数量的进程/">使用shell脚本快速并行启动指定数量的进程 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/文件描述符/">文件描述符 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Linux/获取进程存活时间/">获取进程存活时间 </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/mysql&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">mysql</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/mysql/mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表/">mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/mysql/mysql5.7json支持/">mysql5.7json支持 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/mysql/mysql5.7json支持/">mysql5.7json支持 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/mysql/mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表/">mysql INFORMATION_SCHEMA.OPTIMIZER_TRACE 表 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/nginx')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/nginx&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">nginx</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/nginx master 进程/">Nginx Master 进程主流程 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/nginx master 进程/">Nginx Master 进程主流程 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/nginx 进程模型-整体架构/">Nginx 进程模型-整体架构 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/nginx 进程模型-整体架构/">Nginx 进程模型-整体架构 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/nginx-master-start-worker/">Nginx Master 启动 worker 进程的流程 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/nginx-master-start-worker/">Nginx Master 启动 worker 进程的流程 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/vscode 调试nginx代码/">vscode 调试nginx代码 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/vscode 调试nginx代码/">vscode 调试nginx代码 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/如何查看 nginx 的rewrite记录/">如何查看 nginx 的rewrite记录 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/编译 nginx/">编译 nginx </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/nginx/编译 nginx/">编译 nginx </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/obsidian')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/obsidian&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">obsidian</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/">202404181228 使用 open --background 的形式打开 obsidian 不够轻便 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/202404181228 使用 open --background 的形式打开 obsidian 不够轻便/">202404181228 使用 open --background 的形式打开 obsidian 不够轻便 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/202404181240 快捷指令-记录今天的事情 obsidian/">202404181240 快捷指令-记录今天的事情 obsidian </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/202404181240 快捷指令-记录今天的事情 obsidian/">202404181240 快捷指令-记录今天的事情 obsidian </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/202409052343 github 部署任务设置 reviewer/">202409052343 github 部署任务设置 reviewer </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/202409052343 github 部署任务设置 reviewer/">202409052343 github 部署任务设置 reviewer </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/dg-publish=true的标签云/">dg-publish=true的标签云 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/dg-publish=true的标签云/">dg-publish=true的标签云 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/digital-garden 在 windows 上面 diff 出错/">digital-garden 在 windows 上面 diff 出错 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/digital-garden 在 windows 上面 diff 出错/">digital-garden 在 windows 上面 diff 出错 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/obsidian 开发过程支持的ICON/">obsidian 开发过程支持的ICON </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/obsidian/不打开obsidian的情况下记录当前事件/">不打开obsidian的情况下记录当前事件 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/Omnivore')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/Omnivore&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">Omnivore</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/Omnivore/2024-08-16')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/Omnivore/2024-08-16&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">2024-08-16</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Omnivore/2024-08-16/利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派/">利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Omnivore/2024-08-16/利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派/">利用 Chrome 原生工具进行网页长截图 - 一日一技 - 少数派 </a>
 </div>
 </div>
 </div>
@@ -464,788 +522,928 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/Personal')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/Personal&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">Personal</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Personal/202408312248 甲沟炎的处理办法/">202408312248 甲沟炎的处理办法 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Personal/202408312248 甲沟炎的处理办法/">202408312248 甲沟炎的处理办法 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Personal/费曼技巧/">费曼技巧 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Personal/费曼技巧/">费曼技巧 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Personal/驾驶证期满换证/">驾驶证期满换证 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/Personal/驾驶证期满换证/">驾驶证期满换证 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/php')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/php&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">php</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/php/php-xml 如何解析 cdata/">php-xml 如何解析 cdata </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/php/php-xml 如何解析 cdata/">php-xml 如何解析 cdata </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/php/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/php/PHP生成zip压缩包/">PHP生成zip压缩包 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/python')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/python&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">python</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202511261627 vscode调试gunicorn python/">202511261627 vscode调试gunicorn python </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202511261627 vscode调试gunicorn python/">202511261627 vscode调试gunicorn python </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202601311428 Async 的 syncify 在哪个事件循环中执行的 async 代码？/">202601311428 Async 的 syncify 在哪个事件循环中执行的 async 代码？ </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202601311428 Async 的 syncify 在哪个事件循环中执行的 async 代码？/">202601311428 Async 的 syncify 在哪个事件循环中执行的 async 代码？ </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202602021508 python如何在将contextVar带到子线程中/">202602021508 python如何在将contextVar带到子线程中 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202602021508 python如何在将contextVar带到子线程中/">202602021508 python如何在将contextVar带到子线程中 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202602042030 python 什么是偏函数/">202602042030 python 什么是偏函数 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/202602042030 python 什么是偏函数/">202602042030 python 什么是偏函数 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/gunicorn+uvicorn+fastapi 进程模型.excalidraw/">gunicorn+uvicorn+fastapi 进程模型.excalidraw </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/gunicorn+uvicorn+fastapi 进程模型.excalidraw/">gunicorn+uvicorn+fastapi 进程模型.excalidraw </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/py-spy 的用法/">py-spy 的用法 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/py-spy 的用法/">py-spy 的用法 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python fastapi 默认线程数/">python fastapi 默认线程数 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python fastapi 默认线程数/">python fastapi 默认线程数 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python 多进程日志轮转/">python 多进程日志轮转 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python 多进程日志轮转/">python 多进程日志轮转 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python 虚拟环境/">python 虚拟环境 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python 虚拟环境/">python 虚拟环境 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python-Asyncer/">python-Asyncer </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python-Asyncer/">python-Asyncer </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python-defaultdict/">python-defaultdict </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python-defaultdict/">python-defaultdict </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python-为什么 {} 不能作为默认参数？/">python-为什么 {} 不能作为默认参数？ </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/python/python-为什么 {} 不能作为默认参数？/">python-为什么 {} 不能作为默认参数？ </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/redis')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/redis&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">redis</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/redis/202011281031 - 安装 rdbtools 工具/">202011281031 - 安装 rdbtools 工具 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/redis/202011281031 - 安装 rdbtools 工具/">202011281031 - 安装 rdbtools 工具 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/redis/redis-rdb 文件分析/">redis-rdb 文件分析 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/redis/redis-rdb 文件分析/">redis-rdb 文件分析 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/卡片盒笔记法')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/卡片盒笔记法&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">卡片盒笔记法</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/">202011192022 - 什么是卡片盒笔记法 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011192022 - 什么是卡片盒笔记法/">202011192022 - 什么是卡片盒笔记法 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/">202011192023 - 卡片盒笔记法的基本元素 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011192023 - 卡片盒笔记法的基本元素/">202011192023 - 卡片盒笔记法的基本元素 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011201016 - 什么是知识和信息/">202011201016 - 什么是知识和信息 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011201315 - 卡片盒笔记法主要关注什么/">202011201315 - 卡片盒笔记法主要关注什么 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/">202011210003 - 卡片盒笔记法的基本流程 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011210003 - 卡片盒笔记法的基本流程/">202011210003 - 卡片盒笔记法的基本流程 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/">202011220028 - 从输出的角度看卡片盒笔记法的优势 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011220028 - 从输出的角度看卡片盒笔记法的优势/">202011220028 - 从输出的角度看卡片盒笔记法的优势 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/">202011222209 - 卡片盒笔记法的步骤 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222209 - 卡片盒笔记法的步骤/">202011222209 - 卡片盒笔记法的步骤 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/">202011222310 - 卡片盒笔记法的模块 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222310 - 卡片盒笔记法的模块/">202011222310 - 卡片盒笔记法的模块 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222324 - 知识/">202011222324 - 知识 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222324 - 知识/">202011222324 - 知识 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222325 - 信息/">202011222325 - 信息 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222325 - 信息/">202011222325 - 信息 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/">202011222338 - 使用卡片盒笔记法输出的流程 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011222338 - 使用卡片盒笔记法输出的流程/">202011222338 - 使用卡片盒笔记法输出的流程 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/">202011230004 - 如何写出容易理解的卡片 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202011230004 - 如何写出容易理解的卡片/">202011230004 - 如何写出容易理解的卡片 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202404081646 卡片笔记应该记录什么/">202404081646 卡片笔记应该记录什么 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202404081646 卡片笔记应该记录什么/">202404081646 卡片笔记应该记录什么 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202404081701 针对过时的想法怎么处理/">202404081701 针对过时的想法怎么处理 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202404081701 针对过时的想法怎么处理/">202404081701 针对过时的想法怎么处理 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202404081818 为什么建立笔记时要指明原因/">202404081818 为什么建立笔记时要指明原因 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/202404081818 为什么建立笔记时要指明原因/">202404081818 为什么建立笔记时要指明原因 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/20240408201701 卡片盒笔记法/">20240408201701 卡片盒笔记法 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/20240408201701 卡片盒笔记法/">20240408201701 卡片盒笔记法 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/20240417103919 卡片盒笔记法的标题是对内容的一句话描述/">20240417103919 卡片盒笔记法的标题是对内容的一句话描述 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/20240417103919 卡片盒笔记法的标题是对内容的一句话描述/">20240417103919 卡片盒笔记法的标题是对内容的一句话描述 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/生成/">生成 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/卡片盒笔记法/生成/">生成 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/哲学')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/哲学&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">哲学</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/哲学/202404151420 哲学的分支/">202404151420 哲学的分支 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/哲学/202404151420 哲学的分支/">202404151420 哲学的分支 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/哲学/20240415141933 什么是哲学/">20240415141933 什么是哲学 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/哲学/20240415141933 什么是哲学/">20240415141933 什么是哲学 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/学习')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/学习&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">学习</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/学习/202409022041 神经网络过拟合了怎么办？/">202409022041 神经网络过拟合了怎么办？ </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/学习/202409022041 神经网络过拟合了怎么办？/">202409022041 神经网络过拟合了怎么办？ </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/工具')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/工具&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">工具</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/工具/mac')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/工具/mac&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">mac</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202404231624 如何在 Finder 中拷贝文件路径全称/">202404231624 如何在 Finder 中拷贝文件路径全称 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202404231624 如何在 Finder 中拷贝文件路径全称/">202404231624 如何在 Finder 中拷贝文件路径全称 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202506172251 mac 强制程序使用代理/">202506172251 mac 强制程序使用代理 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202506172251 mac 强制程序使用代理/">202506172251 mac 强制程序使用代理 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202507091139 karabiner left_control to caps_lock/">202507091139 karabiner left_control to caps_lock </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202507091139 karabiner left_control to caps_lock/">202507091139 karabiner left_control to caps_lock </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202508221313 mac terminal 提示符图标显示错误/">202508221313 mac terminal 提示符图标显示错误 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202508221313 mac terminal 提示符图标显示错误/">202508221313 mac terminal 提示符图标显示错误 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202508221315 安装字体/">202508221315 安装字体 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/202508221315 安装字体/">202508221315 安装字体 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/mac-合上盖子不断网/">mac-合上盖子不断网 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/mac-合上盖子不断网/">mac-合上盖子不断网 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/mac-自定义快捷键/">mac-自定义快捷键 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/mac-自定义快捷键/">mac-自定义快捷键 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/mac-获取程序名称-系统名称/">mac-获取程序名称-系统名称 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/mac-获取程序名称-系统名称/">mac-获取程序名称-系统名称 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/接入外置键盘时如何关掉内置键盘/">接入外置键盘时如何关掉内置键盘 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/接入外置键盘时如何关掉内置键盘/">接入外置键盘时如何关掉内置键盘 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/网易云音乐mac端回退到2.x版本/">网易云音乐mac端回退到2.x版本 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mac/网易云音乐mac端回退到2.x版本/">网易云音乐mac端回退到2.x版本 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/工具/marginnote')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/工具/marginnote&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">marginnote</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/marginnote/marginnote 使用方法/">marginnote 使用方法 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/marginnote/marginnote 使用方法/">marginnote 使用方法 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/10x程序员工作法/">10x程序员工作法 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/10x程序员工作法/">10x程序员工作法 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作/">202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作/">202405081331 mac 鼠须管 - rime 如何使用命令行执行同步操作 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/202409021102 marginnote 从 Web 网页导入内容/">202409021102 marginnote 从 Web 网页导入内容 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/202409021102 marginnote 从 Web 网页导入内容/">202409021102 marginnote 从 Web 网页导入内容 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/202506171613 vscode 如何粘贴文件不覆盖/">202506171613 vscode 如何粘贴文件不覆盖 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/202506171613 vscode 如何粘贴文件不覆盖/">202506171613 vscode 如何粘贴文件不覆盖 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/ai-动画制作/">ai-动画制作 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/ai-动画制作/">ai-动画制作 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/ithoughtx破产了/">ithoughtx破产了 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/ithoughtx破产了/">ithoughtx破产了 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/marginnote 实现阅读历史跳转/">marginnote 实现阅读历史跳转 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/marginnote 实现阅读历史跳转/">marginnote 实现阅读历史跳转 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mermaid 图表自动生成/">mermaid 图表自动生成 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/mermaid 图表自动生成/">mermaid 图表自动生成 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/phpstorm 两下 ctrl 可以快速运行程序/">phpstorm 两下 ctrl 可以快速运行程序 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/Things 工作流/">Things 工作流 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/Things 工作流/">Things 工作流 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/vim显示列分隔符/">vim显示列分隔符 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/vim显示列分隔符/">vim显示列分隔符 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/vscode git 只暂存部分改动/">vscode git 只暂存部分改动 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/vscode git 只暂存部分改动/">vscode git 只暂存部分改动 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/vscode vim 状态下显示提示/">vscode vim 状态下显示提示 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/vscode vim 状态下显示提示/">vscode vim 状态下显示提示 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/创建一个chrome独立APP窗口/">创建一个chrome独立APP窗口 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/各种资源国内镜像/">各种资源国内镜像 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/各种资源国内镜像/">各种资源国内镜像 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/搜索引擎技巧/">搜索引擎技巧 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/工具/搜索引擎技巧/">搜索引擎技巧 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/思考')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/思考&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">思考</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/202404082353 取乎其上得乎其中/">202404082353 取乎其上得乎其中 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/202404082353 取乎其上得乎其中/">202404082353 取乎其上得乎其中 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/202404251145 破解软件的成本如果比较高就不要去花时间破解了/">202404251145 破解软件的成本如果比较高就不要去花时间破解了 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/202404251145 破解软件的成本如果比较高就不要去花时间破解了/">202404251145 破解软件的成本如果比较高就不要去花时间破解了 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/如何做监控/">如何做监控 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/如何做监控/">如何做监控 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/如何追查线上问题/">如何追查线上问题 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/如何追查线上问题/">如何追查线上问题 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/思考/当前状态和下一状态的随想.excalidraw/">当前状态和下一状态的随想.excalidraw </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/操作系统')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/操作系统&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">操作系统</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/操作系统/CPU性能优化')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/操作系统/CPU性能优化&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">CPU性能优化</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/202409121624 Linux 性能分析优化-CPU/">202409121624 Linux 性能分析优化-CPU </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/202409121624 Linux 性能分析优化-CPU/">202409121624 Linux 性能分析优化-CPU </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 上下文切换/">CPU 上下文切换 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 上下文切换/">CPU 上下文切换 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 使用率/">CPU 使用率 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 使用率/">CPU 使用率 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 平均负载/">CPU 平均负载 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/CPU 平均负载/">CPU 平均负载 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/linux-execsnoop/">linux-execsnoop </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/linux-execsnoop/">linux-execsnoop </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/linux-perf/">linux-perf </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/linux-perf/">linux-perf </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/mpstat命令输出/">mpstat命令输出 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/mpstat命令输出/">mpstat命令输出 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/sar命令输出/">sar命令输出 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/sar命令输出/">sar命令输出 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/中断上下文切换详情/">中断上下文切换详情 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/中断上下文切换详情/">中断上下文切换详情 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/快速分析系统CPU瓶颈的命令工具/">快速分析系统CPU瓶颈的命令工具 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/快速分析系统CPU瓶颈的命令工具/">快速分析系统CPU瓶颈的命令工具 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/模拟突发进程特别多的情况/">模拟突发进程特别多的情况 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/模拟突发进程特别多的情况/">模拟突发进程特别多的情况 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/模拟软中断特别多的情况/">模拟软中断特别多的情况 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/模拟软中断特别多的情况/">模拟软中断特别多的情况 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/硬件中断输出示例/">硬件中断输出示例 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/硬件中断输出示例/">硬件中断输出示例 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/系统调用时上下文调度/">系统调用时上下文调度 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/系统调用时上下文调度/">系统调用时上下文调度 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/线程上下文切换详情/">线程上下文切换详情 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/线程上下文切换详情/">线程上下文切换详情 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/计算机中断/">计算机中断 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/计算机中断/">计算机中断 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/进程上下文切换详情/">进程上下文切换详情 </a>
-</div>
-</div>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/qemu安装ubuntu/">qemu安装ubuntu </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/内存问题分析/">内存问题分析 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/操作系统-内核态与用户态/">操作系统-内核态与用户态 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/CPU性能优化/进程上下文切换详情/">进程上下文切换详情 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/时间管理')}" @click.stop="isOpen=!isOpen">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/qemu安装ubuntu/">qemu安装ubuntu </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/内存问题分析/">内存问题分析 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/操作系统/操作系统-内核态与用户态/">操作系统-内核态与用户态 </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/时间管理&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">时间管理</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/时间管理/202404191548 GTD的主要思想/">202404191548 GTD的主要思想 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/时间管理/202404191548 GTD的主要思想/">202404191548 GTD的主要思想 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/树莓派')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/树莓派&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">树莓派</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/树莓派/202103251635 - 获取树莓派温度/">202103251635 - 获取树莓派温度 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/树莓派/202103251635 - 获取树莓派温度/">202103251635 - 获取树莓派温度 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/树莓派/ubuntu 树莓派启动时配置网络/">ubuntu 树莓派启动时配置网络 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/树莓派/树莓派无法上网排查/">树莓派无法上网排查 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/树莓派/树莓派无法上网排查/">树莓派无法上网排查 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/游戏')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/游戏&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">游戏</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/游戏/20240415142052 原神挺好玩/">20240415142052 原神挺好玩 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/游戏/20240415142052 原神挺好玩/">20240415142052 原神挺好玩 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/算法')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/算法&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">算法</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/算法/leetcode题目')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/算法/leetcode题目&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">leetcode题目</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/14. 最长公共前缀/">14. 最长公共前缀 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/14. 最长公共前缀/">14. 最长公共前缀 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/54. 螺旋矩阵/">54. 螺旋矩阵 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/54. 螺旋矩阵/">54. 螺旋矩阵 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/55. 跳跃游戏/">55. 跳跃游戏 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/55. 跳跃游戏/">55. 跳跃游戏 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/56. 合并区间/">56. 合并区间 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/56. 合并区间/">56. 合并区间 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/59. 螺旋矩阵 II/">59. 螺旋矩阵 II </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/59. 螺旋矩阵 II/">59. 螺旋矩阵 II </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/72. 编辑距离/">72. 编辑距离 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/72. 编辑距离/">72. 编辑距离 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/128. 最长连续序列/">128. 最长连续序列 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/128. 最长连续序列/">128. 最长连续序列 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/200. 岛屿数量/">200. 岛屿数量 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/200. 岛屿数量/">200. 岛屿数量 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/239. 滑动窗口最大值/">239. 滑动窗口最大值 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/239. 滑动窗口最大值/">239. 滑动窗口最大值 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/560. 和为 K 的子数组/">560. 和为 K 的子数组 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/560. 和为 K 的子数组/">560. 和为 K 的子数组 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/1143. 最长公共子序列/">1143. 最长公共子序列 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/1143. 最长公共子序列/">1143. 最长公共子序列 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-49. 字母异位词分组/">leetcode-49. 字母异位词分组 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-303. 区域和检索 - 数组不可变/">leetcode-303. 区域和检索 - 数组不可变 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-303. 区域和检索 - 数组不可变/">leetcode-303. 区域和检索 - 数组不可变 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-401. 二进制手表/">leetcode-401. 二进制手表 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-401. 二进制手表/">leetcode-401. 二进制手表 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-49. 字母异位词分组/">leetcode-49. 字母异位词分组 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-541. 反转字符串 II/">leetcode-541. 反转字符串 II </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-53. 最大子数组和/">leetcode-53. 最大子数组和 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-557. 反转字符串中的单词 III/">leetcode-557. 反转字符串中的单词 III </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-541. 反转字符串 II/">leetcode-541. 反转字符串 II </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-1014. 最佳观光组合/">leetcode-1014. 最佳观光组合 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-557. 反转字符串中的单词 III/">leetcode-557. 反转字符串中的单词 III </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目/leetcode-1137第 N 个泰波那契数/">leetcode-1137第 N 个泰波那契数 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/算法/动态规划')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/算法/动态规划&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">动态规划</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/动态规划/动态规划很多时候就是在填表/">动态规划很多时候就是在填表 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/动态规划/动态规划很多时候就是在填表/">动态规划很多时候就是在填表 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/202404091044 leetcode-会员购买优惠-宫水三叶/">202404091044 leetcode-会员购买优惠-宫水三叶 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/202404091044 leetcode-会员购买优惠-宫水三叶/">202404091044 leetcode-会员购买优惠-宫水三叶 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode 编码技巧/">leetcode 编码技巧 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode 编码技巧/">leetcode 编码技巧 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目难度更新了/">leetcode题目难度更新了 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/leetcode题目难度更新了/">leetcode题目难度更新了 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/滑动窗口模板/">滑动窗口模板 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/滑动窗口模板/">滑动窗口模板 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/算法新年祝福语/">算法新年祝福语 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/算法新年祝福语/">算法新年祝福语 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/网络')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/网络&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">网络</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/网络/202405081320 IPv6的回环地址是如何表示的/">202405081320 IPv6的回环地址是如何表示的 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/网络/202405081320 IPv6的回环地址是如何表示的/">202405081320 IPv6的回环地址是如何表示的 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/网络/深入理解 X-Forwarded-For：代理背后的真实IP追踪/">深入理解 X-Forwarded-For：代理背后的真实IP追踪 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/网络/深入理解 X-Forwarded-For：代理背后的真实IP追踪/">深入理解 X-Forwarded-For：代理背后的真实IP追踪 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/运动')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/运动&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">运动</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/运动/202601311326 乒乓球产业链-小红书分享/">202601311326 乒乓球产业链-小红书分享 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/运动/202601311326 乒乓球产业链-小红书分享/">202601311326 乒乓球产业链-小红书分享 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/阅读')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/阅读&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">阅读</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/阅读/如何合并marginnote笔记本/">如何合并marginnote笔记本 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/阅读/如何合并marginnote笔记本/">如何合并marginnote笔记本 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('card/音乐')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;card/音乐&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">音乐</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/音乐/202405061046 音乐-圆桌骑士/">202405061046 音乐-圆桌骑士 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/音乐/202405061046 音乐-圆桌骑士/">202405061046 音乐-圆桌骑士 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/音乐/我的音乐歌手关键词/">我的音乐歌手关键词 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/音乐/我的音乐歌手关键词/">我的音乐歌手关键词 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202506201431 将刚提交的commit回滚/">202506201431 将刚提交的commit回滚 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202506201431 将刚提交的commit回滚/">202506201431 将刚提交的commit回滚 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202508271156 tmux 查看每个pane的进程id/">202508271156 tmux 查看每个pane的进程id </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202508271156 tmux 查看每个pane的进程id/">202508271156 tmux 查看每个pane的进程id </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511071302 chrome 无头模式打印pdf/">202511071302 chrome 无头模式打印pdf </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511071302 chrome 无头模式打印pdf/">202511071302 chrome 无头模式打印pdf </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511262222 unix socket 与传统的 tcp 本地通信的异同/">202511262222 unix socket 与传统的 tcp 本地通信的异同 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511262222 unix socket 与传统的 tcp 本地通信的异同/">202511262222 unix socket 与传统的 tcp 本地通信的异同 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511271252 vscode python 删除未使用的 import/">202511271252 vscode python 删除未使用的 import </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511271252 vscode python 删除未使用的 import/">202511271252 vscode python 删除未使用的 import </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511302354 如何使用 unixsocket 进行 http 请求/">202511302354 如何使用 unixsocket 进行 http 请求 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202511302354 如何使用 unixsocket 进行 http 请求/">202511302354 如何使用 unixsocket 进行 http 请求 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202512161115 vscode black formatter 列数设置/">202512161115 vscode black formatter 列数设置 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202512161115 vscode black formatter 列数设置/">202512161115 vscode black formatter 列数设置 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202512281135 raycast 如何统计 focus 时间/">202512281135 raycast 如何统计 focus 时间 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202512281135 raycast 如何统计 focus 时间/">202512281135 raycast 如何统计 focus 时间 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202601302130 kindle kpw3 刷安卓/">202601302130 kindle kpw3 刷安卓 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/202601302130 kindle kpw3 刷安卓/">202601302130 kindle kpw3 刷安卓 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/tmux 快速进入/">tmux 快速进入 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/tmux 快速进入/">tmux 快速进入 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Clippings')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;Clippings&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">Clippings</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/">Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option) </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/">Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of &quot;justMyCode&quot; option) </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('journal')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as(&quot;journal&quot;)}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
+<i x-show="isOpen" style="display:none" data-lucide="chevron-down"></i>
+<i x-show="!isOpen" data-lucide="chevron-right"></i>
 <span class="foldername">journal</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="2" style="text-decoration:none" class="filename" href="/journal/2024-10-11/">2024-10-11 </a>
+<div @click.stop class="notelink">
+<a data-note-icon="2" style="text-decoration:none" class="filename" href="/journal/2024-10-11/">2024-10-11 </a>
 </div>
 </div>
 </div>
@@ -1253,28 +1451,40 @@ CTRL + K
 </div>
 </nav>
 </div>
+</div>
 <div class="search-container" id="globalsearch" onclick="toggleSearch()">
-<div class="search-box">
+<div class="search-box" onclick="event.stopPropagation()">
+<div class="search-header">
 <input type="search" id="term" placeholder="Start typing...">
-<div id="search-results"></div>
+</div>
+<div class="search-layout no-preview" id="search-layout">
+<div class="search-results-panel" id="search-results">
+<span><i>Enter your search text in the box above</i></span>
+</div>
+<div class="search-preview-panel" id="search-preview">
+<div class="preview-placeholder">
+<i data-lucide="file-text"></i>
+<p>Select a result to preview</p>
+</div>
+<div class="preview-content" id="preview-content"></div>
+</div>
+</div>
 <footer class="search-box-footer">
 <div class="navigation-hint">
-<span>Enter to select</span>
-</div>
-<div class="navigation-hint align-icon">
-<i icon-name="arrow-up" aria-hidden="true"></i>
-<i icon-name="arrow-down" aria-hidden="true"></i>
-<span>to navigate</span>
+<span><code>Enter</code>&nbsp;to select</span>
 </div>
 <div class="navigation-hint">
-<span>ESC to close</span>
+<span><code>⇅</code>&nbsp;to navigate</span>
+</div>
+<div class="navigation-hint">
+<span><code>ESC</code>&nbsp;to close</span>
 </div>
 </footer>
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-02-05T11:37:17.312Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-02-05T11:37:17.312Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-02-05T11:37:17.312Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
-<main class="content cm-s-obsidian">
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-03-19T02:47:14.153Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="2">go-gorm-FindInBatches</h1>
 <div class="header-meta">
@@ -1289,7 +1499,7 @@ CTRL + K
 #area/golang
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-11-29T20:19:50+08:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-01-30T14:31:57+08:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2023-11-29T20:19:50+08:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-01-30T14:31:57+08:00"></span></div></div></div>
 </header>
 <h1 id="go-gorm-find-in-batches" tabindex="-1">go-gorm-FindInBatches</h1>
 <p>FindInBatches 用于简化批量操作，防止数据量及过大导致超时</p>
@@ -1359,7 +1569,7 @@ if result.Error != nil {
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
-<script>async function fetchGraphData(){const e=await fetch("/graph.json").then((e=>e.json()));return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(e,t){const n=Object.values(e).map((e=>e.neighbors)).flat();return Object.keys(t).reduce(((r,l)=>(-1!=n.indexOf(l)?t[l].hide||(e[l]=t[l]):r[l]=t[l],r)),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes)),r=JSON.parse(JSON.stringify(e.links)),l=n[decodeURI(window.location.pathname)]||Object.values(n).find((e=>e.home));if(delete n[l.url],!l.home){delete n[Object.values(n).find((e=>e.home)).url]}l.current=!0;let i={};i[l.url]=l;for(let e=0;e<t;e++)n=getNextLevelNeighbours(i,n);nodes=Object.values(i),l.home||(nodes=nodes.filter((e=>!e.home)));let o=nodes.map((e=>e.id));return{nodes:nodes,links:r.filter((function(e){return o.indexOf(e.target)>-1&&o.indexOf(e.source)>-1}))}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(e,t,n,r){if(null==e)return;const l=document.getElementById(t);width=l.offsetWidth,height=l.offsetHeight;const i=new Set;let o=null;const a=getCssVar("--graph-main"),s=getCssVar("--graph-muted");let u=ForceGraph()(l).graphData(e).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor((e=>null==o||e.source.id==o.id||e.target.id==o.id?a:s)).nodeCanvasObject(((e,t)=>{const n=e.neighbors&&e.neighbors.length||2,r=Math.min(7,Math.max(n/2,2));t.beginPath(),t.arc(e.x,e.y,r,0,2*Math.PI,!1),null==o||e==o||i.has(e.url)?t.fillStyle=a:t.fillStyle=s,t.fill(),e.current&&(t.beginPath(),t.arc(e.x,e.y,r+1,0,2*Math.PI,!1),t.lineWidth=.5,t.strokeStyle=a,t.stroke());const l=htmlDecode(e.title);t.font="3.5px Sans-Serif",t.textAlign="center",t.textBaseline="top",t.fillText(l,e.x,e.y+r+2)})).onNodeClick((e=>{window.location=e.url})).onNodeHover((e=>{i.clear(),e&&(i.add(e),e.neighbors.forEach((e=>i.add(e)))),o=e||null}));return(r||null!=n&&e.nodes.length>4)&&setTimeout((()=>{u.zoomToFit(5,75)}),n||200),u}function renderLocalGraph(e,t,n){window.graph&&window.graph._destructor();return renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter((e=>e.hide)).map((e=>e.id));return{links:JSON.parse(JSON.stringify(e.links)).filter((e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target))),nodes:[...Object.values(e.nodes).filter((e=>!e.hide))]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
+<script>async function fetchGraphData(){const e=await fetch("/graph.json").then((e=>e.json()));return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(e,t){const n=Object.values(e).map((e=>e.neighbors)).flat();return Object.keys(t).reduce(((r,l)=>(-1!=n.indexOf(l)?t[l].hide||(e[l]=t[l]):r[l]=t[l],r)),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes)),r=JSON.parse(JSON.stringify(e.links)),l=decodeURI(window.location.pathname),i=n[l];if(!i){const e=l.toLowerCase();i=Object.values(n).find((t=>t.url.toLowerCase()===e))}if(i||(i=Object.values(n).find((e=>e.home))),!i)return null;if(delete n[i.url],!i.home){delete n[Object.values(n).find((e=>e.home)).url]}i.current=!0;let o={};o[i.url]=i;for(let e=0;e<t;e++)n=getNextLevelNeighbours(o,n);nodes=Object.values(o),i.home||(nodes=nodes.filter((e=>!e.home)));let a=nodes.map((e=>e.id));return{nodes:nodes,links:r.filter((function(e){return a.indexOf(e.target)>-1&&a.indexOf(e.source)>-1}))}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(e,t,n,r){if(null==e)return;const l=document.getElementById(t);if(l&&"undefined"!=typeof ForceGraph&&(width=l.offsetWidth,height=l.offsetHeight,0!==width&&0!==height))try{const t=new Set;let i=null;const o=getCssVar("--graph-main"),a=getCssVar("--graph-muted");let u=ForceGraph()(l).graphData(e).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor((e=>null==i||e.source.id==i.id||e.target.id==i.id?o:a)).nodeCanvasObject(((e,n)=>{const r=e.neighbors&&e.neighbors.length||2,l=Math.min(7,Math.max(r/2,2));n.beginPath(),n.arc(e.x,e.y,l,0,2*Math.PI,!1),null==i||e==i||t.has(e.url)?n.fillStyle=o:n.fillStyle=a,n.fill(),e.current&&(n.beginPath(),n.arc(e.x,e.y,l+1,0,2*Math.PI,!1),n.lineWidth=.5,n.strokeStyle=o,n.stroke());const u=htmlDecode(e.title);n.font="3.5px Sans-Serif",n.textAlign="center",n.textBaseline="top",n.fillText(u,e.x,e.y+l+2)})).onNodeClick((e=>{window.location=e.url})).onNodeHover((e=>{t.clear(),e&&(t.add(e),e.neighbors.forEach((e=>t.add(e)))),i=e||null}));return(r||null!=n&&e.nodes.length>4)&&setTimeout((()=>{u.zoomToFit(5,75)}),n||200),u}catch(e){return void console.warn("Graph rendering failed:",e)}}function renderLocalGraph(e,t,n){if(null==e)return;window.graph&&window.graph._destructor();return renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter((e=>e.hide)).map((e=>e.id));return{links:JSON.parse(JSON.stringify(e.links)).filter((e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target))),nodes:[...Object.values(e.nodes).filter((e=>!e.hide))]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
 <div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
 <div class="graph-title-container">
 <div class="graph-title">Connected Pages</div>
@@ -1377,20 +1587,20 @@ if result.Error != nil {
 <span id="depth-display" x-text="depth"></span>
 </div>
 <div class="ctrl-right">
-<span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i icon-name="globe" aria-hidden="true"></i></span>
-<span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i icon-name="expand" aria-hidden="true"></i></span>
+<span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i data-lucide="globe" aria-hidden="true"></i></span>
+<span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i data-lucide="expand" aria-hidden="true"></i></span>
 </div>
 </div>
 </div>
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
-<span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+<span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i data-lucide="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
 </div>
 </div>
 <div class="toc">
 <div class="toc-title-container">
 <div class="toc-title">
-On this page
+go-gorm-FindInBatches
 </div>
 </div>
 <div class="toc-container">
@@ -1411,25 +1621,25 @@ On this page
 </div>
 </div>
 <div class="backlinks">
-<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-title">Pages mentioning this page</div>
 <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">Home</a>
 </div></div>
 </div>
 </div>
 </div>
 </aside>
-<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}.tooltip-pdf{width:100%;height:260px;border:0}</style>
 <div style="opacity:0;display:none" id="tooltip-wrapper">
 <div id="tooltip-content">
 </div>
 </div>
 <iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
 </iframe>
-<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function positionTooltip(t){var o=t.getClientRects()[t.getClientRects().length-1],e=document.documentElement.clientWidth,i=window.innerHeight,p=12,n=10,l=(o.top,i-(o.top+o.height)),r=(o.left,e-(o.left+o.width)),s=l>=tooltipWrapper.offsetHeight+p?"bottom":"top",a=r>=tooltipWrapper.offsetWidth+p?"right":"left";tooltipWrapper.style.top="bottom"===s?o.top+o.height+p+"px":o.top-tooltipWrapper.offsetHeight-p+"px",tooltipWrapper.style.left="right"===a?o.left+o.width+p+"px":o.left-tooltipWrapper.offsetWidth-p+"px";var c=parseFloat(tooltipWrapper.style.top),f=parseFloat(tooltipWrapper.style.left);c<n?tooltipWrapper.style.top="10px":c+tooltipWrapper.offsetHeight+n>i&&(tooltipWrapper.style.top=i-tooltipWrapper.offsetHeight-n+"px"),f<n?tooltipWrapper.style.left="10px":f+tooltipWrapper.offsetWidth+n>e&&(tooltipWrapper.style.left=e-tooltipWrapper.offsetWidth-n+"px")}function showTooltip(t){var o=t.currentTarget||t.target;if(o){var e=o.getAttribute("href");if(-1===e.indexOf("http")||-1!==e.indexOf(window.location.host)){tooltipWrapper.style.display="block",tooltipWrapper.style.opacity=0,positionTooltip(o);let t=e.split("#")[0];if(t.toLowerCase().endsWith(".pdf"))return tooltipContent.innerHTML='<iframe class="tooltip-pdf" src="'+t+'"></iframe>',tooltipWrapper.scrollTop=0,void setTimeout((function(){positionTooltip(o),tooltipWrapper.style.opacity=1}),1);if(/\.(png|jpg|jpeg|gif|webp|svg)$/i.test(t))return tooltipContent.innerHTML='<img src="'+t+'" style="max-width:100%;height:auto;" />',tooltipWrapper.scrollTop=0,void setTimeout((function(){positionTooltip(o),tooltipWrapper.style.opacity=1}),1);linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],setTimeout((function(){if(positionTooltip(o),tooltipWrapper.style.opacity=1,-1!=e.indexOf("#")){let t=e.split("#")[1];const o=tooltipWrapper.querySelector(`[id='${t}']`);o.classList.add("referred"),o.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){let i,p;try{i=iframe.contentWindow,p=i?i.document:null}catch(t){return tooltipContent.innerHTML="<div>Preview not available for this file.</div>",tooltipWrapper.scrollTop=0,void setTimeout((function(){positionTooltip(o),tooltipWrapper.style.opacity=1}),1)}if(!p)return;const n=p.querySelector("h1"),l=p.querySelector(".content");if(tooltipContentHtml="",n&&(tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+n.innerHTML+"</div>"),l)tooltipContentHtml+=l.innerHTML;else if(p.body)tooltipContentHtml+=p.body.innerHTML;else{if(!p.documentElement)return;tooltipContentHtml+=p.documentElement.innerHTML}tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.scrollTop=0,setTimeout((function(){if(positionTooltip(o),tooltipWrapper.style.opacity=1,-1!=e.indexOf("#")){let t=e.split("#")[1];const o=tooltipWrapper.querySelector(`[id='${t}']`);o.classList.add("referred"),console.log(o),o.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),positionTooltip(o)}}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
-<script src="/scripts/luxon.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
 <script defer="defer">TIMESTAMP_FORMAT="yyyy年MM月dd日 HH:mm:ss",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
-<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
-<script src="/scripts/image-lightbox.js"></script>
+<script defer="defer" src="https://unpkg.com/lucide@latest"></script>
+<script defer="defer">document.addEventListener("DOMContentLoaded",(()=>{lucide.createIcons({attrs:{class:["svg-icon"]}})}))</script>
 </body>
 </html>

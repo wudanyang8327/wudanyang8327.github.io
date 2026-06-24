@@ -3,7 +3,7 @@
   <title>枸杞</title>
   <link href="https://fulu.press/feed.xml" rel="self"/>
   <link href="https://fulu.press"/>
-  <updated>2026-04-30T11:08:40Z</updated>
+  <updated>2026-06-24T05:35:37Z</updated>
   <id>https://fulu.press</id><entry>
     <title>深入理解 X-Forwarded-For：代理背后的真实IP追踪</title>
     <updated>2026-01-17T18:19:07.000Z</updated>
@@ -4650,12 +4650,17 @@ sudo py-spy top -p $(pgrep -f &amp;quot;python my_app&amp;quot;)
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://fulu.press/card/python/python-%E4%B8%BA%E4%BB%80%E4%B9%88%20%7B%7D%20%E4%B8%8D%E8%83%BD%E4%BD%9C%E4%B8%BA%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%EF%BC%9F/&quot;&gt;python-为什么 {} 不能作为默认参数？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://fulu.press/404&quot; target=&quot;&quot;&gt;为什么使用弱引用&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&quot;学习路线&quot; tabindex=&quot;-1&quot;&gt;学习路线&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://fulu.press/404&quot; target=&quot;&quot;&gt;Python 学习书单规划&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;工程实践&quot; tabindex=&quot;-1&quot;&gt;工程实践&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://fulu.press/404&quot; target=&quot;&quot;&gt;python pip&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://fulu.press/card/python/python%20%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/&quot;&gt;python 虚拟环境&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://fulu.press/404&quot; target=&quot;&quot;&gt;python 日志&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://fulu.press/card/python/python%20%E5%A4%9A%E8%BF%9B%E7%A8%8B%E6%97%A5%E5%BF%97%E8%BD%AE%E8%BD%AC/&quot;&gt;python 多进程日志轮转&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://fulu.press/404&quot; target=&quot;&quot;&gt;Python 单元测试专题&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     <link href="https://fulu.press/card/python/Python MOC/"/>
@@ -5454,6 +5459,22 @@ obsidian 插件 digital-garden 在windows上面有个 bug，会将我的 frontma
     <id>https://fulu.press/card/obsidian/dg-publish=true的标签云/</id>
     <content type="html">&lt;h1 id=&quot;dg-publish-true&quot; tabindex=&quot;-1&quot;&gt;dg-publish=true的标签云&lt;/h1&gt;
 &lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:tool&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;tool&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:vm&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;vm&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:linux&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;linux&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
+                    &lt;a href=&quot;obsidian://search?query=tag:container&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
+                        &lt;strong&gt;container&lt;/strong&gt; (1)
+                    &lt;/a&gt;
+                &lt;/span&gt;&lt;span style=&quot;font-size:12.222222222222221px; margin-right:20px;&quot;&gt;
                     &lt;a href=&quot;obsidian://search?query=tag:clippings&quot; style=&quot;text-decoration:none; color:inherit;&quot;&gt;
                         &lt;strong&gt;clippings&lt;/strong&gt; (1)
                     &lt;/a&gt;
@@ -6753,7 +6774,7 @@ func main() {
     <link href="https://fulu.press/card/go/go 获取凌晨0点的时间戳/"/>
   </entry><entry>
     <title>Go MOC</title>
-    <updated>2026-04-30T11:08:24Z</updated>
+    <updated>2026-06-24T05:35:15Z</updated>
     <id>https://fulu.press/card/go/Go MOC/</id>
     <content type="html">&lt;h1 id=&quot;go-moc&quot; tabindex=&quot;-1&quot;&gt;Go MOC&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -8781,7 +8802,7 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
     <link href="https://fulu.press/card/0000 publish/CDN 带宽优化/"/>
   </entry><entry>
     <title>Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)</title>
-    <updated>2026-04-30T11:08:24Z</updated>
+    <updated>2026-06-24T05:35:15Z</updated>
     <id>https://fulu.press/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/</id>
     <content type="html">&lt;h1 id=&quot;visual-studio-code-breakpoint-set-to-grey-color-and-amp-not-working-error-may-be-excluded-because-of-just-my-code-option&quot; tabindex=&quot;-1&quot;&gt;Visual studio code breakpoint set to grey color &amp;amp; not working.error(may be excluded because of justMyCode option)&lt;/h1&gt;
 &lt;p&gt;I was only able to add Breakpoints to 3rd party libraries when I set 2 options:&lt;/p&gt;
@@ -8793,6 +8814,445 @@ Unix Socket：只能看 &lt;code&gt;ss -x&lt;/code&gt;、lsof&lt;/p&gt;
 &lt;p&gt;Tested on: version: 1.63.2&lt;/p&gt;
 </content>
     <link href="https://fulu.press/Clippings/Visual studio code breakpoint set to grey color &amp; not working.error(may be excluded because of justMyCode option)/"/>
+  </entry><entry>
+    <title>Lima 使用文档</title>
+    <updated>2026-06-22T00:00:00.000Z</updated>
+    <id>https://fulu.press/000 inbox/Lima 使用文档/</id>
+    <content type="html">&lt;h1 id=&quot;lima&quot; tabindex=&quot;-1&quot;&gt;Lima 使用文档&lt;/h1&gt;
+&lt;p&gt;Lima（Linux Machines）是在 macOS、Linux 等宿主机上创建 Linux 虚拟机的轻量工具。它常用来在 Mac 上获得接近原生 Linux 的开发环境，并内置文件共享、端口转发、containerd/nerdctl 等能力。&lt;/p&gt;
+&lt;p&gt;适合场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 macOS 上跑 Linux 命令、服务端程序、CI 脚本&lt;/li&gt;
+&lt;li&gt;需要隔离的开发环境&lt;/li&gt;
+&lt;li&gt;不想安装完整 Docker Desktop，但想跑容器&lt;/li&gt;
+&lt;li&gt;需要多套不同发行版或不同资源规格的虚拟机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!note]&lt;br /&gt;
+官方文档在 2026 年的示例中使用 &lt;code&gt;template:docker&lt;/code&gt;、&lt;code&gt;template:ubuntu-lts&lt;/code&gt; 这种模板 URL 写法。旧资料里常见的 &lt;code&gt;template://docker&lt;/code&gt; 不再作为首选写法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;安装&quot; tabindex=&quot;-1&quot;&gt;安装&lt;/h2&gt;
+&lt;p&gt;macOS 推荐用 Homebrew：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brew install lima
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其他安装方式：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# MacPorts
+sudo port install lima
+
+# Nix
+nix-env -i lima
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果使用 QEMU 作为虚拟化驱动，需要系统中有 QEMU；在 macOS 上 Lima 也可以使用 Apple 的 Virtualization.framework（配置中通常写作 &lt;code&gt;vz&lt;/code&gt;）。&lt;/p&gt;
+&lt;p&gt;安装后检查：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl --version
+limactl --help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;最快创建一个虚拟机&quot; tabindex=&quot;-1&quot;&gt;最快创建一个虚拟机&lt;/h2&gt;
+&lt;p&gt;创建并启动默认实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;第一次执行时，Lima 会弹出交互式选择。一般选择：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;Proceed with the current configuration
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;看到 &lt;code&gt;READY&lt;/code&gt; 后，进入默认虚拟机：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;lima
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在默认虚拟机里执行一条命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;lima uname -a
+lima cat /etc/os-release
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;退出虚拟机 shell：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;非交互创建适合脚本：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --tty=false
+
+# 或者使用 -y，含义相同
+limactl start -y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;创建具名虚拟机&quot; tabindex=&quot;-1&quot;&gt;创建具名虚拟机&lt;/h2&gt;
+&lt;p&gt;日常更推荐给虚拟机取名字，方便同时管理多台实例。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 使用默认模板创建 dev
+limactl start --name dev template:default
+
+# 使用 Ubuntu LTS 模板创建 ubuntu
+limactl start --name ubuntu template:ubuntu-lts
+
+# 创建 Debian
+limactl start --name debian template:debian
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;进入具名实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl shell dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在具名实例里执行命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl shell dev uname -a
+limactl shell dev -- sudo apt update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;也可以让 &lt;code&gt;lima&lt;/code&gt; 快捷命令临时指向某个实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;LIMA_INSTANCE=dev lima uname -a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;生命周期管理&quot; tabindex=&quot;-1&quot;&gt;生命周期管理&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 查看实例
+limactl list
+
+# 启动已经存在的实例
+limactl start dev
+
+# 停止实例
+limactl stop dev
+
+# 重启实例
+limactl restart dev
+
+# 删除实例，删除前最好确认没有重要数据只放在虚拟机磁盘里
+limactl delete dev
+
+# 非交互删除
+limactl delete dev -f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看实例目录：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl list dev --format &#39;{{.Dir}}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;实例通常位于：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;~/.lima/&amp;lt;实例名&amp;gt;/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;按资源规格创建虚拟机&quot; tabindex=&quot;-1&quot;&gt;按资源规格创建虚拟机&lt;/h2&gt;
+&lt;p&gt;创建时指定 CPU、内存、磁盘：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev &#92;
+  --cpus 4 &#92;
+  --memory 8 &#92;
+  --disk 80 &#92;
+  template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--cpus 4&lt;/code&gt;：分配 4 个 CPU&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--memory 8&lt;/code&gt;：分配 8 GiB 内存&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--disk 80&lt;/code&gt;：分配 80 GiB 磁盘&lt;/li&gt;
+&lt;li&gt;这些创建期参数一般应在实例创建时确定；已创建实例要改配置，通常需要停机后编辑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;停机后编辑实例配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl stop dev
+limactl edit dev
+limactl start dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;使用模板&quot; tabindex=&quot;-1&quot;&gt;使用模板&lt;/h2&gt;
+&lt;p&gt;列出内置模板：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --list-templates
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;常用模板：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name ubuntu template:ubuntu-lts
+limactl start --name debian template:debian
+limactl start --name fedora template:fedora
+limactl start --name arch template:archlinux
+limactl start --name docker template:docker
+limactl start --name podman template:podman
+limactl start --name k3s template:k3s
+limactl start --name k8s template:k8s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果想把创建和启动拆开：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl create --name dev template:ubuntu-lts
+limactl start dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;yaml&quot; tabindex=&quot;-1&quot;&gt;自定义 YAML 创建虚拟机&lt;/h2&gt;
+&lt;p&gt;创建 &lt;code&gt;dev.yaml&lt;/code&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;minimumLimaVersion: &amp;quot;2.0.0&amp;quot;
+
+base:
+  - template:ubuntu-lts
+
+cpus: 4
+memory: &amp;quot;8GiB&amp;quot;
+disk: &amp;quot;80GiB&amp;quot;
+
+mountType: &amp;quot;virtiofs&amp;quot;
+mounts:
+  - location: &amp;quot;~&amp;quot;
+    writable: false
+  - location: &amp;quot;~/projects&amp;quot;
+    mountPoint: &amp;quot;/workspace&amp;quot;
+    writable: true
+
+portForwards:
+  - guestPort: 8080
+    hostPort: 8080
+  - guestPort: 3000
+    hostPort: 3000
+
+provision:
+  - mode: system
+    script: |
+      #!/bin/bash
+      set -euxo pipefail
+      apt-get update
+      apt-get install -y git curl build-essential
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;用 YAML 创建并启动：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev ./dev.yaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;进入验证：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl shell dev
+ls /workspace
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;文件共享&quot; tabindex=&quot;-1&quot;&gt;文件共享&lt;/h2&gt;
+&lt;p&gt;默认模板会把宿主机 home 目录以只读方式挂载进虚拟机。macOS 宿主机里路径通常保持为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;/Users/&amp;lt;你的用户名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;虚拟机自己的 home 目录是独立的。Lima 2.1 之后，Linux guest 通常使用：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;/home/&amp;lt;你的用户名&amp;gt;.guest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;临时让默认挂载可写：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev --mount-writable template:default
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;创建时指定挂载：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev &#92;
+  --mount ~/projects:w &#92;
+  template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;YAML 中指定挂载：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;mounts:
+  - location: &amp;quot;~/projects&amp;quot;
+    mountPoint: &amp;quot;/workspace&amp;quot;
+    writable: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;常见挂载类型：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;适用场景&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;9p&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;QEMU 的默认挂载类型，适合通用场景&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;virtiofs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;VZ 下常用，macOS 13+ 支持，性能通常更好&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;reverse-sshfs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;兼容性好，适合遇到 9p/virtiofs 问题时回退&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;创建时指定挂载类型：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev --vm-type=vz --mount-type=virtiofs template:ubuntu-lts
+limactl start --name dev-qemu --vm-type=qemu --mount-type=9p template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;复制文件&quot; tabindex=&quot;-1&quot;&gt;复制文件&lt;/h2&gt;
+&lt;p&gt;不想配置共享目录时，可以直接复制文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 宿主机 -&amp;gt; 虚拟机
+limactl copy ./local-file.txt dev:/tmp/
+
+# 虚拟机 -&amp;gt; 宿主机
+limactl copy dev:/tmp/result.txt ./
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;端口转发&quot; tabindex=&quot;-1&quot;&gt;端口转发&lt;/h2&gt;
+&lt;p&gt;Lima 支持把虚拟机内监听的 localhost 端口转发到宿主机。&lt;/p&gt;
+&lt;p&gt;例如在虚拟机里启动服务：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl shell dev -- python3 -m http.server 8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;宿主机访问：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl http://127.0.0.1:8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;创建时通过命令行指定端口：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name web --port-forward 8080:80 template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;YAML 中指定端口：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;portForwards:
+  - guestPort: 80
+    hostPort: 8080
+  - guestPort: 3000
+    hostPort: 3000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;忽略某个端口：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;portForwards:
+  - guestPort: 22
+    ignore: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果要通过虚拟机 IP 访问，而不是只通过 localhost，可以给实例连接 &lt;code&gt;vzNAT&lt;/code&gt; 或 &lt;code&gt;lima:shared&lt;/code&gt; 网络：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev --network vzNAT template:ubuntu-lts
+limactl shell dev -- ip addr show lima0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;虚拟化驱动&quot; tabindex=&quot;-1&quot;&gt;虚拟化驱动&lt;/h2&gt;
+&lt;p&gt;常用驱动：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;驱动&lt;/th&gt;
+&lt;th&gt;平台&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;qemu&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;macOS/Linux&lt;/td&gt;
+&lt;td&gt;通用，支持跨架构模拟&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;vz&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;macOS 13+&lt;/td&gt;
+&lt;td&gt;Apple Virtualization.framework，性能通常更好&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;wsl2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Windows&lt;/td&gt;
+&lt;td&gt;实验性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;创建 VZ 实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev --vm-type=vz template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 Apple Silicon Mac 上启用 Rosetta：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev &#92;
+  --vm-type=vz &#92;
+  --rosetta &#92;
+  template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对应 YAML：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;vmType: &amp;quot;vz&amp;quot;
+rosetta:
+  enabled: true
+  binfmt: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;containerd-nerdctl&quot; tabindex=&quot;-1&quot;&gt;使用 containerd 和 nerdctl&lt;/h2&gt;
+&lt;p&gt;Lima 默认集成 containerd，可用 &lt;code&gt;nerdctl&lt;/code&gt; 运行容器。用法和 Docker CLI 很像。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 在默认实例里运行 nginx
+lima nerdctl run -d --name nginx -p 127.0.0.1:8080:80 nginx:alpine
+
+# 查看容器
+lima nerdctl ps
+
+# 停止并删除
+lima nerdctl rm -f nginx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;具名实例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl shell dev -- nerdctl ps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;创建时禁用 containerd：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name plain --containerd=none template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;使用 rootful containerd：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name ctr --containerd=system template:ubuntu-lts
+limactl shell ctr -- sudo nerdctl ps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;docker&quot; tabindex=&quot;-1&quot;&gt;使用 Docker&lt;/h2&gt;
+&lt;p&gt;如果要使用 Docker Engine，可以直接使用 Docker 模板。&lt;/p&gt;
+&lt;p&gt;Rootless Docker：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start template:docker
+export DOCKER_HOST=&amp;quot;$(limactl list docker --format &#39;unix://{{.Dir}}/sock/docker.sock&#39;)&amp;quot;
+docker run -d --name nginx -p 127.0.0.1:8080:80 nginx:alpine
+docker ps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Rootful Docker：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start template:docker-rootful
+export DOCKER_HOST=&amp;quot;$(limactl list docker-rootful --format &#39;unix://{{.Dir}}/sock/docker.sock&#39;)&amp;quot;
+docker run -d --name nginx -p 127.0.0.1:8080:80 nginx:alpine
+docker ps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;也可以把 &lt;code&gt;DOCKER_HOST&lt;/code&gt; 写入 shell 配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;echo &#39;export DOCKER_HOST=&amp;quot;$(limactl list docker --format &#39;&#92;&#39;&#39;unix://{{.Dir}}/sock/docker.sock&#39;&#92;&#39;&#39;)&amp;quot;&#39; &amp;gt;&amp;gt; ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;ssh&quot; tabindex=&quot;-1&quot;&gt;SSH 连接&lt;/h2&gt;
+&lt;p&gt;查看 SSH 命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl show-ssh dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;直接 SSH：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;ssh -F ~/.lima/dev/ssh.config lima-dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在脚本中更推荐用：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl shell dev -- command args
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;快照&quot; tabindex=&quot;-1&quot;&gt;快照&lt;/h2&gt;
+&lt;p&gt;快照适合在大改系统前留回滚点。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl snapshot create dev --tag before-upgrade
+limactl snapshot list dev
+limactl snapshot apply dev --tag before-upgrade
+limactl snapshot delete dev --tag before-upgrade
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;全局默认配置&quot; tabindex=&quot;-1&quot;&gt;全局默认配置&lt;/h2&gt;
+&lt;p&gt;可以在以下位置放全局默认配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;~/.lima/_config/default.yaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;例如让新实例默认使用 VZ 和 virtiofs：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;vmType: &amp;quot;vz&amp;quot;
+mountType: &amp;quot;virtiofs&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;还有一个覆盖配置：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;~/.lima/_config/override.yaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;override.yaml&lt;/code&gt; 会覆盖具体实例的配置，适合强制应用某些全局策略。谨慎使用。&lt;/p&gt;
+&lt;h2 id=&quot;常见问题&quot; tabindex=&quot;-1&quot;&gt;常见问题&lt;/h2&gt;
+&lt;h3 id=&quot;端口访问不到&quot; tabindex=&quot;-1&quot;&gt;端口访问不到&lt;/h3&gt;
+&lt;p&gt;检查服务是否在虚拟机内监听：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl shell dev -- ss -ltnp
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果服务只监听虚拟机内某个非 localhost 地址，先改成监听 &lt;code&gt;0.0.0.0&lt;/code&gt; 或 &lt;code&gt;127.0.0.1&lt;/code&gt; 再测试。&lt;/p&gt;
+&lt;h3 id=&quot;共享目录不可写&quot; tabindex=&quot;-1&quot;&gt;共享目录不可写&lt;/h3&gt;
+&lt;p&gt;默认 home 挂载通常是只读的。创建实例时用：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl start --name dev --mount ~/projects:w template:ubuntu-lts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或在 YAML 里设置：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yaml&quot;&gt;mounts:
+  - location: &amp;quot;~/projects&amp;quot;
+    writable: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;yaml-1&quot; tabindex=&quot;-1&quot;&gt;改了 YAML 但没生效&lt;/h3&gt;
+&lt;p&gt;部分配置是创建期配置，不能对已存在实例直接变更。稳妥做法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl stop dev
+limactl edit dev
+limactl start dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果仍无效，可能需要删除重建：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl delete dev
+limactl start --name dev ./dev.yaml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;磁盘空间不够&quot; tabindex=&quot;-1&quot;&gt;磁盘空间不够&lt;/h3&gt;
+&lt;p&gt;查看磁盘：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl disk list
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;调整磁盘需参考当前版本的 &lt;code&gt;limactl disk resize&lt;/code&gt; 帮助：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;limactl disk resize --help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;推荐日常流程&quot; tabindex=&quot;-1&quot;&gt;推荐日常流程&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;# 1. 创建开发 VM
+limactl start --name dev --cpus 4 --memory 8 --disk 80 template:ubuntu-lts
+
+# 2. 进入 VM
+limactl shell dev
+
+# 3. 在 VM 中安装依赖
+sudo apt update
+sudo apt install -y git curl build-essential
+
+# 4. 宿主机执行 VM 命令
+limactl shell dev -- uname -a
+
+# 5. 停止 VM
+limactl stop dev
+
+# 6. 再次启动
+limactl start dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;参考链接&quot; tabindex=&quot;-1&quot;&gt;参考链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Lima 官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/installation/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/usage/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/reference/limactl_start/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;limactl start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/templates/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Templates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/config/mount/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Filesystem mounts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/config/port/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Port Forwarding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/examples/containers/containerd/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;containerd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lima-vm.io/docs/examples/containers/docker/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <link href="https://fulu.press/000 inbox/Lima 使用文档/"/>
   </entry><entry>
     <title>2024-10-11</title>
     <updated>2026-01-16T03:22:35.000Z</updated>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<title>动态规划很多时候就是在填表</title>
+<title>Lima 使用文档</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script type="importmap">
@@ -80,7 +80,7 @@
 <span class="foldername">000 inbox</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink">
+<div @click.stop class="notelink active-note">
 <a data-note-icon="2" style="text-decoration:none" class="filename" href="/000 inbox/Lima 使用文档/">Lima 使用文档 </a>
 </div>
 </div>
@@ -1251,7 +1251,7 @@
 <span class="foldername">动态规划</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note">
+<div @click.stop class="notelink">
 <a data-note-icon="2" style="text-decoration:none" class="filename" href="/card/算法/动态规划/动态规划很多时候就是在填表/">动态规划很多时候就是在填表 </a>
 </div>
 </div>
@@ -1421,18 +1421,458 @@
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-24T05:35:34.560Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
-<h1 data-note-icon="2">动态规划很多时候就是在填表</h1>
+<h1 data-note-icon="2">Lima 使用文档</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#null
+#tool
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#vm
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#linux
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#container
 </a>
 </div>
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2024-09-11T23:05:30+08:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2025-11-17T15:29:43+08:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-06-12"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-06-22"></span></div></div></div>
 </header>
-<h1 id="动态规划很多时候就是在填表" tabindex="-1">动态规划很多时候就是在填表</h1>
-<p><a href="https://leetcode.cn/problems/longest-palindromic-substring/solutions/7792/zhong-xin-kuo-san-dong-tai-gui-hua-by-liweiwei1419" target="_blank" class="external-link">https://leetcode.cn/problems/longest-palindromic-substring/solutions/7792/zhong-xin-kuo-san-dong-tai-gui-hua-by-liweiwei1419</a></p>
-<p>填表的顺序是非常重要的</p>
+<h1 id="lima" tabindex="-1">Lima 使用文档</h1>
+<p>Lima（Linux Machines）是在 macOS、Linux 等宿主机上创建 Linux 虚拟机的轻量工具。它常用来在 Mac 上获得接近原生 Linux 的开发环境，并内置文件共享、端口转发、containerd/nerdctl 等能力。</p>
+<p>适合场景：</p>
+<ul>
+<li>在 macOS 上跑 Linux 命令、服务端程序、CI 脚本</li>
+<li>需要隔离的开发环境</li>
+<li>不想安装完整 Docker Desktop，但想跑容器</li>
+<li>需要多套不同发行版或不同资源规格的虚拟机</li>
+</ul>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner">Note</div></div>
+<div class="callout-content">
+<p>
+官方文档在 2026 年的示例中使用 <code>template:docker</code>、<code>template:ubuntu-lts</code> 这种模板 URL 写法。旧资料里常见的 <code>template://docker</code> 不再作为首选写法。</p>
+</div></div>
+<h2 id="安装" tabindex="-1">安装</h2>
+<p>macOS 推荐用 Homebrew：</p>
+<pre><code class="language-bash">brew install lima
+</code></pre>
+<p>其他安装方式：</p>
+<pre><code class="language-bash"># MacPorts
+sudo port install lima
+
+# Nix
+nix-env -i lima
+</code></pre>
+<p>如果使用 QEMU 作为虚拟化驱动，需要系统中有 QEMU；在 macOS 上 Lima 也可以使用 Apple 的 Virtualization.framework（配置中通常写作 <code>vz</code>）。</p>
+<p>安装后检查：</p>
+<pre><code class="language-bash">limactl --version
+limactl --help
+</code></pre>
+<h2 id="最快创建一个虚拟机" tabindex="-1">最快创建一个虚拟机</h2>
+<p>创建并启动默认实例：</p>
+<pre><code class="language-bash">limactl start
+</code></pre>
+<p>第一次执行时，Lima 会弹出交互式选择。一般选择：</p>
+<pre><code class="language-text">Proceed with the current configuration
+</code></pre>
+<p>看到 <code>READY</code> 后，进入默认虚拟机：</p>
+<pre><code class="language-bash">lima
+</code></pre>
+<p>在默认虚拟机里执行一条命令：</p>
+<pre><code class="language-bash">lima uname -a
+lima cat /etc/os-release
+</code></pre>
+<p>退出虚拟机 shell：</p>
+<pre><code class="language-bash">exit
+</code></pre>
+<p>非交互创建适合脚本：</p>
+<pre><code class="language-bash">limactl start --tty=false
+
+# 或者使用 -y，含义相同
+limactl start -y
+</code></pre>
+<h2 id="创建具名虚拟机" tabindex="-1">创建具名虚拟机</h2>
+<p>日常更推荐给虚拟机取名字，方便同时管理多台实例。</p>
+<pre><code class="language-bash"># 使用默认模板创建 dev
+limactl start --name dev template:default
+
+# 使用 Ubuntu LTS 模板创建 ubuntu
+limactl start --name ubuntu template:ubuntu-lts
+
+# 创建 Debian
+limactl start --name debian template:debian
+</code></pre>
+<p>进入具名实例：</p>
+<pre><code class="language-bash">limactl shell dev
+</code></pre>
+<p>在具名实例里执行命令：</p>
+<pre><code class="language-bash">limactl shell dev uname -a
+limactl shell dev -- sudo apt update
+</code></pre>
+<p>也可以让 <code>lima</code> 快捷命令临时指向某个实例：</p>
+<pre><code class="language-bash">LIMA_INSTANCE=dev lima uname -a
+</code></pre>
+<h2 id="生命周期管理" tabindex="-1">生命周期管理</h2>
+<pre><code class="language-bash"># 查看实例
+limactl list
+
+# 启动已经存在的实例
+limactl start dev
+
+# 停止实例
+limactl stop dev
+
+# 重启实例
+limactl restart dev
+
+# 删除实例，删除前最好确认没有重要数据只放在虚拟机磁盘里
+limactl delete dev
+
+# 非交互删除
+limactl delete dev -f
+</code></pre>
+<p>查看实例目录：</p>
+<pre><code class="language-bash">limactl list dev --format '{{.Dir}}'
+</code></pre>
+<p>实例通常位于：</p>
+<pre><code class="language-text">~/.lima/&lt;实例名&gt;/
+</code></pre>
+<h2 id="按资源规格创建虚拟机" tabindex="-1">按资源规格创建虚拟机</h2>
+<p>创建时指定 CPU、内存、磁盘：</p>
+<pre><code class="language-bash">limactl start --name dev \
+  --cpus 4 \
+  --memory 8 \
+  --disk 80 \
+  template:ubuntu-lts
+</code></pre>
+<p>说明：</p>
+<ul>
+<li><code>--cpus 4</code>：分配 4 个 CPU</li>
+<li><code>--memory 8</code>：分配 8 GiB 内存</li>
+<li><code>--disk 80</code>：分配 80 GiB 磁盘</li>
+<li>这些创建期参数一般应在实例创建时确定；已创建实例要改配置，通常需要停机后编辑</li>
+</ul>
+<p>停机后编辑实例配置：</p>
+<pre><code class="language-bash">limactl stop dev
+limactl edit dev
+limactl start dev
+</code></pre>
+<h2 id="使用模板" tabindex="-1">使用模板</h2>
+<p>列出内置模板：</p>
+<pre><code class="language-bash">limactl start --list-templates
+</code></pre>
+<p>常用模板：</p>
+<pre><code class="language-bash">limactl start --name ubuntu template:ubuntu-lts
+limactl start --name debian template:debian
+limactl start --name fedora template:fedora
+limactl start --name arch template:archlinux
+limactl start --name docker template:docker
+limactl start --name podman template:podman
+limactl start --name k3s template:k3s
+limactl start --name k8s template:k8s
+</code></pre>
+<p>如果想把创建和启动拆开：</p>
+<pre><code class="language-bash">limactl create --name dev template:ubuntu-lts
+limactl start dev
+</code></pre>
+<h2 id="yaml" tabindex="-1">自定义 YAML 创建虚拟机</h2>
+<p>创建 <code>dev.yaml</code>：</p>
+<pre><code class="language-yaml">minimumLimaVersion: &quot;2.0.0&quot;
+
+base:
+  - template:ubuntu-lts
+
+cpus: 4
+memory: &quot;8GiB&quot;
+disk: &quot;80GiB&quot;
+
+mountType: &quot;virtiofs&quot;
+mounts:
+  - location: &quot;~&quot;
+    writable: false
+  - location: &quot;~/projects&quot;
+    mountPoint: &quot;/workspace&quot;
+    writable: true
+
+portForwards:
+  - guestPort: 8080
+    hostPort: 8080
+  - guestPort: 3000
+    hostPort: 3000
+
+provision:
+  - mode: system
+    script: |
+      #!/bin/bash
+      set -euxo pipefail
+      apt-get update
+      apt-get install -y git curl build-essential
+</code></pre>
+<p>用 YAML 创建并启动：</p>
+<pre><code class="language-bash">limactl start --name dev ./dev.yaml
+</code></pre>
+<p>进入验证：</p>
+<pre><code class="language-bash">limactl shell dev
+ls /workspace
+</code></pre>
+<h2 id="文件共享" tabindex="-1">文件共享</h2>
+<p>默认模板会把宿主机 home 目录以只读方式挂载进虚拟机。macOS 宿主机里路径通常保持为：</p>
+<pre><code class="language-text">/Users/&lt;你的用户名&gt;
+</code></pre>
+<p>虚拟机自己的 home 目录是独立的。Lima 2.1 之后，Linux guest 通常使用：</p>
+<pre><code class="language-text">/home/&lt;你的用户名&gt;.guest
+</code></pre>
+<p>临时让默认挂载可写：</p>
+<pre><code class="language-bash">limactl start --name dev --mount-writable template:default
+</code></pre>
+<p>创建时指定挂载：</p>
+<pre><code class="language-bash">limactl start --name dev \
+  --mount ~/projects:w \
+  template:ubuntu-lts
+</code></pre>
+<p>YAML 中指定挂载：</p>
+<pre><code class="language-yaml">mounts:
+  - location: &quot;~/projects&quot;
+    mountPoint: &quot;/workspace&quot;
+    writable: true
+</code></pre>
+<p>常见挂载类型：</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>9p</code></td>
+<td>QEMU 的默认挂载类型，适合通用场景</td>
+</tr>
+<tr>
+<td><code>virtiofs</code></td>
+<td>VZ 下常用，macOS 13+ 支持，性能通常更好</td>
+</tr>
+<tr>
+<td><code>reverse-sshfs</code></td>
+<td>兼容性好，适合遇到 9p/virtiofs 问题时回退</td>
+</tr>
+</tbody>
+</table></div>
+<p>创建时指定挂载类型：</p>
+<pre><code class="language-bash">limactl start --name dev --vm-type=vz --mount-type=virtiofs template:ubuntu-lts
+limactl start --name dev-qemu --vm-type=qemu --mount-type=9p template:ubuntu-lts
+</code></pre>
+<h2 id="复制文件" tabindex="-1">复制文件</h2>
+<p>不想配置共享目录时，可以直接复制文件：</p>
+<pre><code class="language-bash"># 宿主机 -&gt; 虚拟机
+limactl copy ./local-file.txt dev:/tmp/
+
+# 虚拟机 -&gt; 宿主机
+limactl copy dev:/tmp/result.txt ./
+</code></pre>
+<h2 id="端口转发" tabindex="-1">端口转发</h2>
+<p>Lima 支持把虚拟机内监听的 localhost 端口转发到宿主机。</p>
+<p>例如在虚拟机里启动服务：</p>
+<pre><code class="language-bash">limactl shell dev -- python3 -m http.server 8080
+</code></pre>
+<p>宿主机访问：</p>
+<pre><code class="language-bash">curl http://127.0.0.1:8080
+</code></pre>
+<p>创建时通过命令行指定端口：</p>
+<pre><code class="language-bash">limactl start --name web --port-forward 8080:80 template:ubuntu-lts
+</code></pre>
+<p>YAML 中指定端口：</p>
+<pre><code class="language-yaml">portForwards:
+  - guestPort: 80
+    hostPort: 8080
+  - guestPort: 3000
+    hostPort: 3000
+</code></pre>
+<p>忽略某个端口：</p>
+<pre><code class="language-yaml">portForwards:
+  - guestPort: 22
+    ignore: true
+</code></pre>
+<p>如果要通过虚拟机 IP 访问，而不是只通过 localhost，可以给实例连接 <code>vzNAT</code> 或 <code>lima:shared</code> 网络：</p>
+<pre><code class="language-bash">limactl start --name dev --network vzNAT template:ubuntu-lts
+limactl shell dev -- ip addr show lima0
+</code></pre>
+<h2 id="虚拟化驱动" tabindex="-1">虚拟化驱动</h2>
+<p>常用驱动：</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>驱动</th>
+<th>平台</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>qemu</code></td>
+<td>macOS/Linux</td>
+<td>通用，支持跨架构模拟</td>
+</tr>
+<tr>
+<td><code>vz</code></td>
+<td>macOS 13+</td>
+<td>Apple Virtualization.framework，性能通常更好</td>
+</tr>
+<tr>
+<td><code>wsl2</code></td>
+<td>Windows</td>
+<td>实验性</td>
+</tr>
+</tbody>
+</table></div>
+<p>创建 VZ 实例：</p>
+<pre><code class="language-bash">limactl start --name dev --vm-type=vz template:ubuntu-lts
+</code></pre>
+<p>在 Apple Silicon Mac 上启用 Rosetta：</p>
+<pre><code class="language-bash">limactl start --name dev \
+  --vm-type=vz \
+  --rosetta \
+  template:ubuntu-lts
+</code></pre>
+<p>对应 YAML：</p>
+<pre><code class="language-yaml">vmType: &quot;vz&quot;
+rosetta:
+  enabled: true
+  binfmt: true
+</code></pre>
+<h2 id="containerd-nerdctl" tabindex="-1">使用 containerd 和 nerdctl</h2>
+<p>Lima 默认集成 containerd，可用 <code>nerdctl</code> 运行容器。用法和 Docker CLI 很像。</p>
+<pre><code class="language-bash"># 在默认实例里运行 nginx
+lima nerdctl run -d --name nginx -p 127.0.0.1:8080:80 nginx:alpine
+
+# 查看容器
+lima nerdctl ps
+
+# 停止并删除
+lima nerdctl rm -f nginx
+</code></pre>
+<p>具名实例：</p>
+<pre><code class="language-bash">limactl shell dev -- nerdctl ps
+</code></pre>
+<p>创建时禁用 containerd：</p>
+<pre><code class="language-bash">limactl start --name plain --containerd=none template:ubuntu-lts
+</code></pre>
+<p>使用 rootful containerd：</p>
+<pre><code class="language-bash">limactl start --name ctr --containerd=system template:ubuntu-lts
+limactl shell ctr -- sudo nerdctl ps
+</code></pre>
+<h2 id="docker" tabindex="-1">使用 Docker</h2>
+<p>如果要使用 Docker Engine，可以直接使用 Docker 模板。</p>
+<p>Rootless Docker：</p>
+<pre><code class="language-bash">limactl start template:docker
+export DOCKER_HOST=&quot;$(limactl list docker --format 'unix://{{.Dir}}/sock/docker.sock')&quot;
+docker run -d --name nginx -p 127.0.0.1:8080:80 nginx:alpine
+docker ps
+</code></pre>
+<p>Rootful Docker：</p>
+<pre><code class="language-bash">limactl start template:docker-rootful
+export DOCKER_HOST=&quot;$(limactl list docker-rootful --format 'unix://{{.Dir}}/sock/docker.sock')&quot;
+docker run -d --name nginx -p 127.0.0.1:8080:80 nginx:alpine
+docker ps
+</code></pre>
+<p>也可以把 <code>DOCKER_HOST</code> 写入 shell 配置：</p>
+<pre><code class="language-bash">echo 'export DOCKER_HOST=&quot;$(limactl list docker --format '\''unix://{{.Dir}}/sock/docker.sock'\'')&quot;' &gt;&gt; ~/.zshrc
+</code></pre>
+<h2 id="ssh" tabindex="-1">SSH 连接</h2>
+<p>查看 SSH 命令：</p>
+<pre><code class="language-bash">limactl show-ssh dev
+</code></pre>
+<p>直接 SSH：</p>
+<pre><code class="language-bash">ssh -F ~/.lima/dev/ssh.config lima-dev
+</code></pre>
+<p>在脚本中更推荐用：</p>
+<pre><code class="language-bash">limactl shell dev -- command args
+</code></pre>
+<h2 id="快照" tabindex="-1">快照</h2>
+<p>快照适合在大改系统前留回滚点。</p>
+<pre><code class="language-bash">limactl snapshot create dev --tag before-upgrade
+limactl snapshot list dev
+limactl snapshot apply dev --tag before-upgrade
+limactl snapshot delete dev --tag before-upgrade
+</code></pre>
+<h2 id="全局默认配置" tabindex="-1">全局默认配置</h2>
+<p>可以在以下位置放全局默认配置：</p>
+<pre><code class="language-text">~/.lima/_config/default.yaml
+</code></pre>
+<p>例如让新实例默认使用 VZ 和 virtiofs：</p>
+<pre><code class="language-yaml">vmType: &quot;vz&quot;
+mountType: &quot;virtiofs&quot;
+</code></pre>
+<p>还有一个覆盖配置：</p>
+<pre><code class="language-text">~/.lima/_config/override.yaml
+</code></pre>
+<p><code>override.yaml</code> 会覆盖具体实例的配置，适合强制应用某些全局策略。谨慎使用。</p>
+<h2 id="常见问题" tabindex="-1">常见问题</h2>
+<h3 id="端口访问不到" tabindex="-1">端口访问不到</h3>
+<p>检查服务是否在虚拟机内监听：</p>
+<pre><code class="language-bash">limactl shell dev -- ss -ltnp
+</code></pre>
+<p>如果服务只监听虚拟机内某个非 localhost 地址，先改成监听 <code>0.0.0.0</code> 或 <code>127.0.0.1</code> 再测试。</p>
+<h3 id="共享目录不可写" tabindex="-1">共享目录不可写</h3>
+<p>默认 home 挂载通常是只读的。创建实例时用：</p>
+<pre><code class="language-bash">limactl start --name dev --mount ~/projects:w template:ubuntu-lts
+</code></pre>
+<p>或在 YAML 里设置：</p>
+<pre><code class="language-yaml">mounts:
+  - location: &quot;~/projects&quot;
+    writable: true
+</code></pre>
+<h3 id="yaml-1" tabindex="-1">改了 YAML 但没生效</h3>
+<p>部分配置是创建期配置，不能对已存在实例直接变更。稳妥做法：</p>
+<pre><code class="language-bash">limactl stop dev
+limactl edit dev
+limactl start dev
+</code></pre>
+<p>如果仍无效，可能需要删除重建：</p>
+<pre><code class="language-bash">limactl delete dev
+limactl start --name dev ./dev.yaml
+</code></pre>
+<h3 id="磁盘空间不够" tabindex="-1">磁盘空间不够</h3>
+<p>查看磁盘：</p>
+<pre><code class="language-bash">limactl disk list
+</code></pre>
+<p>调整磁盘需参考当前版本的 <code>limactl disk resize</code> 帮助：</p>
+<pre><code class="language-bash">limactl disk resize --help
+</code></pre>
+<h2 id="推荐日常流程" tabindex="-1">推荐日常流程</h2>
+<pre><code class="language-bash"># 1. 创建开发 VM
+limactl start --name dev --cpus 4 --memory 8 --disk 80 template:ubuntu-lts
+
+# 2. 进入 VM
+limactl shell dev
+
+# 3. 在 VM 中安装依赖
+sudo apt update
+sudo apt install -y git curl build-essential
+
+# 4. 宿主机执行 VM 命令
+limactl shell dev -- uname -a
+
+# 5. 停止 VM
+limactl stop dev
+
+# 6. 再次启动
+limactl start dev
+</code></pre>
+<h2 id="参考链接" tabindex="-1">参考链接</h2>
+<ul>
+<li><a href="https://lima-vm.io/docs/" target="_blank" class="external-link">Lima 官方文档</a></li>
+<li><a href="https://lima-vm.io/docs/installation/" target="_blank" class="external-link">Installation</a></li>
+<li><a href="https://lima-vm.io/docs/usage/" target="_blank" class="external-link">Usage</a></li>
+<li><a href="https://lima-vm.io/docs/reference/limactl_start/" target="_blank" class="external-link">limactl start</a></li>
+<li><a href="https://lima-vm.io/docs/templates/" target="_blank" class="external-link">Templates</a></li>
+<li><a href="https://lima-vm.io/docs/config/mount/" target="_blank" class="external-link">Filesystem mounts</a></li>
+<li><a href="https://lima-vm.io/docs/config/port/" target="_blank" class="external-link">Port Forwarding</a></li>
+<li><a href="https://lima-vm.io/docs/examples/containers/containerd/" target="_blank" class="external-link">containerd</a></li>
+<li><a href="https://lima-vm.io/docs/examples/containers/docker/" target="_blank" class="external-link">Docker</a></li>
+</ul>
 <hr>
 <script src="https://giscus.app/client.js" data-repo="wudanyang8327/wudanyang8327.github.io" data-repo-id="R_kgDOQMJa_g" data-category="Announcements" data-category-id="DIC_kwDOQMJa_s4Cx9C2" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
@@ -1459,13 +1899,63 @@
 <div class="toc">
 <div class="toc-title-container">
 <div class="toc-title">
-动态规划很多时候就是在填表
+Lima 使用文档
 </div>
 </div>
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#动态规划很多时候就是在填表">动态规划很多时候就是在填表</a>
+<li><a href="#lima">Lima 使用文档</a>
+<ol>
+<li><a href="#安装">安装</a>
+</li>
+<li><a href="#最快创建一个虚拟机">最快创建一个虚拟机</a>
+</li>
+<li><a href="#创建具名虚拟机">创建具名虚拟机</a>
+</li>
+<li><a href="#生命周期管理">生命周期管理</a>
+</li>
+<li><a href="#按资源规格创建虚拟机">按资源规格创建虚拟机</a>
+</li>
+<li><a href="#使用模板">使用模板</a>
+</li>
+<li><a href="#yaml">自定义 YAML 创建虚拟机</a>
+</li>
+<li><a href="#文件共享">文件共享</a>
+</li>
+<li><a href="#复制文件">复制文件</a>
+</li>
+<li><a href="#端口转发">端口转发</a>
+</li>
+<li><a href="#虚拟化驱动">虚拟化驱动</a>
+</li>
+<li><a href="#containerd-nerdctl">使用 containerd 和 nerdctl</a>
+</li>
+<li><a href="#docker">使用 Docker</a>
+</li>
+<li><a href="#ssh">SSH 连接</a>
+</li>
+<li><a href="#快照">快照</a>
+</li>
+<li><a href="#全局默认配置">全局默认配置</a>
+</li>
+<li><a href="#常见问题">常见问题</a>
+<ol>
+<li><a href="#端口访问不到">端口访问不到</a>
+</li>
+<li><a href="#共享目录不可写">共享目录不可写</a>
+</li>
+<li><a href="#yaml-1">改了 YAML 但没生效</a>
+</li>
+<li><a href="#磁盘空间不够">磁盘空间不够</a>
+</li>
+</ol>
+</li>
+<li><a href="#推荐日常流程">推荐日常流程</a>
+</li>
+<li><a href="#参考链接">参考链接</a>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
@@ -1474,8 +1964,7 @@
 <script>!function(){const t=document.querySelectorAll('.toc-container a[href^="#"]');if(!t.length)return;const e=Array.from(t).map((t=>{const e=decodeURIComponent(t.getAttribute("href").slice(1));return{link:t,target:document.getElementById(e)}})).filter((t=>t.target));function n(){let n=e[0];for(const t of e)t.target.getBoundingClientRect().top<=100&&(n=t);t.forEach((t=>t.classList.remove("toc-active"))),n&&n.link.classList.add("toc-active")}window.addEventListener("scroll",n,{passive:!0}),n()}()</script>
 <div class="backlinks">
 <div class="backlink-title">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card">
-<span class="no-backlinks-message">No other pages mentions this page</span>
+<div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="2" class="backlink">Home</a>
 </div></div>
 </div>
 </div>
